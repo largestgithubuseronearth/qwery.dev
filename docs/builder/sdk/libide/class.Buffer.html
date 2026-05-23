@@ -1,0 +1,1565 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Buffer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.Buffer"/>
+  <meta property="og:description" content="Reference for Ide.Buffer"/>
+  <meta name="twitter:title" content="Ide.Buffer"/>
+  <meta name="twitter:description" content="Reference for Ide.Buffer"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Buffer.html#description">Buffer</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Buffer.addin_find_by_module_name.html">addin_find_by_module_name</a>
+  
+    <a class="method" href="method.Buffer.code_action_query_async.html">code_action_query_async</a>
+  
+    <a class="method" href="method.Buffer.code_action_query_finish.html">code_action_query_finish</a>
+  
+    <a class="method" href="method.Buffer.dup_content.html">dup_content</a>
+  
+    <a class="method" href="method.Buffer.dup_title.html">dup_title</a>
+  
+    <a class="method" href="method.Buffer.dup_uri.html">dup_uri</a>
+  
+    <a class="method" href="method.Buffer.format_selection_async.html">format_selection_async</a>
+  
+    <a class="method" href="method.Buffer.format_selection_finish.html">format_selection_finish</a>
+  
+    <a class="method" href="method.Buffer.get_change_count.html">get_change_count</a>
+  
+    <a class="method" href="method.Buffer.get_change_monitor.html">get_change_monitor</a>
+  
+    <a class="method" href="method.Buffer.get_changed_on_volume.html">get_changed_on_volume</a>
+  
+    <a class="method" href="method.Buffer.get_charset.html">get_charset</a>
+  
+    <a class="method" href="method.Buffer.get_code_action_provider.html">get_code_action_provider</a>
+  
+    <a class="method" href="method.Buffer.get_diagnostics.html">get_diagnostics</a>
+  
+    <a class="method" href="method.Buffer.get_failed.html">get_failed</a>
+  
+    <a class="method" href="method.Buffer.get_failure.html">get_failure</a>
+  
+    <a class="method" href="method.Buffer.get_file.html">get_file</a>
+  
+    <a class="method" href="method.Buffer.get_file_settings.html">get_file_settings</a>
+  
+    <a class="method" href="method.Buffer.get_formatter.html">get_formatter</a>
+  
+    <a class="method" href="method.Buffer.get_highlight_diagnostics.html">get_highlight_diagnostics</a>
+  
+    <a class="method" href="method.Buffer.get_insert_location.html">get_insert_location</a>
+  
+    <a class="method" href="method.Buffer.get_is_temporary.html">get_is_temporary</a>
+  
+    <a class="method" href="method.Buffer.get_iter_at_location.html">get_iter_at_location</a>
+  
+    <a class="method" href="method.Buffer.get_iter_location.html">get_iter_location</a>
+  
+    <a class="method" href="method.Buffer.get_language_id.html">get_language_id</a>
+  
+    <a class="method" href="method.Buffer.get_line_text.html">get_line_text</a>
+  
+    <a class="method" href="method.Buffer.get_loading.html">get_loading</a>
+  
+    <a class="method" href="method.Buffer.get_newline_type.html">get_newline_type</a>
+  
+    <a class="method" href="method.Buffer.get_read_only.html">get_read_only</a>
+  
+    <a class="method" href="method.Buffer.get_rename_provider.html">get_rename_provider</a>
+  
+    <a class="method" href="method.Buffer.get_selection_bounds.html">get_selection_bounds</a>
+  
+    <a class="method" href="method.Buffer.get_selection_range.html">get_selection_range</a>
+  
+    <a class="method" href="method.Buffer.get_state.html">get_state</a>
+  
+    <a class="method" href="method.Buffer.get_style_scheme_name.html">get_style_scheme_name</a>
+  
+    <a class="method" href="method.Buffer.get_symbol_at_location_async.html">get_symbol_at_location_async</a>
+  
+    <a class="method" href="method.Buffer.get_symbol_at_location_finish.html">get_symbol_at_location_finish</a>
+  
+    <a class="method" href="method.Buffer.get_symbol_resolvers.html">get_symbol_resolvers</a>
+  
+    <a class="method" href="method.Buffer.get_word_at_iter.html">get_word_at_iter</a>
+  
+    <a class="method" href="method.Buffer.has_diagnostics.html">has_diagnostics</a>
+  
+    <a class="method" href="method.Buffer.has_encoding_error.html">has_encoding_error</a>
+  
+    <a class="method" href="method.Buffer.has_symbol_resolvers.html">has_symbol_resolvers</a>
+  
+    <a class="method" href="method.Buffer.hold.html">hold</a>
+  
+    <a class="method" href="method.Buffer.list_symbol_resolvers.html">list_symbol_resolvers</a>
+  
+    <a class="method" href="method.Buffer.ref_context.html">ref_context</a>
+  
+    <a class="method" href="method.Buffer.rehighlight.html">rehighlight</a>
+  
+    <a class="method" href="method.Buffer.release.html">release</a>
+  
+    <a class="method" href="method.Buffer.save_file_async.html">save_file_async</a>
+  
+    <a class="method" href="method.Buffer.save_file_finish.html">save_file_finish</a>
+  
+    <a class="method" href="method.Buffer.set_change_monitor.html">set_change_monitor</a>
+  
+    <a class="method" href="method.Buffer.set_charset.html">set_charset</a>
+  
+    <a class="method" href="method.Buffer.set_diagnostics.html">set_diagnostics</a>
+  
+    <a class="method" href="method.Buffer.set_highlight_diagnostics.html">set_highlight_diagnostics</a>
+  
+    <a class="method" href="method.Buffer.set_language_id.html">set_language_id</a>
+  
+    <a class="method" href="method.Buffer.set_newline_type.html">set_newline_type</a>
+  
+    <a class="method" href="method.Buffer.set_style_scheme_name.html">set_style_scheme_name</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Buffer.buffer-manager.html">buffer-manager</a>
+  
+    <a class="property" href="property.Buffer.change-monitor.html">change-monitor</a>
+  
+    <a class="property" href="property.Buffer.changed-on-volume.html">changed-on-volume</a>
+  
+    <a class="property" href="property.Buffer.charset.html">charset</a>
+  
+    <a class="property" href="property.Buffer.diagnostics.html">diagnostics</a>
+  
+    <a class="property" href="property.Buffer.enable-addins.html">enable-addins</a>
+  
+    <a class="property" href="property.Buffer.failed.html">failed</a>
+  
+    <a class="property" href="property.Buffer.file.html">file</a>
+  
+    <a class="property" href="property.Buffer.file-settings.html">file-settings</a>
+  
+    <a class="property" href="property.Buffer.formatter.html">formatter</a>
+  
+    <a class="property" href="property.Buffer.has-diagnostics.html">has-diagnostics</a>
+  
+    <a class="property" href="property.Buffer.has-encoding-error.html">has-encoding-error</a>
+  
+    <a class="property" href="property.Buffer.has-symbol-resolvers.html">has-symbol-resolvers</a>
+  
+    <a class="property" href="property.Buffer.highlight-diagnostics.html">highlight-diagnostics</a>
+  
+    <a class="property" href="property.Buffer.is-temporary.html">is-temporary</a>
+  
+    <a class="property" href="property.Buffer.language-id.html">language-id</a>
+  
+    <a class="property" href="property.Buffer.newline-type.html">newline-type</a>
+  
+    <a class="property" href="property.Buffer.read-only.html">read-only</a>
+  
+    <a class="property" href="property.Buffer.state.html">state</a>
+  
+    <a class="property" href="property.Buffer.style-scheme-name.html">style-scheme-name</a>
+  
+    <a class="property" href="property.Buffer.symbol-resolvers.html">symbol-resolvers</a>
+  
+    <a class="property" href="property.Buffer.title.html">title</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.Buffer.change-settled.html">change-settled</a>
+  
+    <a class="signal" href="signal.Buffer.line-flags-changed.html">line-flags-changed</a>
+  
+    <a class="signal" href="signal.Buffer.loaded.html">loaded</a>
+  
+    <a class="signal" href="signal.Buffer.request-scroll-to-insert.html">request-scroll-to-insert</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>Buffer</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>final class Ide.Buffer : GtkSource.Buffer
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Buffer.html" data-namespace="GtkSource">GtkSourceBuffer</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.TextBuffer.html" data-namespace="Gtk">GtkTextBuffer</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Buffer.addin_find_by_module_name.html">ide_buffer_addin_find_by_module_name</a></h6>
+          <div class="docblock">
+            <p>Locates an addin attached to the <code>IdeBuffer</code> by the name of the module
+that provides the&nbsp;addin.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.code_action_query_async.html">ide_buffer_code_action_query_async</a></h6>
+          <div class="docblock">
+            <p>Queries for code actions in the current&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.code_action_query_finish.html">ide_buffer_code_action_query_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_buffer_query_code_action_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.dup_content.html">ide_buffer_dup_content</a></h6>
+          <div class="docblock">
+            <p>Gets the contents of the buffer as&nbsp;GBytes.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.dup_title.html">ide_buffer_dup_title</a></h6>
+          <div class="docblock">
+            <p>Gets a string to represent the title of the buffer. An attempt is made to
+make this relative to the project workdir if&nbsp;possible.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.dup_uri.html">ide_buffer_dup_uri</a></h6>
+          <div class="docblock">
+            <p>Gets the <span class="caps">URI</span> for the underlying file and returns a copy of&nbsp;it.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.format_selection_async.html">ide_buffer_format_selection_async</a></h6>
+          <div class="docblock">
+            <p>Formats the selection using an available <code>IdeFormatter</code> for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.format_selection_finish.html">ide_buffer_format_selection_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_buffer_format_selection_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_change_count.html">ide_buffer_get_change_count</a></h6>
+          <div class="docblock">
+            <p>Gets the monotonic change count for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_change_monitor.html">ide_buffer_get_change_monitor</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeBuffer:change-monitor</code> for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_changed_on_volume.html">ide_buffer_get_changed_on_volume</a></h6>
+          <div class="docblock">
+            <p>Returns <code>TRUE</code> if the <code>IdeBuffer</code> is known to have been modified on storage
+externally from this <code>IdeBuffer</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_charset.html">ide_buffer_get_charset</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_code_action_provider.html">ide_buffer_get_code_action_provider</a></h6>
+          <div class="docblock">
+            <p>Gets the code action provider, if&nbsp;any.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 44</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_diagnostics.html">ide_buffer_get_diagnostics</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeDiagnostics</code> for the buffer if any have been&nbsp;registered.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_failed.html">ide_buffer_get_failed</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeBuffer:failed</code> property, denoting if the buffer has failed
+in some aspect such as loading or&nbsp;saving.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_failure.html">ide_buffer_get_failure</a></h6>
+          <div class="docblock">
+            <p>Gets a <code>GError</code> representing a failure that has occurred for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_file.html">ide_buffer_get_file</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeBuffer:file</code> property.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_file_settings.html">ide_buffer_get_file_settings</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeBuffer:file-settings</code> property.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_formatter.html">ide_buffer_get_formatter</a></h6>
+          <div class="docblock">
+            <p>Gets an <code>IdeFormatter</code> for the buffer, if&nbsp;any.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_highlight_diagnostics.html">ide_buffer_get_highlight_diagnostics</a></h6>
+          <div class="docblock">
+            <p>Checks if diagnostics should be&nbsp;highlighted.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_insert_location.html">ide_buffer_get_insert_location</a></h6>
+          <div class="docblock">
+            <p>Gets the location of the insert mark as an <code>IdeLocation</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_is_temporary.html">ide_buffer_get_is_temporary</a></h6>
+          <div class="docblock">
+            <p>Checks if the buffer represents a temporary&nbsp;file.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_iter_at_location.html">ide_buffer_get_iter_at_location</a></h6>
+          <div class="docblock">
+            <p>Set <code>iter</code> to the position designated by <code>location</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_iter_location.html">ide_buffer_get_iter_location</a></h6>
+          <div class="docblock">
+            <p>Gets an <code>IdeLocation</code> for the position represented by <code>iter</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_language_id.html">ide_buffer_get_language_id</a></h6>
+          <div class="docblock">
+            <p>A helper to get the language identifier of the buffers current&nbsp;language.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_line_text.html">ide_buffer_get_line_text</a></h6>
+          <div class="docblock">
+            <p>Gets the contents of a single line within the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_loading.html">ide_buffer_get_loading</a></h6>
+          <div class="docblock">
+            <p>This checks to see if the buffer is currently loading. This is equivalent
+to calling <code>ide_buffer_get_state()</code> and checking for <code>IDE_BUFFER_STATE_LOADING</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_newline_type.html">ide_buffer_get_newline_type</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_read_only.html">ide_buffer_get_read_only</a></h6>
+          <div class="docblock">
+            <p>This function returns <code>TRUE</code> if the underlying file has been discovered to
+be read-only. This may be used by the interface to display information to
+the user about saving the&nbsp;file.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_rename_provider.html">ide_buffer_get_rename_provider</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeRenameProvider</code> for this buffer, or <code>NULL</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_selection_bounds.html">ide_buffer_get_selection_bounds</a></h6>
+          <div class="docblock">
+            <p>This function acts like <code>gtk_text_buffer_get_selection_bounds()</code> except that
+it always places the location of the insert mark at <code>insert</code> and the location
+of the selection mark at <code>selection</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_selection_range.html">ide_buffer_get_selection_range</a></h6>
+          <div class="docblock">
+            <p>Gets an <code>IdeRange</code> to represent the current buffer&nbsp;selection.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_state.html">ide_buffer_get_state</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeBuffer:state</code> property.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_style_scheme_name.html">ide_buffer_get_style_scheme_name</a></h6>
+          <div class="docblock">
+            <p>Gets the name of the <code>GtkSourceStyleScheme</code> from the <code>IdeBuffer:style-scheme</code>
+property.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_symbol_at_location_async.html">ide_buffer_get_symbol_at_location_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously get a possible symbol at <code>location</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_symbol_at_location_finish.html">ide_buffer_get_symbol_at_location_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to locate a symbol at a&nbsp;location.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_symbol_resolvers.html">ide_buffer_get_symbol_resolvers</a></h6>
+          <div class="docblock">
+            <p>Gets the symbol resolvers for the buffer based on the current language. The
+resolvers in the resulting array are sorted by&nbsp;priority.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.get_word_at_iter.html">ide_buffer_get_word_at_iter</a></h6>
+          <div class="docblock">
+            <p>Gets the word found under the position denoted by <code>iter</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.has_diagnostics.html">ide_buffer_has_diagnostics</a></h6>
+          <div class="docblock">
+            <p>Returns <code>TRUE</code> if any diagnostics have been registered for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.has_encoding_error.html">ide_buffer_has_encoding_error</a></h6>
+          <div class="docblock">
+            <p>Gets the &#8220;has-encoding-error&#8221;&nbsp;property.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 44</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.has_symbol_resolvers.html">ide_buffer_has_symbol_resolvers</a></h6>
+          <div class="docblock">
+            <p>Checks if any symbol resolvers are&nbsp;available.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.hold.html">ide_buffer_hold</a></h6>
+          <div class="docblock">
+            <p>Increases the &#8220;hold count&#8221; of the <code>IdeBuffer</code> by&nbsp;one.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.list_symbol_resolvers.html">ide_buffer_list_symbol_resolvers</a></h6>
+          <div class="docblock">
+            <p>Gets the symbol resolvers for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 45</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.ref_context.html">ide_buffer_ref_context</a></h6>
+          <div class="docblock">
+            <p>Locates the <code>IdeContext</code> for the buffer and returns&nbsp;it.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.rehighlight.html">ide_buffer_rehighlight</a></h6>
+          <div class="docblock">
+            <p>Force <code>self</code> to rebuild the highlighted&nbsp;words.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.release.html">ide_buffer_release</a></h6>
+          <div class="docblock">
+            <p>Releases the &#8220;hold count&#8221; on a&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.save_file_async.html">ide_buffer_save_file_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously saves the buffer contents to <code>file</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.save_file_finish.html">ide_buffer_save_file_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to save the buffer via&nbsp;ide_buffer_save_file_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_change_monitor.html">ide_buffer_set_change_monitor</a></h6>
+          <div class="docblock">
+            <p>Sets an <code>IdeBufferChangeMonitor</code> to use for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_charset.html">ide_buffer_set_charset</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_diagnostics.html">ide_buffer_set_diagnostics</a></h6>
+          <div class="docblock">
+            <p>Sets the <code>IdeDiagnostics</code> for the buffer. These will be used to highlight
+the buffer for errors and warnings if <code>IdeBuffer:highlight-diagnostics</code>
+is <code>TRUE</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_highlight_diagnostics.html">ide_buffer_set_highlight_diagnostics</a></h6>
+          <div class="docblock">
+            <p>Sets the <code>IdeBuffer:highlight-diagnostics</code> property.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_language_id.html">ide_buffer_set_language_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_newline_type.html">ide_buffer_set_newline_type</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Buffer.set_style_scheme_name.html">ide_buffer_set_style_scheme_name</a></h6>
+          <div class="docblock">
+            <p>Sets the <code>IdeBuffer:style-scheme</code> property by locating the style scheme
+matching <code>style_scheme_name</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Buffer.html" data-namespace="GtkSource">GtkSourceBuffer</a> (27)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Buffer.html#methods" data-namespace="GtkSource">GtkSourceBuffer</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.TextBuffer.html" data-namespace="Gtk">GtkTextBuffer</a> (72)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.TextBuffer.html#methods" data-namespace="Gtk">GtkTextBuffer</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Buffer.buffer-manager.html">Ide.Buffer:buffer-manager</a></h6>
+          <div class="docblock">
+            <p>Sets the &#8220;buffer-manager&#8221; property, which is used by the buffer to
+clean-up state when the buffer is no longer in&nbsp;use.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.change-monitor.html">Ide.Buffer:change-monitor</a></h6>
+          <div class="docblock">
+            <p>The &#8220;change-monitor&#8221; property is an <code>IdeBufferChangeMonitor</code> that will be
+used to track changes in the <code>IdeBuffer</code>. This can be used to show line
+changes in the editor&nbsp;gutter.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.changed-on-volume.html">Ide.Buffer:changed-on-volume</a></h6>
+          <div class="docblock">
+            <p>The &#8220;changed-on-volume&#8221; property is set to <code>TRUE</code> when it has been
+discovered that the file represented by the <code>IdeBuffer</code> has changed
+externally to&nbsp;Builder.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.charset.html">Ide.Buffer:charset</a></h6>
+          <div class="docblock">
+            <p>Sets the encoding to use for the buffer based on the &#8220;charset&#8221;
+specified. This is useful to ensure that characters may not be
+lost from the original&nbsp;encoding.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.diagnostics.html">Ide.Buffer:diagnostics</a></h6>
+          <div class="docblock">
+            <p>The &#8220;diagnostics&#8221; property contains an <code>IdeDiagnostics</code> that represent
+the diagnostics found in the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.enable-addins.html">Ide.Buffer:enable-addins</a></h6>
+          <div class="docblock">
+            <p>The &#8220;enable-addins&#8221; property determines whether addins will be aware of
+this buffer. When set to <code>FALSE</code> no ide_buffer_addin_*() functions will be
+called on this&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.failed.html">Ide.Buffer:failed</a></h6>
+          <div class="docblock">
+            <p>The &#8220;failed&#8221; property is <code>TRUE</code> when the buffer has entered a failed
+state such as when loading or saving the buffer to&nbsp;disk.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.file.html">Ide.Buffer:file</a></h6>
+          <div class="docblock">
+            <p>The &#8220;file&#8221; property is the underlying file represented by the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.file-settings.html">Ide.Buffer:file-settings</a></h6>
+          <div class="docblock">
+            <p>The &#8220;file-settings&#8221; property are the settings to be used by the buffer
+and source-view for the underlying&nbsp;file.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.formatter.html">Ide.Buffer:formatter</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.has-diagnostics.html">Ide.Buffer:has-diagnostics</a></h6>
+          <div class="docblock">
+            <p>The &#8220;has-diagnostics&#8221; property denotes that there are a non-zero number
+of diangostics registered for the&nbsp;buffer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.has-encoding-error.html">Ide.Buffer:has-encoding-error</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.has-symbol-resolvers.html">Ide.Buffer:has-symbol-resolvers</a></h6>
+          <div class="docblock">
+            <p>The &#8220;has-symbol-resolvers&#8221; property is <code>TRUE</code> if there are any symbol
+resolvers&nbsp;loaded.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.highlight-diagnostics.html">Ide.Buffer:highlight-diagnostics</a></h6>
+          <div class="docblock">
+            <p>The &#8220;highlight-diagnostics&#8221; property indicates that diagnostics which
+are discovered should be&nbsp;styled.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.is-temporary.html">Ide.Buffer:is-temporary</a></h6>
+          <div class="docblock">
+            <p>The &#8220;is-temporary&#8221; property denotes the <code>IdeBuffer:file</code> property points
+to a temporary file. When saving the the buffer, various <span class="caps">UI</span> components
+know to check this property and provide a file chooser to allow the user
+to select the destination&nbsp;file.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.language-id.html">Ide.Buffer:language-id</a></h6>
+          <div class="docblock">
+            <p>The &#8220;language-id&#8221; property is a convenience property to set the
+<code>GtkSourceBuffer:language</code> property using a string&nbsp;name.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.newline-type.html">Ide.Buffer:newline-type</a></h6>
+          <div class="docblock">
+            <p>Sets the style of newline to append to each&nbsp;line.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.read-only.html">Ide.Buffer:read-only</a></h6>
+          <div class="docblock">
+            <p>The &#8220;read-only&#8221; property is set to <code>TRUE</code> when it has been
+discovered that the file represented by the <code>IdeBuffer</code> is read-only
+on the underlying&nbsp;storage.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.state.html">Ide.Buffer:state</a></h6>
+          <div class="docblock">
+            <p>The &#8220;state&#8221; property can be used to determine if the buffer is
+currently performing any specific background work, such as loading
+from or saving a buffer to&nbsp;storage.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.style-scheme-name.html">Ide.Buffer:style-scheme-name</a></h6>
+          <div class="docblock">
+            <p>The &#8220;style-scheme-name&#8221; is the name of the style scheme that is used.
+It is a convenience property so that you do not need to use the
+<code>GtkSourceStyleSchemeManager</code> to lookup style&nbsp;schemes.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.symbol-resolvers.html">Ide.Buffer:symbol-resolvers</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Buffer.title.html">Ide.Buffer:title</a></h6>
+          <div class="docblock">
+            <p>The &#8220;title&#8221; for the buffer which includes some variant of the path
+to the underlying&nbsp;file.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties"><h5 style="display:block;">Properties inherited from <a class="external" href="javascript:void(0)" data-link="class.Buffer.html" data-namespace="GtkSource">GtkSourceBuffer</a> (6)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="property.Buffer.highlight-matching-brackets.html">GtkSource.Buffer:highlight-matching-brackets</a></h6>
+            <div class="docblock">
+              <p>Whether to highlight matching brackets in the&nbsp;buffer.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="property.Buffer.highlight-syntax.html">GtkSource.Buffer:highlight-syntax</a></h6>
+            <div class="docblock">
+              <p>Whether to highlight syntax in the&nbsp;buffer.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="property.Buffer.implicit-trailing-newline.html">GtkSource.Buffer:implicit-trailing-newline</a></h6>
+            <div class="docblock">
+              <p>Whether the buffer has an implicit trailing newline. See
+<code>gtk_source_buffer_set_implicit_trailing_newline()</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="property.Buffer.language.html">GtkSource.Buffer:language</a></h6>
+            <div class="docblock">
+              No description available.
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="property.Buffer.loading.html">GtkSource.Buffer:loading</a></h6>
+            <div class="docblock">
+              <p>The &#8220;loading&#8221; property denotes that a <code>GtkSourceFileLoader</code> is
+currently loading the&nbsp;buffer.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="property.Buffer.style-scheme.html">GtkSource.Buffer:style-scheme</a></h6>
+            <div class="docblock">
+              <p>Style scheme. It contains styles for syntax highlighting, optionally
+foreground, background, cursor color, current line color, and matching
+brackets&nbsp;style.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties"><h5 style="display:block;">Properties inherited from <a class="external" href="javascript:void(0)" data-link="class.TextBuffer.html" data-namespace="Gtk">GtkTextBuffer</a> (7)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.can-redo.html">Gtk.TextBuffer:can-redo</a></h6>
+            <div class="docblock">
+              <p>Denotes that the buffer can reapply the last undone&nbsp;action.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.can-undo.html">Gtk.TextBuffer:can-undo</a></h6>
+            <div class="docblock">
+              <p>Denotes that the buffer can undo the last applied&nbsp;action.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.cursor-position.html">Gtk.TextBuffer:cursor-position</a></h6>
+            <div class="docblock">
+              <p>The position of the insert&nbsp;mark.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.enable-undo.html">Gtk.TextBuffer:enable-undo</a></h6>
+            <div class="docblock">
+              <p>Denotes if support for undoing and redoing changes to the buffer is&nbsp;allowed.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.has-selection.html">Gtk.TextBuffer:has-selection</a></h6>
+            <div class="docblock">
+              <p>Whether the buffer has some text currently&nbsp;selected.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.tag-table.html">Gtk.TextBuffer:tag-table</a></h6>
+            <div class="docblock">
+              <p>The GtkTextTagTable for the&nbsp;buffer.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="property.TextBuffer.text.html">Gtk.TextBuffer:text</a></h6>
+            <div class="docblock">
+              <p>The text content of the&nbsp;buffer.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.Buffer.change-settled.html">Ide.Buffer::change-settled</a></h6>
+          <div class="docblock">
+            <p>The &#8220;change-settled&#8221; signal is emitted when the buffer has stopped
+being edited for a short period of time. This is useful to connect
+to when you want to perform work as the user is editing, but you
+don&#8217;t want to get in the way of their&nbsp;editing.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Buffer.line-flags-changed.html">Ide.Buffer::line-flags-changed</a></h6>
+          <div class="docblock">
+            <p>The &#8220;line-flags-changed&#8221; signal is emitted when the buffer has detected
+ancillary information has changed for lines in the buffer. Such information
+might include diagnostics or version control&nbsp;information.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Buffer.loaded.html">Ide.Buffer::loaded</a></h6>
+          <div class="docblock">
+            <p>The &#8220;loaded&#8221; signal is emitted after the buffer is&nbsp;loaded.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Buffer.request-scroll-to-insert.html">Ide.Buffer::request-scroll-to-insert</a></h6>
+          <div class="docblock">
+            <p>Requests that attached views scroll to insert&nbsp;location.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Buffer.html" data-namespace="GtkSource">GtkSourceBuffer</a> (4)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="signal.Buffer.bracket-matched.html">GtkSourceBuffer::bracket-matched</a></h6>
+            <div class="docblock">
+              <p><code>iter</code> is set to a valid iterator pointing to the matching bracket
+if <code>state</code> is <code>GTK_SOURCE_BRACKET_MATCH_FOUND</code>. Otherwise <code>iter</code> is&nbsp;meaningless.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="signal.Buffer.cursor-moved.html">GtkSourceBuffer::cursor-moved</a></h6>
+            <div class="docblock">
+              <p>The &#8220;cursor-moved&#8221; signal is emitted when then insertion mark has&nbsp;moved.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="signal.Buffer.highlight-updated.html">GtkSourceBuffer::highlight-updated</a></h6>
+            <div class="docblock">
+              <p>The ::highlight-updated signal is emitted when the syntax
+highlighting and <a href="./class.Buffer.html#context-classes">context classes</a> are updated in a
+certain region of the <code>buffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="GtkSource" data-link="signal.Buffer.source-mark-updated.html">GtkSourceBuffer::source-mark-updated</a></h6>
+            <div class="docblock">
+              <p>The ::source-mark-updated signal is emitted each time
+a mark is added to, moved or removed from the <code>buffer</code>.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.TextBuffer.html" data-namespace="Gtk">GtkTextBuffer</a> (15)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.apply-tag.html">GtkTextBuffer::apply-tag</a></h6>
+            <div class="docblock">
+              <p>Emitted to apply a tag to a range of text in a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.begin-user-action.html">GtkTextBuffer::begin-user-action</a></h6>
+            <div class="docblock">
+              <p>Emitted at the beginning of a single user-visible
+operation on a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.changed.html">GtkTextBuffer::changed</a></h6>
+            <div class="docblock">
+              <p>Emitted when the content of a <code>GtkTextBuffer</code> has&nbsp;changed.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.delete-range.html">GtkTextBuffer::delete-range</a></h6>
+            <div class="docblock">
+              <p>Emitted to delete a range from a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.end-user-action.html">GtkTextBuffer::end-user-action</a></h6>
+            <div class="docblock">
+              <p>Emitted at the end of a single user-visible
+operation on the <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.insert-child-anchor.html">GtkTextBuffer::insert-child-anchor</a></h6>
+            <div class="docblock">
+              <p>Emitted to insert a <code>GtkTextChildAnchor</code> in a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.insert-paintable.html">GtkTextBuffer::insert-paintable</a></h6>
+            <div class="docblock">
+              <p>Emitted to insert a <code>GdkPaintable</code> in a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.insert-text.html">GtkTextBuffer::insert-text</a></h6>
+            <div class="docblock">
+              <p>Emitted to insert text in a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.mark-deleted.html">GtkTextBuffer::mark-deleted</a></h6>
+            <div class="docblock">
+              <p>Emitted as notification after a <code>GtkTextMark</code> is&nbsp;deleted.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.mark-set.html">GtkTextBuffer::mark-set</a></h6>
+            <div class="docblock">
+              <p>Emitted as notification after a <code>GtkTextMark</code> is&nbsp;set.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.modified-changed.html">GtkTextBuffer::modified-changed</a></h6>
+            <div class="docblock">
+              <p>Emitted when the modified bit of a <code>GtkTextBuffer</code> flips.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.paste-done.html">GtkTextBuffer::paste-done</a></h6>
+            <div class="docblock">
+              <p>Emitted after paste operation has been&nbsp;completed.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.redo.html">GtkTextBuffer::redo</a></h6>
+            <div class="docblock">
+              <p>Emitted when a request has been made to redo the
+previously undone&nbsp;operation.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.remove-tag.html">GtkTextBuffer::remove-tag</a></h6>
+            <div class="docblock">
+              <p>Emitted to remove all occurrences of <code>tag</code> from a range
+of text in a <code>GtkTextBuffer</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gtk" data-link="signal.TextBuffer.undo.html">GtkTextBuffer::undo</a></h6>
+            <div class="docblock">
+              <p>Emitted when a request has been made to undo the
+previous operation or set of operations that have
+been grouped&nbsp;together.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeBufferClass {
+  GtkSourceBufferClass parent_class;
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: GtkSourceBufferClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

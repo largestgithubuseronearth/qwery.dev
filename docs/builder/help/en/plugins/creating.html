@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating Your First Extension &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extending the Workbench" href="workbench/index.html" />
+    <link rel="prev" title="Enabling and Disabling Extensions" href="enabling.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="enabling.html">Enabling and Disabling Extensions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating Your First Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workbench/index.html">Extending the Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="greeter.html">Extending the Greeter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editor/index.html">Extending the Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="symbols/index.html">Symbols and Semantic Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/index.html">Extending the Build Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="processes/index.html">Processes and Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="devices.html">Extending the Device Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running.html">Extending the Run Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keybindings.html">Registering Keybindings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langserv.html">Integrating Language Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Extending Project Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session.html">Session Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menus.html">Extending Application Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html">Registering Application Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workers.html">Managing Worker Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs.html">Integrating Version Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Extensions</a></li>
+      <li class="breadcrumb-item active">Creating Your First Extension</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/plugins/creating.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="creating-your-first-extension">
+<h1>Creating Your First Extension<a class="headerlink" href="#creating-your-first-extension" title="Link to this heading"></a></h1>
+<p>Plugins consist of two things.
+First, a meta-data file describing the extension which includes things like a name, the author, and where to find the extension.
+Second, the code which can take the form of a shared library or python module.</p>
+<p>Builder supports writing extensions in C, Vala, or Python.
+We will be using Python for our examples in this tutorial because it is both succinct and easy to get started with.</p>
+<p>First, we will look at our extension meta-data file.
+The file should have the file-suffix of “.plugin” and its format is familiar.
+It starts with a line containing “[Plugin]” indicating this is extension metadata.
+Then it is followed by a series of “Key=Value” key-pairs.</p>
+<p>We will often use the words “extension” and “plugin” interchangeably.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1"># my_plugin.plugin</span>
+<span class="k">[Plugin]</span>
+<span class="na">Name</span><span class="o">=</span><span class="s">My Plugin</span>
+<span class="na">Loader</span><span class="o">=</span><span class="s">python3</span>
+<span class="na">Module</span><span class="o">=</span><span class="s">my_plugin</span>
+<span class="na">Author</span><span class="o">=</span><span class="s">Angela Avery</span>
+<span class="na">X-Builder-ABI</span><span class="o">=</span><span class="s">3.32</span>
+<span class="na">X-Has-Resources</span><span class="o">=</span><span class="s">true</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">X-Builder-ABI</span></code> should be set to the version of Builder you are targeting (not including the micro release number). It will only be loaded if the Builder version matches.</p>
+</div>
+<p>Now we can create a simple plugin that will print “hello” when Builder starts and “goodbye” when Builder exits.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># my_plugin.py</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">gi</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">GObject</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ide</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyAppAddin</span><span class="p">(</span><span class="n">GObject</span><span class="o">.</span><span class="n">Object</span><span class="p">,</span> <span class="n">Ide</span><span class="o">.</span><span class="n">ApplicationAddin</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">application</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_unload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">application</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;goodbye&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In the python file above, we define a new extension called <code class="docutils literal notranslate"><span class="pre">MyAppAddin</span></code>.
+It inherits from <code class="docutils literal notranslate"><span class="pre">GObject.Object</span></code> (which is our base object) and implements the interface <code class="docutils literal notranslate"><span class="pre">Ide.ApplicationAddin</span></code>.
+We won’t get too much into objects and interfaces here, but the plugin manager uses this information to determine when and how to load our extension.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Ide.ApplicationAddin</span></code> requires that two methods are implemented.
+The first is called <code class="docutils literal notranslate"><span class="pre">do_load</span></code> and is executed when the extension should load.
+And the second is called <code class="docutils literal notranslate"><span class="pre">do_unload</span></code> and is executed when the plugin should cleanup after itself.
+Each of the two functions take a parameter called <code class="docutils literal notranslate"><span class="pre">application</span></code> which is an <code class="docutils literal notranslate"><span class="pre">Ide.Application</span></code> instance.</p>
+<section id="loading-our-extension">
+<h2>Loading our Extension<a class="headerlink" href="#loading-our-extension" title="Link to this heading"></a></h2>
+<p>Now place the two files in <code class="docutils literal notranslate"><span class="pre">~/.local/share/gnome-builder/plugins</span></code> as <code class="docutils literal notranslate"><span class="pre">my_plugin.plugin</span></code> and <code class="docutils literal notranslate"><span class="pre">my_plugin.py</span></code>.
+If we run Builder from the command line, we should see the output from our plugin!</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>angela@localhost<span class="w"> </span>~<span class="o">]</span><span class="w"> </span>gnome-builder
+hello
+</pre></div>
+</div>
+<p>Now if we close the window, we should see that our plugin was unloaded.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>angela@localhost<span class="w"> </span>~<span class="o">]</span><span class="w"> </span>gnome-builder
+hello
+goodbye
+</pre></div>
+</div>
+</section>
+<section id="embedding-resources">
+<span id="id1"></span><h2>Embedding Resources<a class="headerlink" href="#embedding-resources" title="Link to this heading"></a></h2>
+<p>Sometimes plugins need to embed resources. Builder will automatically
+load a file that matches the name <code class="docutils literal notranslate"><span class="pre">$module_name.gresource</span></code> if it
+placed alongside the <code class="docutils literal notranslate"><span class="pre">$module_name.plugin</span></code> file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are writing an extension in C or Vala, simply embed GResources as normal.</p>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">First we need to create a my-plugin.gresource.xml file describing our resources</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;gresources&gt;</span>
+<span class="w">  </span><span class="nt">&lt;gresource</span><span class="w"> </span><span class="na">prefix=</span><span class="s">&quot;/plugins/my-plugin&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;file</span><span class="w"> </span><span class="na">preprocess=</span><span class="s">&quot;xml-stripblanks&quot;</span><span class="w"> </span><span class="na">compressed=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>gtk/menus.ui<span class="nt">&lt;/file&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/gresource&gt;</span>
+<span class="nt">&lt;/gresources&gt;</span>
+</pre></div>
+</div>
+</div>
+<p>Next, compile the resources using <code class="docutils literal notranslate"><span class="pre">glib-compile-resources</span></code>.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>glib-compile-resources<span class="w"> </span>--generate<span class="w"> </span>my-plugin.gresource<span class="w"> </span>my-plugin.gresource.xml
+</pre></div>
+</div>
+<p>Now you should have a file named <code class="docutils literal notranslate"><span class="pre">my-plugin.gresource</span></code> in the current directory.
+Ship this file along with your <code class="docutils literal notranslate"><span class="pre">my-plugin.plugin</span></code> and Python module.</p>
+<p>Next, continue on to learn about other interfaces you can implement in Builder to extend it’s features!</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="enabling.html" class="btn btn-neutral float-left" title="Enabling and Disabling Extensions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="workbench/index.html" class="btn btn-neutral float-right" title="Extending the Workbench" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.SubprocessLauncher.take_stderr_fd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta priority="og:title" content="Ide.SubprocessLauncher.take_stderr_fd"/>
+  <meta priority="og:description" content="Reference for Ide.SubprocessLauncher.take_stderr_fd"/>
+  <meta name="twitter:title" content="Ide.SubprocessLauncher.take_stderr_fd"/>
+  <meta name="twitter:description" content="Reference for Ide.SubprocessLauncher.take_stderr_fd"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.SubprocessLauncher.html">SubprocessLauncher</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.SubprocessLauncher.append_path.html">append_path</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_arg.html">get_arg</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_argv.html">get_argv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_clear_env.html">get_clear_env</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_cwd.html">get_cwd</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_environ.html">get_environ</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_flags.html">get_flags</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_max_fd.html">get_max_fd</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_needs_tty.html">get_needs_tty</a>
+  
+    <a class="method" href="method.SubprocessLauncher.get_run_on_host.html">get_run_on_host</a>
+  
+    <a class="method" href="method.SubprocessLauncher.getenv.html">getenv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.insert_argv.html">insert_argv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.join_args_for_sh_c.html">join_args_for_sh_c</a>
+  
+    <a class="method" href="method.SubprocessLauncher.overlay_environment.html">overlay_environment</a>
+  
+    <a class="method" href="method.SubprocessLauncher.pop_argv.html">pop_argv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.prepend_path.html">prepend_path</a>
+  
+    <a class="method" href="method.SubprocessLauncher.push_args.html">push_args</a>
+  
+    <a class="method" href="method.SubprocessLauncher.push_argv.html">push_argv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.push_argv_format.html">push_argv_format</a>
+  
+    <a class="method" href="method.SubprocessLauncher.push_argv_parsed.html">push_argv_parsed</a>
+  
+    <a class="method" href="method.SubprocessLauncher.replace_argv.html">replace_argv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_argv.html">set_argv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_clear_env.html">set_clear_env</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_cwd.html">set_cwd</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_environ.html">set_environ</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_flags.html">set_flags</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_run_on_host.html">set_run_on_host</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_setup_tty.html">set_setup_tty</a>
+  
+    <a class="method" href="method.SubprocessLauncher.set_stdout_file_path.html">set_stdout_file_path</a>
+  
+    <a class="method" href="method.SubprocessLauncher.setenv.html">setenv</a>
+  
+    <a class="method" href="method.SubprocessLauncher.spawn.html">spawn</a>
+  
+    <a class="method" href="method.SubprocessLauncher.take_fd.html">take_fd</a>
+  
+    <a class="method current" href="method.SubprocessLauncher.take_stderr_fd.html">take_stderr_fd</a>
+  
+    <a class="method" href="method.SubprocessLauncher.take_stdin_fd.html">take_stdin_fd</a>
+  
+    <a class="method" href="method.SubprocessLauncher.take_stdout_fd.html">take_stdout_fd</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index.html">Ide</a><span class="sep"></span><a href="class.SubprocessLauncher.html">SubprocessLauncher</a><span class="sep"></span>take_stderr_fd</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="kt">void</span>
+<span class="n">ide_subprocess_launcher_take_stderr_fd</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">IdeSubprocessLauncher</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="p">,</span>
+<span class="w">  </span><span class="n">gint</span><span class="w"> </span><span class="n">stderr_fd</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <dl class="arguments">
+          
+          <dt class="arg-name"><code>stderr_fd</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gint</code></p>
+            <p>No description available.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </table>
+          </dd>
+          
+
+          
+        </dl>
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

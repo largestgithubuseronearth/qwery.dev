@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extending the Greeter &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extending the Editor" href="editor/index.html" />
+    <link rel="prev" title="Adding Panels to the Workspace" href="workbench/panels.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="enabling.html">Enabling and Disabling Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating.html">Creating Your First Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workbench/index.html">Extending the Workbench</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Extending the Greeter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editor/index.html">Extending the Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="symbols/index.html">Symbols and Semantic Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/index.html">Extending the Build Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="processes/index.html">Processes and Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="devices.html">Extending the Device Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running.html">Extending the Run Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keybindings.html">Registering Keybindings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langserv.html">Integrating Language Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Extending Project Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session.html">Session Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menus.html">Extending Application Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html">Registering Application Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workers.html">Managing Worker Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs.html">Integrating Version Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Extensions</a></li>
+      <li class="breadcrumb-item active">Extending the Greeter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/plugins/greeter.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="extending-the-greeter">
+<h1>Extending the Greeter<a class="headerlink" href="#extending-the-greeter" title="Link to this heading"></a></h1>
+<p>When the user starts Builder, they are greeted by the <code class="docutils literal notranslate"><span class="pre">Ide.GreeterWorkspace</span></code>.
+This is a window containing a series of <code class="docutils literal notranslate"><span class="pre">Ide.Surface</span></code>’s to display various options for opening a project.</p>
+<p>In the following image, you can see the <code class="docutils literal notranslate"><span class="pre">Ide.GreeterSurface</span></code> showing personal projects as well as suggested new projects.
+Along the bottom of the window are buttons providing various ways to open an existing project.</p>
+<a class="reference internal image-reference" href="../_images/greeter.png"><img alt="../_images/greeter.png" class="align-center" src="../_images/greeter.png" style="width: 500px;" /></a>
+<section id="adding-a-surface">
+<h2>Adding a Surface<a class="headerlink" href="#adding-a-surface" title="Link to this heading"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Ide.Workspace</span></code> API provides a method to add an additional <code class="docutils literal notranslate"><span class="pre">Ide.Surface</span></code> for your extension.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyWorkspaceAddin</span><span class="p">(</span><span class="n">GObject</span><span class="o">.</span><span class="n">Object</span><span class="p">,</span> <span class="n">Ide</span><span class="o">.</span><span class="n">WorkspaceAddin</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">workspace</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">workspace</span><span class="p">)</span> <span class="o">!=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">GreeterWorkspace</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">my_surface</span> <span class="o">=</span> <span class="n">MySurface</span><span class="p">()</span>
+        <span class="n">workspace</span><span class="o">.</span><span class="n">add_surface</span><span class="p">(</span><span class="n">my_surface</span><span class="p">)</span>
+        <span class="n">workspace</span><span class="o">.</span><span class="n">set_visible_surface</span><span class="p">(</span><span class="n">my_surface</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="adding-a-button">
+<h2>Adding a Button<a class="headerlink" href="#adding-a-button" title="Link to this heading"></a></h2>
+<p>You can add a button that switches to a custom surface, or even opens a dialog.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># &#39;my-surface-name&#39; should match the name of your widget (See Gtk.Widget.set_name())</span>
+<span class="n">button</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;click me&#39;</span><span class="p">,</span> <span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">detailed_action_name</span><span class="o">=</span><span class="s1">&#39;win.surface::my-surface-name&#39;</span><span class="p">)</span>
+<span class="n">greeter_workspace</span><span class="o">.</span><span class="n">add_button</span><span class="p">(</span><span class="n">button</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># 100 is sort priority</span>
+</pre></div>
+</div>
+</section>
+<section id="performing-long-running-actions">
+<h2>Performing Long Running Actions<a class="headerlink" href="#performing-long-running-actions" title="Link to this heading"></a></h2>
+<p>If you need to perform a long-running action, such as cloning a repository or expanding a template, then you should notify the workspace.
+Surround your long running operation with calls to <code class="docutils literal notranslate"><span class="pre">greeter_workspace.begin()</span></code> and <code class="docutils literal notranslate"><span class="pre">greeter_workspace.end()</span></code>.
+This will cause the workspace to prevent certain changes by the user.</p>
+</section>
+<section id="adding-project-sections">
+<h2>Adding Project Sections<a class="headerlink" href="#adding-project-sections" title="Link to this heading"></a></h2>
+<p>The list of projects in the greeter are broken into sections.
+You can add a section to the greeter using <code class="docutils literal notranslate"><span class="pre">greeter_workspace.add_section()</span></code>.
+The section should implement <code class="docutils literal notranslate"><span class="pre">Ide.GreeterSection</span></code> so that it can respond to user input and selections.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="workbench/panels.html" class="btn btn-neutral float-left" title="Adding Panels to the Workspace" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="editor/index.html" class="btn btn-neutral float-right" title="Extending the Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

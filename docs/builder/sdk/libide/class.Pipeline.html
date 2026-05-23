@@ -1,0 +1,1292 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Pipeline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.Pipeline"/>
+  <meta property="og:description" content="Reference for Ide.Pipeline"/>
+  <meta name="twitter:title" content="Ide.Pipeline"/>
+  <meta name="twitter:description" content="Reference for Ide.Pipeline"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Pipeline.html#description">Pipeline</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Pipeline.add_error_format.html">add_error_format</a>
+  
+    <a class="method" href="method.Pipeline.add_log_observer.html">add_log_observer</a>
+  
+    <a class="method" href="method.Pipeline.addin_find_by_module_name.html">addin_find_by_module_name</a>
+  
+    <a class="method" href="method.Pipeline.attach.html">attach</a>
+  
+    <a class="method" href="method.Pipeline.attach_command.html">attach_command</a>
+  
+    <a class="method" href="method.Pipeline.attach_launcher.html">attach_launcher</a>
+  
+    <a class="method" href="method.Pipeline.attach_pty.html">attach_pty</a>
+  
+    <a class="method" href="method.Pipeline.build_async.html">build_async</a>
+  
+    <a class="method" href="method.Pipeline.build_builddir_path.html">build_builddir_path</a>
+  
+    <a class="method" href="method.Pipeline.build_finish.html">build_finish</a>
+  
+    <a class="method" href="method.Pipeline.build_srcdir_path.html">build_srcdir_path</a>
+  
+    <a class="method" href="method.Pipeline.build_targets_async.html">build_targets_async</a>
+  
+    <a class="method" href="method.Pipeline.build_targets_finish.html">build_targets_finish</a>
+  
+    <a class="method" href="method.Pipeline.clean_async.html">clean_async</a>
+  
+    <a class="method" href="method.Pipeline.clean_finish.html">clean_finish</a>
+  
+    <a class="method" href="method.Pipeline.contains_program_in_path.html">contains_program_in_path</a>
+  
+    <a class="method" href="method.Pipeline.create_launcher.html">create_launcher</a>
+  
+    <a class="method" href="method.Pipeline.create_run_context.html">create_run_context</a>
+  
+    <a class="method" href="method.Pipeline.detach.html">detach</a>
+  
+    <a class="method" href="method.Pipeline.dup_arch.html">dup_arch</a>
+  
+    <a class="method" href="method.Pipeline.emit_diagnostic.html">emit_diagnostic</a>
+  
+    <a class="method" href="method.Pipeline.foreach_stage.html">foreach_stage</a>
+  
+    <a class="method" href="method.Pipeline.get_builddir.html">get_builddir</a>
+  
+    <a class="method" href="method.Pipeline.get_busy.html">get_busy</a>
+  
+    <a class="method" href="method.Pipeline.get_can_export.html">get_can_export</a>
+  
+    <a class="method" href="method.Pipeline.get_config.html">get_config</a>
+  
+    <a class="method" href="method.Pipeline.get_deploy_strategy.html">get_deploy_strategy</a>
+  
+    <a class="method" href="method.Pipeline.get_device.html">get_device</a>
+  
+    <a class="method" href="method.Pipeline.get_device_info.html">get_device_info</a>
+  
+    <a class="method" href="method.Pipeline.get_host_triplet.html">get_host_triplet</a>
+  
+    <a class="method" href="method.Pipeline.get_message.html">get_message</a>
+  
+    <a class="method" href="method.Pipeline.get_phase.html">get_phase</a>
+  
+    <a class="method" href="method.Pipeline.get_pty.html">get_pty</a>
+  
+    <a class="method" href="method.Pipeline.get_requested_phase.html">get_requested_phase</a>
+  
+    <a class="method" href="method.Pipeline.get_runtime.html">get_runtime</a>
+  
+    <a class="method" href="method.Pipeline.get_srcdir.html">get_srcdir</a>
+  
+    <a class="method" href="method.Pipeline.get_stage_by_id.html">get_stage_by_id</a>
+  
+    <a class="method" href="method.Pipeline.get_toolchain.html">get_toolchain</a>
+  
+    <a class="method" href="method.Pipeline.has_configured.html">has_configured</a>
+  
+    <a class="method" href="method.Pipeline.invalidate_phase.html">invalidate_phase</a>
+  
+    <a class="method" href="method.Pipeline.is_native.html">is_native</a>
+  
+    <a class="method" href="method.Pipeline.is_ready.html">is_ready</a>
+  
+    <a class="method" href="method.Pipeline.prepare_run_context.html">prepare_run_context</a>
+  
+    <a class="method" href="method.Pipeline.rebuild_async.html">rebuild_async</a>
+  
+    <a class="method" href="method.Pipeline.rebuild_finish.html">rebuild_finish</a>
+  
+    <a class="method" href="method.Pipeline.ref_toolchain.html">ref_toolchain</a>
+  
+    <a class="method" href="method.Pipeline.remove_error_format.html">remove_error_format</a>
+  
+    <a class="method" href="method.Pipeline.remove_log_observer.html">remove_log_observer</a>
+  
+    <a class="method" href="method.Pipeline.request_phase.html">request_phase</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Pipeline.busy.html">busy</a>
+  
+    <a class="property" href="property.Pipeline.config.html">config</a>
+  
+    <a class="property" href="property.Pipeline.device.html">device</a>
+  
+    <a class="property" href="property.Pipeline.message.html">message</a>
+  
+    <a class="property" href="property.Pipeline.phase.html">phase</a>
+  
+    <a class="property" href="property.Pipeline.pty.html">pty</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.Pipeline.diagnostic.html">diagnostic</a>
+  
+    <a class="signal" href="signal.Pipeline.finished.html">finished</a>
+  
+    <a class="signal" href="signal.Pipeline.launcher-created.html">launcher-created</a>
+  
+    <a class="signal" href="signal.Pipeline.loaded.html">loaded</a>
+  
+    <a class="signal" href="signal.Pipeline.started.html">started</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>Pipeline</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>final class Ide.Pipeline : Ide.Object
+  implements Gio.Initable, Gio.ListModel {
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>The <code>IdePipeline</code> is responsible for managing the build process
+for Builder. It consists of multiple build &#8220;phases&#8221; (see <code>IdePipelinePhase</code>
+for the individual phases). An <code>IdePipelineStage</code> can be attached with
+a priority to each phase and is the primary mechanism that plugins
+use to perform their operations in the proper&nbsp;ordering.</p>
+<p>For example, the flatpak plugin provides its download stage as part of the
+<code>IDE_PIPELINE_PHASE_DOWNLOAD</code> phase. The autotools plugin provides stages to
+phases such as <code>IDE_PIPELINE_PHASE_AUTOGEN</code>, <code>IDE_PIPELINE_PHASE_CONFIGURE</code>,
+<code>IDE_PIPELINE_PHASE_BUILD</code>, and <code>IDE_PIPELINE_PHASE_INSTALL</code>.</p>
+<p>If you want ensure a particular phase is performed as part of a build,
+then fall <code>ide_pipeline_request_phase()</code> with the phase you are
+interested in seeing complete&nbsp;successfully.</p>
+<p>If your plugin has discovered that something has changed that invalidates a
+given phase, use <code>ide_pipeline_invalidate_phase()</code> to ensure that the
+phase is re-build the next time a requested phase of higher precedence
+is&nbsp;requested.</p>
+<p>It can be useful to perform operations before or after a given stage (but
+still be built as part of that stage) so the <code>IDE_PIPELINE_PHASE_BEFORE</code> and
+<code>IDE_PIPELINE_PHASE_AFTER</code> flags may be xor&#8217;d with the requested phase.  If more
+precise ordering is required, you may use the priority parameter to order
+the operation with regards to other stages in that&nbsp;phase.</p>
+<p>Transient stages may be added to the pipeline and they will be removed after
+the <code>ide_pipeline_build_async()</code> operation has completed successfully
+or has failed. You can mark a stage as transient with
+ide_pipeline_stage_set_transient(). This may be useful to perform operations
+such as an &#8220;export tarball&#8221; stage which should only run once as determined
+by the user requesting a &#8220;make dist&#8221; style&nbsp;operation.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper implements">
+      <h4 id="implements">
+        Implements
+        <a href="#implements" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="interface"><a class="external" href="javascript:void(0)" data-link="iface.Initable.html" data-namespace="Gio">GInitable</a></li>
+          
+        
+          
+          <li class="interface"><a class="external" href="javascript:void(0)" data-link="iface.ListModel.html" data-namespace="Gio">GListModel</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Pipeline.add_error_format.html">ide_pipeline_add_error_format</a></h6>
+          <div class="docblock">
+            <p>This can be used to add a regex that will extract errors from
+standard output. This is similar to the &#8220;errorformat&#8221; feature
+of vim to extract warnings from standard&nbsp;output.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.add_log_observer.html">ide_pipeline_add_log_observer</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.addin_find_by_module_name.html">ide_pipeline_addin_find_by_module_name</a></h6>
+          <div class="docblock">
+            <p>Finds the addin (if any) matching the plugin&#8217;s <code>module_name</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.attach.html">ide_pipeline_attach</a></h6>
+          <div class="docblock">
+            <p>Insert <code>stage</code> into the pipeline as part of the phase denoted by <code>phase</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.attach_command.html">ide_pipeline_attach_command</a></h6>
+          <div class="docblock">
+            <p>This creates a new stage that will spawn a process using <code>run_command</code> and
+log the output of&nbsp;stdin/stdout.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.attach_launcher.html">ide_pipeline_attach_launcher</a></h6>
+          <div class="docblock">
+            <p>This creates a new stage that will spawn a process using <code>launcher</code> and log
+the output of&nbsp;stdin/stdout.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.attach_pty.html">ide_pipeline_attach_pty</a></h6>
+          <div class="docblock">
+            <p>Attaches a <span class="caps">PTY</span> to stdin/stdout/stderr of the <code>IdeSubprocessLauncher</code>.
+This is useful if the application can take advantage of a <span class="caps">PTY</span> for
+features like colors and other escape&nbsp;sequences.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.build_async.html">ide_pipeline_build_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously starts the build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.build_builddir_path.html">ide_pipeline_build_builddir_path</a></h6>
+          <div class="docblock">
+            <p>This is a convenience function to create a new path that starts with
+the build directory for this build&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.build_finish.html">ide_pipeline_build_finish</a></h6>
+          <div class="docblock">
+            <p>This function completes the asynchronous request to build
+up to a particular phase of the build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.build_srcdir_path.html">ide_pipeline_build_srcdir_path</a></h6>
+          <div class="docblock">
+            <p>This is a convenience function to create a new path that starts with
+the source directory of the&nbsp;project.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.build_targets_async.html">ide_pipeline_build_targets_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously starts the build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.build_targets_finish.html">ide_pipeline_build_targets_finish</a></h6>
+          <div class="docblock">
+            <p>This function completes the asynchronous request to build
+up to a particular phase and targets of the build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.clean_async.html">ide_pipeline_clean_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.clean_finish.html">ide_pipeline_clean_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.contains_program_in_path.html">ide_pipeline_contains_program_in_path</a></h6>
+          <div class="docblock">
+            <p>Looks through the runtime and <span class="caps">SDK</span> extensions for binaries matching
+<code>name</code> that may be&nbsp;executed.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.create_launcher.html">ide_pipeline_create_launcher</a></h6>
+          <div class="docblock">
+            <p>This is a convenience function to create a new <code>IdeSubprocessLauncher</code>
+using the configuration and runtime associated with the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.create_run_context.html">ide_pipeline_create_run_context</a></h6>
+          <div class="docblock">
+            <p>Creates a new <code>IdeRunContext</code> to run <code>run_command</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.detach.html">ide_pipeline_detach</a></h6>
+          <div class="docblock">
+            <p>This removes the stage matching <code>stage_id</code>. You are returned a <code>stage_id</code> when
+inserting a stage with functions such as <code>ide_pipeline_attach()</code>
+or&nbsp;ide_pipeline_attach_launcher().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.dup_arch.html">ide_pipeline_dup_arch</a></h6>
+          <div class="docblock">
+            <p>Gets the name of the&nbsp;arch.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 44</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.emit_diagnostic.html">ide_pipeline_emit_diagnostic</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.foreach_stage.html">ide_pipeline_foreach_stage</a></h6>
+          <div class="docblock">
+            <p>This function will call <code>stage_callback</code> for every <code>IdePipelineStage</code> registered
+in the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_builddir.html">ide_pipeline_get_builddir</a></h6>
+          <div class="docblock">
+            <p>Gets the &#8220;builddir&#8221; to be used for the build process. This is generally
+the location that build systems will use for out-of-tree&nbsp;builds.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_busy.html">ide_pipeline_get_busy</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_can_export.html">ide_pipeline_get_can_export</a></h6>
+          <div class="docblock">
+            <p>This function is useful to discover if there are any pipeline addins
+which implement the export phase. <span class="caps">UI</span> or GAction implementations may
+want to use this value to set the enabled state of the action or
+sensitivity of a&nbsp;button.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_config.html">ide_pipeline_get_config</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>IdeConfig</code> to use for the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_deploy_strategy.html">ide_pipeline_get_deploy_strategy</a></h6>
+          <div class="docblock">
+            <p>Gets the best discovered deployment&nbsp;strategry.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_device.html">ide_pipeline_get_device</a></h6>
+          <div class="docblock">
+            <p>Gets the device that the pipeline is building&nbsp;for.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_device_info.html">ide_pipeline_get_device_info</a></h6>
+          <div class="docblock">
+            <p>Gets the device info for the current&nbsp;device.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_host_triplet.html">ide_pipeline_get_host_triplet</a></h6>
+          <div class="docblock">
+            <p>Gets the &#8220;host&#8221; triplet which specifies where the build results will&nbsp;run.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_message.html">ide_pipeline_get_message</a></h6>
+          <div class="docblock">
+            <p>Gets the current message for the build pipeline. This can be
+shown to users in <span class="caps">UI</span> elements to signify progress in the&nbsp;build.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_phase.html">ide_pipeline_get_phase</a></h6>
+          <div class="docblock">
+            <p>Gets the current phase that is executing. This is only useful during
+execution of the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_pty.html">ide_pipeline_get_pty</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>VtePty</code> for the pipeline, if&nbsp;set.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_requested_phase.html">ide_pipeline_get_requested_phase</a></h6>
+          <div class="docblock">
+            <p>Gets the phase that has been requested. This can be useful when you want to
+get an idea of where the build pipeline will attempt to&nbsp;advance.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_runtime.html">ide_pipeline_get_runtime</a></h6>
+          <div class="docblock">
+            <p>A convenience function to get the runtime for a build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_srcdir.html">ide_pipeline_get_srcdir</a></h6>
+          <div class="docblock">
+            <p>Gets the &#8220;srcdir&#8221; of the project. This is equivalent to the
+IdeVcs:working-directory property as a&nbsp;string.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_stage_by_id.html">ide_pipeline_get_stage_by_id</a></h6>
+          <div class="docblock">
+            <p>Gets the stage matching the identifier <code>stage_id</code> as returned from&nbsp;ide_pipeline_attach().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.get_toolchain.html">ide_pipeline_get_toolchain</a></h6>
+          <div class="docblock">
+            <p>A convenience function to get the toolchain for a build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.has_configured.html">ide_pipeline_has_configured</a></h6>
+          <div class="docblock">
+            <p>Checks to see if the pipeline has advanced far enough to ensure that
+the configure stage has been&nbsp;reached.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.invalidate_phase.html">ide_pipeline_invalidate_phase</a></h6>
+          <div class="docblock">
+            <p>Invalidates the phases matching <code>phases</code> flags.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.is_native.html">ide_pipeline_is_native</a></h6>
+          <div class="docblock">
+            <p>This is a helper to check if the triplet that we are compiling
+for matches the host system. That allows some plugins to do less
+work by avoiding some cross-compiling&nbsp;work.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.is_ready.html">ide_pipeline_is_ready</a></h6>
+          <div class="docblock">
+            <p>Checks to see if the pipeline has been loaded. Loading may be delayed
+due to various initialization routines that need to&nbsp;complete.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.prepare_run_context.html">ide_pipeline_prepare_run_context</a></h6>
+          <div class="docblock">
+            <p>Prepares <code>IdeRunContext</code> to build within the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.rebuild_async.html">ide_pipeline_rebuild_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously starts the build pipeline after cleaning any
+existing build&nbsp;artifacts.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.rebuild_finish.html">ide_pipeline_rebuild_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.ref_toolchain.html">ide_pipeline_ref_toolchain</a></h6>
+          <div class="docblock">
+            <p>Thread-safe variant of&nbsp;ide_pipeline_get_toolchain().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.remove_error_format.html">ide_pipeline_remove_error_format</a></h6>
+          <div class="docblock">
+            <p>Removes an error format that was registered with&nbsp;ide_pipeline_add_error_format().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.remove_log_observer.html">ide_pipeline_remove_log_observer</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Pipeline.request_phase.html">ide_pipeline_request_phase</a></h6>
+          <div class="docblock">
+            <p>Requests that the next execution of the pipeline will build up to <code>phase</code>
+including all stages that were previously&nbsp;invalidated.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="iface.Initable.html" data-namespace="Gio">GInitable</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.Initable.init.html">g_initable_init</a></h6>
+            <div class="docblock">
+              <p>Initializes the object implementing the&nbsp;interface.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="iface.ListModel.html" data-namespace="Gio">GListModel</a> (5)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ListModel.get_item.html">g_list_model_get_item</a></h6>
+            <div class="docblock">
+              <p>Get the item at <code>position</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ListModel.get_item_type.html">g_list_model_get_item_type</a></h6>
+            <div class="docblock">
+              <p>Gets the type of the items in <code>list</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ListModel.get_n_items.html">g_list_model_get_n_items</a></h6>
+            <div class="docblock">
+              <p>Gets the number of items in <code>list</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ListModel.get_object.html">g_list_model_get_object</a></h6>
+            <div class="docblock">
+              <p>Get the item at <code>position</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ListModel.items_changed.html">g_list_model_items_changed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GListModel::items-changed</code> signal on <code>list</code>.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Pipeline.busy.html">Ide.Pipeline:busy</a></h6>
+          <div class="docblock">
+            <p>Gets the &#8220;busy&#8221; property. If <code>TRUE</code>, the pipeline is busy&nbsp;executing.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Pipeline.config.html">Ide.Pipeline:config</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Pipeline.device.html">Ide.Pipeline:device</a></h6>
+          <div class="docblock">
+            <p>The &#8220;device&#8221; property is the device we are compiling&nbsp;for.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Pipeline.message.html">Ide.Pipeline:message</a></h6>
+          <div class="docblock">
+            <p>The &#8220;message&#8221; property is descriptive text about what the the
+pipeline is doing or it&#8217;s readiness&nbsp;status.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Pipeline.phase.html">Ide.Pipeline:phase</a></h6>
+          <div class="docblock">
+            <p>The current build phase during execution of the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Pipeline.pty.html">Ide.Pipeline:pty</a></h6>
+          <div class="docblock">
+            <p>The &#8220;pty&#8221; property is the <code>VtePty</code> that is used by build stages that
+build subprocesses with a pseudo&nbsp;terminal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+        
+      
+        
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.Pipeline.diagnostic.html">Ide.Pipeline::diagnostic</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a plugin has detected a diagnostic while
+building the&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Pipeline.finished.html">Ide.Pipeline::finished</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the build process has finished executing.
+If the build failed to complete all requested stages, then <code>failed</code> will
+be set to <code>TRUE</code>, otherwise <code>FALSE</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Pipeline.launcher-created.html">Ide.Pipeline::launcher-created</a></h6>
+          <div class="docblock">
+            <p>The &#8220;launcher-created&#8221; signal is emitted when a new
+<code>IdeSubprocessLauncher</code> is created by the pipeline. This may be useful
+to plugins that wan to modify the launcher in a consistent way for all
+pipeline&nbsp;consumers.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Pipeline.loaded.html">Ide.Pipeline::loaded</a></h6>
+          <div class="docblock">
+            <p>The &#8220;loaded&#8221; signal is emitted after the pipeline has finished
+loading&nbsp;addins.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Pipeline.started.html">Ide.Pipeline::started</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the pipeline has started executing in
+response to <code>ide_pipeline_build_async()</code> being&nbsp;called.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="iface.ListModel.html" data-namespace="Gio">GListModel</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ListModel.items-changed.html">GListModel::items-changed</a></h6>
+            <div class="docblock">
+              <p>This signal is emitted whenever items were added to or removed
+from <code>list</code>. At <code>position</code>, <code>removed</code> items were removed and <code>added</code>
+items were added in their&nbsp;place.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdePipelineClass {
+  IdeObjectClass parent_class;
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="#implements"><span class="link-text">Implements</span></a></li>
+      
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

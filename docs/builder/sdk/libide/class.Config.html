@@ -1,0 +1,1712 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Config</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.Config"/>
+  <meta property="og:description" content="Reference for Ide.Config"/>
+  <meta name="twitter:title" content="Ide.Config"/>
+  <meta name="twitter:description" content="Reference for Ide.Config"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Config.html#description">Config</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Config.apply_path.html">apply_path</a>
+  
+    <a class="method" href="method.Config.get_app_id.html">get_app_id</a>
+  
+    <a class="method" href="method.Config.get_append_path.html">get_append_path</a>
+  
+    <a class="method" href="method.Config.get_args_for_phase.html">get_args_for_phase</a>
+  
+    <a class="method" href="method.Config.get_build_commands.html">get_build_commands</a>
+  
+    <a class="method" href="method.Config.get_build_commands_dir.html">get_build_commands_dir</a>
+  
+    <a class="method" href="method.Config.get_config_opts.html">get_config_opts</a>
+  
+    <a class="method" href="method.Config.get_debug.html">get_debug</a>
+  
+    <a class="method" href="method.Config.get_description.html">get_description</a>
+  
+    <a class="method" href="method.Config.get_dirty.html">get_dirty</a>
+  
+    <a class="method" href="method.Config.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="method.Config.get_environ.html">get_environ</a>
+  
+    <a class="method" href="method.Config.get_environment.html">get_environment</a>
+  
+    <a class="method" href="method.Config.get_extensions.html">get_extensions</a>
+  
+    <a class="method" href="method.Config.get_id.html">get_id</a>
+  
+    <a class="method" href="method.Config.get_internal_boolean.html">get_internal_boolean</a>
+  
+    <a class="method" href="method.Config.get_internal_int.html">get_internal_int</a>
+  
+    <a class="method" href="method.Config.get_internal_int64.html">get_internal_int64</a>
+  
+    <a class="method" href="method.Config.get_internal_object.html">get_internal_object</a>
+  
+    <a class="method" href="method.Config.get_internal_string.html">get_internal_string</a>
+  
+    <a class="method" href="method.Config.get_internal_strv.html">get_internal_strv</a>
+  
+    <a class="method" href="method.Config.get_locality.html">get_locality</a>
+  
+    <a class="method" href="method.Config.get_parallelism.html">get_parallelism</a>
+  
+    <a class="method" href="method.Config.get_post_install_commands.html">get_post_install_commands</a>
+  
+    <a class="method" href="method.Config.get_prefix.html">get_prefix</a>
+  
+    <a class="method" href="method.Config.get_prefix_set.html">get_prefix_set</a>
+  
+    <a class="method" href="method.Config.get_prepend_path.html">get_prepend_path</a>
+  
+    <a class="method" href="method.Config.get_ready.html">get_ready</a>
+  
+    <a class="method" href="method.Config.get_run_opts.html">get_run_opts</a>
+  
+    <a class="method" href="method.Config.get_runtime.html">get_runtime</a>
+  
+    <a class="method" href="method.Config.get_runtime_environment.html">get_runtime_environment</a>
+  
+    <a class="method" href="method.Config.get_runtime_id.html">get_runtime_id</a>
+  
+    <a class="method" href="method.Config.get_sequence.html">get_sequence</a>
+  
+    <a class="method" href="method.Config.get_toolchain.html">get_toolchain</a>
+  
+    <a class="method" href="method.Config.get_toolchain_id.html">get_toolchain_id</a>
+  
+    <a class="method" href="method.Config.getenv.html">getenv</a>
+  
+    <a class="method" href="method.Config.replace_config_opt.html">replace_config_opt</a>
+  
+    <a class="method" href="method.Config.set_app_id.html">set_app_id</a>
+  
+    <a class="method" href="method.Config.set_append_path.html">set_append_path</a>
+  
+    <a class="method" href="method.Config.set_args_for_phase.html">set_args_for_phase</a>
+  
+    <a class="method" href="method.Config.set_build_commands.html">set_build_commands</a>
+  
+    <a class="method" href="method.Config.set_build_commands_dir.html">set_build_commands_dir</a>
+  
+    <a class="method" href="method.Config.set_config_opts.html">set_config_opts</a>
+  
+    <a class="method" href="method.Config.set_debug.html">set_debug</a>
+  
+    <a class="method" href="method.Config.set_dirty.html">set_dirty</a>
+  
+    <a class="method" href="method.Config.set_display_name.html">set_display_name</a>
+  
+    <a class="method" href="method.Config.set_environment.html">set_environment</a>
+  
+    <a class="method" href="method.Config.set_internal_boolean.html">set_internal_boolean</a>
+  
+    <a class="method" href="method.Config.set_internal_int.html">set_internal_int</a>
+  
+    <a class="method" href="method.Config.set_internal_int64.html">set_internal_int64</a>
+  
+    <a class="method" href="method.Config.set_internal_object.html">set_internal_object</a>
+  
+    <a class="method" href="method.Config.set_internal_string.html">set_internal_string</a>
+  
+    <a class="method" href="method.Config.set_internal_strv.html">set_internal_strv</a>
+  
+    <a class="method" href="method.Config.set_locality.html">set_locality</a>
+  
+    <a class="method" href="method.Config.set_parallelism.html">set_parallelism</a>
+  
+    <a class="method" href="method.Config.set_post_install_commands.html">set_post_install_commands</a>
+  
+    <a class="method" href="method.Config.set_prefix.html">set_prefix</a>
+  
+    <a class="method" href="method.Config.set_prefix_set.html">set_prefix_set</a>
+  
+    <a class="method" href="method.Config.set_prepend_path.html">set_prepend_path</a>
+  
+    <a class="method" href="method.Config.set_run_opts.html">set_run_opts</a>
+  
+    <a class="method" href="method.Config.set_runtime.html">set_runtime</a>
+  
+    <a class="method" href="method.Config.set_runtime_environment.html">set_runtime_environment</a>
+  
+    <a class="method" href="method.Config.set_runtime_id.html">set_runtime_id</a>
+  
+    <a class="method" href="method.Config.set_toolchain.html">set_toolchain</a>
+  
+    <a class="method" href="method.Config.set_toolchain_id.html">set_toolchain_id</a>
+  
+    <a class="method" href="method.Config.setenv.html">setenv</a>
+  
+    <a class="method" href="method.Config.supports_runtime.html">supports_runtime</a>
+  
+    <a class="method" href="method.Config.translate_file.html">translate_file</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Config.app-id.html">app-id</a>
+  
+    <a class="property" href="property.Config.append-path.html">append-path</a>
+  
+    <a class="property" href="property.Config.build-commands.html">build-commands</a>
+  
+    <a class="property" href="property.Config.build-commands-dir.html">build-commands-dir</a>
+  
+    <a class="property" href="property.Config.config-opts.html">config-opts</a>
+  
+    <a class="property" href="property.Config.debug.html">debug</a>
+  
+    <a class="property" href="property.Config.description.html">description</a>
+  
+    <a class="property" href="property.Config.dirty.html">dirty</a>
+  
+    <a class="property" href="property.Config.display-name.html">display-name</a>
+  
+    <a class="property" href="property.Config.environ.html">environ</a>
+  
+    <a class="property" href="property.Config.id.html">id</a>
+  
+    <a class="property" href="property.Config.locality.html">locality</a>
+  
+    <a class="property" href="property.Config.parallelism.html">parallelism</a>
+  
+    <a class="property" href="property.Config.post-install-commands.html">post-install-commands</a>
+  
+    <a class="property" href="property.Config.prefix.html">prefix</a>
+  
+    <a class="property" href="property.Config.prefix-set.html">prefix-set</a>
+  
+    <a class="property" href="property.Config.prepend-path.html">prepend-path</a>
+  
+    <a class="property" href="property.Config.ready.html">ready</a>
+  
+    <a class="property" href="property.Config.run-opts.html">run-opts</a>
+  
+    <a class="property" href="property.Config.runtime.html">runtime</a>
+  
+    <a class="property" href="property.Config.runtime-id.html">runtime-id</a>
+  
+    <a class="property" href="property.Config.supported-runtimes.html">supported-runtimes</a>
+  
+    <a class="property" href="property.Config.toolchain.html">toolchain</a>
+  
+    <a class="property" href="property.Config.toolchain-id.html">toolchain-id</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.Config.changed.html">changed</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.Config.get_description.html">get_description</a>
+  
+    <a class="method" href="vfunc.Config.get_extensions.html">get_extensions</a>
+  
+    <a class="method" href="vfunc.Config.get_runtime.html">get_runtime</a>
+  
+    <a class="method" href="vfunc.Config.set_runtime.html">set_runtime</a>
+  
+    <a class="method" href="vfunc.Config.supports_runtime.html">supports_runtime</a>
+  
+    <a class="method" href="vfunc.Config.translate_file.html">translate_file</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>Config</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>abstract class Ide.Config : Ide.Object
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Config.apply_path.html">ide_config_apply_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_app_id.html">ide_config_get_app_id</a></h6>
+          <div class="docblock">
+            <p>Gets the application <span class="caps">ID</span> for the&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_append_path.html">ide_config_get_append_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_args_for_phase.html">ide_config_get_args_for_phase</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_build_commands.html">ide_config_get_build_commands</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_build_commands_dir.html">ide_config_get_build_commands_dir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_config_opts.html">ide_config_get_config_opts</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_debug.html">ide_config_get_debug</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_description.html">ide_config_get_description</a></h6>
+          <div class="docblock">
+            <p>Describes the type of config this&nbsp;is.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_dirty.html">ide_config_get_dirty</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_display_name.html">ide_config_get_display_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_environ.html">ide_config_get_environ</a></h6>
+          <div class="docblock">
+            <p>Gets the environment to use when spawning&nbsp;processes.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_environment.html">ide_config_get_environment</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_extensions.html">ide_config_get_extensions</a></h6>
+          <div class="docblock">
+            <p>Gets the known <span class="caps">SDK</span> extensions that will be used when building the project.
+Implementing this in your configuration backend allows plugins to know if
+additional binaries will be available to the build&nbsp;system.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_id.html">ide_config_get_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_internal_boolean.html">ide_config_get_internal_boolean</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_internal_int.html">ide_config_get_internal_int</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_internal_int64.html">ide_config_get_internal_int64</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_internal_object.html">ide_config_get_internal_object</a></h6>
+          <div class="docblock">
+            <p>Gets the value associated with <code>key</code> if it is a <code>GObject</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_internal_string.html">ide_config_get_internal_string</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_internal_strv.html">ide_config_get_internal_strv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_locality.html">ide_config_get_locality</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_parallelism.html">ide_config_get_parallelism</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_post_install_commands.html">ide_config_get_post_install_commands</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_prefix.html">ide_config_get_prefix</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_prefix_set.html">ide_config_get_prefix_set</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_prepend_path.html">ide_config_get_prepend_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_ready.html">ide_config_get_ready</a></h6>
+          <div class="docblock">
+            <p>Determines if the configuration is ready for&nbsp;use.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_run_opts.html">ide_config_get_run_opts</a></h6>
+          <div class="docblock">
+            <p>Gets the command line options to use when running the target application.
+The result should be parsed with <code>g_shell_parse_argv()</code> to convert the run
+options to an array suitable for use in&nbsp;argv.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_runtime.html">ide_config_get_runtime</a></h6>
+          <div class="docblock">
+            <p>Gets the runtime for the&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_runtime_environment.html">ide_config_get_runtime_environment</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_runtime_id.html">ide_config_get_runtime_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_sequence.html">ide_config_get_sequence</a></h6>
+          <div class="docblock">
+            <p>This returns a sequence number for the configuration. This is useful
+for build systems that want to clear the &#8220;dirty&#8221; bit on the configuration
+so that they need not bootstrap a second time. This should be done by
+checking the sequence number before executing the bootstrap, and only
+cleared if the sequence number matches after performing the bootstrap.
+This indicates no changes have been made to the configuration in the
+mean&nbsp;time.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_toolchain.html">ide_config_get_toolchain</a></h6>
+          <div class="docblock">
+            <p>Gets the toolchain for the&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.get_toolchain_id.html">ide_config_get_toolchain_id</a></h6>
+          <div class="docblock">
+            <p>Gets the toolchain id for the&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.getenv.html">ide_config_getenv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.replace_config_opt.html">ide_config_replace_config_opt</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_app_id.html">ide_config_set_app_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_append_path.html">ide_config_set_append_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_args_for_phase.html">ide_config_set_args_for_phase</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_build_commands.html">ide_config_set_build_commands</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_build_commands_dir.html">ide_config_set_build_commands_dir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_config_opts.html">ide_config_set_config_opts</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_debug.html">ide_config_set_debug</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_dirty.html">ide_config_set_dirty</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_display_name.html">ide_config_set_display_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_environment.html">ide_config_set_environment</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_internal_boolean.html">ide_config_set_internal_boolean</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_internal_int.html">ide_config_set_internal_int</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_internal_int64.html">ide_config_set_internal_int64</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_internal_object.html">ide_config_set_internal_object</a></h6>
+          <div class="docblock">
+            <p>Sets the value for <code>key</code> to <code>instance</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_internal_string.html">ide_config_set_internal_string</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_internal_strv.html">ide_config_set_internal_strv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_locality.html">ide_config_set_locality</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_parallelism.html">ide_config_set_parallelism</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_post_install_commands.html">ide_config_set_post_install_commands</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_prefix.html">ide_config_set_prefix</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_prefix_set.html">ide_config_set_prefix_set</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_prepend_path.html">ide_config_set_prepend_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_run_opts.html">ide_config_set_run_opts</a></h6>
+          <div class="docblock">
+            <p>Sets the run options to use when running the target application.
+See <code>ide_config_get_run_opts()</code> for more&nbsp;information.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_runtime.html">ide_config_set_runtime</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_runtime_environment.html">ide_config_set_runtime_environment</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_runtime_id.html">ide_config_set_runtime_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_toolchain.html">ide_config_set_toolchain</a></h6>
+          <div class="docblock">
+            <p>Sets the toolchain for the&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.set_toolchain_id.html">ide_config_set_toolchain_id</a></h6>
+          <div class="docblock">
+            <p>Sets the toolchain id for the&nbsp;configuration.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.setenv.html">ide_config_setenv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.supports_runtime.html">ide_config_supports_runtime</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Config.translate_file.html">ide_config_translate_file</a></h6>
+          <div class="docblock">
+            <p>Requests translation of the file path to one available in the
+current process. That might mean translating to a path that
+allows access outside Builder&#8217;s sandbox such as using
+/var/run/host or depoy-directories of OSTree&nbsp;commits.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Config.app-id.html">Ide.Config:app-id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.append-path.html">Ide.Config:append-path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.build-commands.html">Ide.Config:build-commands</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.build-commands-dir.html">Ide.Config:build-commands-dir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.config-opts.html">Ide.Config:config-opts</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.debug.html">Ide.Config:debug</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.description.html">Ide.Config:description</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.dirty.html">Ide.Config:dirty</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.display-name.html">Ide.Config:display-name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.environ.html">Ide.Config:environ</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.id.html">Ide.Config:id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.locality.html">Ide.Config:locality</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.parallelism.html">Ide.Config:parallelism</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.post-install-commands.html">Ide.Config:post-install-commands</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.prefix.html">Ide.Config:prefix</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.prefix-set.html">Ide.Config:prefix-set</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.prepend-path.html">Ide.Config:prepend-path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.ready.html">Ide.Config:ready</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.run-opts.html">Ide.Config:run-opts</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.runtime.html">Ide.Config:runtime</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.runtime-id.html">Ide.Config:runtime-id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.supported-runtimes.html">Ide.Config:supported-runtimes</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.toolchain.html">Ide.Config:toolchain</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Config.toolchain-id.html">Ide.Config:toolchain-id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.Config.changed.html">Ide.Config::changed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeConfigClass {
+  IdeObjectClass parent;
+  IdeRuntime* (* get_runtime) (
+    IdeConfig* self
+  );
+  void (* set_runtime) (
+    IdeConfig* self,
+    IdeRuntime* runtime
+  );
+  gboolean (* supports_runtime) (
+    IdeConfig* self,
+    IdeRuntime* runtime
+  );
+  GPtrArray* (* get_extensions) (
+    IdeConfig* self
+  );
+  char* (* get_description) (
+    IdeConfig* self
+  );
+  GFile* (* translate_file) (
+    IdeConfig* self,
+    GFile* file
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_runtime: IdeRuntime* (* get_runtime) (
+    IdeConfig* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>set_runtime: void (* set_runtime) (
+    IdeConfig* self,
+    IdeRuntime* runtime
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>supports_runtime: gboolean (* supports_runtime) (
+    IdeConfig* self,
+    IdeRuntime* runtime
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_extensions: GPtrArray* (* get_extensions) (
+    IdeConfig* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_description: char* (* get_description) (
+    IdeConfig* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>translate_file: GFile* (* translate_file) (
+    IdeConfig* self,
+    GFile* file
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-get_description"><a href="vfunc.Config.get_description.html">Ide.ConfigClass.get_description</a></h6>
+        <div class="docblock">
+          <p>Describes the type of config this&nbsp;is.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-get_extensions"><a href="vfunc.Config.get_extensions.html">Ide.ConfigClass.get_extensions</a></h6>
+        <div class="docblock">
+          <p>Gets the known <span class="caps">SDK</span> extensions that will be used when building the project.
+Implementing this in your configuration backend allows plugins to know if
+additional binaries will be available to the build&nbsp;system.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-get_runtime"><a href="vfunc.Config.get_runtime.html">Ide.ConfigClass.get_runtime</a></h6>
+        <div class="docblock">
+          <p>Gets the runtime for the&nbsp;configuration.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-set_runtime"><a href="vfunc.Config.set_runtime.html">Ide.ConfigClass.set_runtime</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-supports_runtime"><a href="vfunc.Config.supports_runtime.html">Ide.ConfigClass.supports_runtime</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-translate_file"><a href="vfunc.Config.translate_file.html">Ide.ConfigClass.translate_file</a></h6>
+        <div class="docblock">
+          <p>Requests translation of the file path to one available in the
+current process. That might mean translating to a path that
+allows access outside Builder&#8217;s sandbox such as using
+/var/run/host or depoy-directories of OSTree&nbsp;commits.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

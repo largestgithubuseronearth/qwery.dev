@@ -1,0 +1,1178 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Vcs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.Vcs"/>
+  <meta property="og:description" content="Reference for Ide.Vcs"/>
+  <meta name="twitter:title" content="Ide.Vcs"/>
+  <meta name="twitter:description" content="Reference for Ide.Vcs"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="iface.Vcs.html#description">Vcs</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.Vcs.from_context.html">from_context</a>
+  
+    <a class="func" href="type_func.Vcs.ref_from_context.html">ref_from_context</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Vcs.emit_changed.html">emit_changed</a>
+  
+    <a class="method" href="method.Vcs.get_branch_name.html">get_branch_name</a>
+  
+    <a class="method" href="method.Vcs.get_config.html">get_config</a>
+  
+    <a class="method" href="method.Vcs.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="method.Vcs.get_priority.html">get_priority</a>
+  
+    <a class="method" href="method.Vcs.get_workdir.html">get_workdir</a>
+  
+    <a class="method" href="method.Vcs.is_ignored.html">is_ignored</a>
+  
+    <a class="method" href="method.Vcs.list_branches_async.html">list_branches_async</a>
+  
+    <a class="method" href="method.Vcs.list_branches_finish.html">list_branches_finish</a>
+  
+    <a class="method" href="method.Vcs.list_status_async.html">list_status_async</a>
+  
+    <a class="method" href="method.Vcs.list_status_finish.html">list_status_finish</a>
+  
+    <a class="method" href="method.Vcs.list_tags_async.html">list_tags_async</a>
+  
+    <a class="method" href="method.Vcs.list_tags_finish.html">list_tags_finish</a>
+  
+    <a class="method" href="method.Vcs.path_is_ignored.html">path_is_ignored</a>
+  
+    <a class="method" href="method.Vcs.push_branch_async.html">push_branch_async</a>
+  
+    <a class="method" href="method.Vcs.push_branch_finish.html">push_branch_finish</a>
+  
+    <a class="method" href="method.Vcs.query_ignored.html">query_ignored</a>
+  
+    <a class="method" href="method.Vcs.switch_branch_async.html">switch_branch_async</a>
+  
+    <a class="method" href="method.Vcs.switch_branch_finish.html">switch_branch_finish</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Vcs.branch-name.html">branch-name</a>
+  
+    <a class="property" href="property.Vcs.workdir.html">workdir</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.Vcs.changed.html">changed</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.Vcs.changed.html">changed</a>
+  
+    <a class="method" href="vfunc.Vcs.get_branch_name.html">get_branch_name</a>
+  
+    <a class="method" href="vfunc.Vcs.get_config.html">get_config</a>
+  
+    <a class="method" href="vfunc.Vcs.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="vfunc.Vcs.get_priority.html">get_priority</a>
+  
+    <a class="method" href="vfunc.Vcs.get_workdir.html">get_workdir</a>
+  
+    <a class="method" href="vfunc.Vcs.is_ignored.html">is_ignored</a>
+  
+    <a class="method" href="vfunc.Vcs.list_branches_async.html">list_branches_async</a>
+  
+    <a class="method" href="vfunc.Vcs.list_branches_finish.html">list_branches_finish</a>
+  
+    <a class="method" href="vfunc.Vcs.list_status_async.html">list_status_async</a>
+  
+    <a class="method" href="vfunc.Vcs.list_status_finish.html">list_status_finish</a>
+  
+    <a class="method" href="vfunc.Vcs.list_tags_async.html">list_tags_async</a>
+  
+    <a class="method" href="vfunc.Vcs.list_tags_finish.html">list_tags_finish</a>
+  
+    <a class="method" href="vfunc.Vcs.push_branch_async.html">push_branch_async</a>
+  
+    <a class="method" href="vfunc.Vcs.push_branch_finish.html">push_branch_finish</a>
+  
+    <a class="method" href="vfunc.Vcs.query_ignored.html">query_ignored</a>
+  
+    <a class="method" href="vfunc.Vcs.switch_branch_async.html">switch_branch_async</a>
+  
+    <a class="method" href="vfunc.Vcs.switch_branch_finish.html">switch_branch_finish</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Interface</h3>
+    <h1><a href="index.html">Ide</a><span class="sep"></span>Vcs</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>interface Ide.Vcs : Ide.Object</code></pre>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    <div class="toggle-wrapper prerequisite">
+      <h4 id="prerequisite">
+        Prerequisite
+        <a href="#prerequisite" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <p>In order to implement Vcs, your type must inherit from<a href="class.Object.html"><code>IdeObject</code></a>.</p>
+      </div>
+    </div>
+
+    
+    <div class="implementations toggle-wrapper default-hide">
+      <h4 id="implementations">Implementations<a href="#implementations" class="anchor"></a></h4>
+      <div class="docblock">
+        <ul>
+          <li><a href="class.DirectoryVcs.html">IdeDirectoryVcs</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+    <div class="methods toggle-wrapper">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.Vcs.from_context.html">ide_vcs_from_context</a></h6>
+        <div class="docblock">
+          <p>Gets the <code>IdeVcs</code> for the&nbsp;context.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Vcs.ref_from_context.html">ide_vcs_ref_from_context</a></h6>
+        <div class="docblock">
+          <p>A thread-safe version of&nbsp;ide_vcs_from_context().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="methods toggle-wrapper">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Vcs.emit_changed.html">ide_vcs_emit_changed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.get_branch_name.html">ide_vcs_get_branch_name</a></h6>
+          <div class="docblock">
+            <p>Retrieves the name of the branch in the current working&nbsp;directory.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.get_config.html">ide_vcs_get_config</a></h6>
+          <div class="docblock">
+            <p>Retrieves an <code>IdeVcsConfig</code> for the <code>IdeVcs</code> provided. If the <code>IdeVcs</code> implementation does not
+support access to configuration, then <code>NULL</code> is&nbsp;returned.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.get_display_name.html">ide_vcs_get_display_name</a></h6>
+          <div class="docblock">
+            <p>Gets the display name for the <span class="caps">VCS</span>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.get_priority.html">ide_vcs_get_priority</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.get_workdir.html">ide_vcs_get_workdir</a></h6>
+          <div class="docblock">
+            <p>Retrieves the working directory for the context. This is the root of where
+the project files&nbsp;exist.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.is_ignored.html">ide_vcs_is_ignored</a></h6>
+          <div class="docblock">
+            <p>This function will check if <code>file</code> is considered an &#8220;ignored file&#8221; by
+the underlying Version Control&nbsp;System.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.list_branches_async.html">ide_vcs_list_branches_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.list_branches_finish.html">ide_vcs_list_branches_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.list_status_async.html">ide_vcs_list_status_async</a></h6>
+          <div class="docblock">
+            <p>Retrieves the status of the files matching the request. If
+<code>directory_or_file</code> is a directory, then all files within that directory
+will be scanned for changes. If <code>include_descendants</code> is <code>TRUE</code>, the
+<code>IdeVcs</code> will scan sub-directories for changes as&nbsp;well.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.list_status_finish.html">ide_vcs_list_status_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_vcs_list_status_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.list_tags_async.html">ide_vcs_list_tags_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.list_tags_finish.html">ide_vcs_list_tags_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.path_is_ignored.html">ide_vcs_path_is_ignored</a></h6>
+          <div class="docblock">
+            <p>This function acts like <code>ide_vcs_is_ignored()</code> except that it
+allows for using a regular file-system&nbsp;path.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.push_branch_async.html">ide_vcs_push_branch_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.push_branch_finish.html">ide_vcs_push_branch_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.query_ignored.html">ide_vcs_query_ignored</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 47</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.switch_branch_async.html">ide_vcs_switch_branch_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Vcs.switch_branch_finish.html">ide_vcs_switch_branch_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+    
+    <div class="properties toggle-wrapper">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Vcs.branch-name.html">Ide.Vcs:branch-name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Vcs.workdir.html">Ide.Vcs:workdir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.Vcs.changed.html">Ide.Vcs::changed</a></h6>
+          <div class="docblock">
+            <p>The &#8220;changed&#8221; signal should be emitted when the <span class="caps">VCS</span> has detected a change
+to the underlying <span class="caps">VCS</span> storage. This can be used by consumers to reload
+their respective data&nbsp;structures.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="interface toggle-wrapper default-hide">
+      <h4 style="display:flex;" id="interface-struct">
+        Interface structure
+        <a href="#interface-struct" class="anchor"></a>
+        
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeVcsInterface {
+  GTypeInterface parent_interface;
+  char* (* get_display_name) (
+    IdeVcs* self
+  );
+  GFile* (* get_workdir) (
+    IdeVcs* self
+  );
+  gboolean (* is_ignored) (
+    IdeVcs* self,
+    GFile* file,
+    GError** error
+  );
+  gint (* get_priority) (
+    IdeVcs* self
+  );
+  void (* changed) (
+    IdeVcs* self
+  );
+  IdeVcsConfig* (* get_config) (
+    IdeVcs* self
+  );
+  gchar* (* get_branch_name) (
+    IdeVcs* self
+  );
+  void (* list_status_async) (
+    IdeVcs* self,
+    GFile* directory_or_file,
+    gboolean include_descendants,
+    gint io_priority,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GListModel* (* list_status_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_branches_async) (
+    IdeVcs* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_branches_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_tags_async) (
+    IdeVcs* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_tags_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* switch_branch_async) (
+    IdeVcs* self,
+    IdeVcsBranch* branch,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* switch_branch_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* push_branch_async) (
+    IdeVcs* self,
+    IdeVcsBranch* branch,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* push_branch_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  DexFuture* (* query_ignored) (
+    IdeVcs* self,
+    GFile* file
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Interface members</h6>
+
+        <table>
+        
+        <tr>
+          <td style="vertical-align:top"><code>parent_interface</code></td>
+          <td style="vertical-align:top"><pre><code>GTypeInterface</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_display_name</code></td>
+          <td style="vertical-align:top"><pre><code>char* (* get_display_name) (
+    IdeVcs* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_workdir</code></td>
+          <td style="vertical-align:top"><pre><code>GFile* (* get_workdir) (
+    IdeVcs* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>is_ignored</code></td>
+          <td style="vertical-align:top"><pre><code>gboolean (* is_ignored) (
+    IdeVcs* self,
+    GFile* file,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_priority</code></td>
+          <td style="vertical-align:top"><pre><code>gint (* get_priority) (
+    IdeVcs* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>changed</code></td>
+          <td style="vertical-align:top"><pre><code>void (* changed) (
+    IdeVcs* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_config</code></td>
+          <td style="vertical-align:top"><pre><code>IdeVcsConfig* (* get_config) (
+    IdeVcs* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_branch_name</code></td>
+          <td style="vertical-align:top"><pre><code>gchar* (* get_branch_name) (
+    IdeVcs* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>list_status_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* list_status_async) (
+    IdeVcs* self,
+    GFile* directory_or_file,
+    gboolean include_descendants,
+    gint io_priority,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>list_status_finish</code></td>
+          <td style="vertical-align:top"><pre><code>GListModel* (* list_status_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>list_branches_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* list_branches_async) (
+    IdeVcs* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>list_branches_finish</code></td>
+          <td style="vertical-align:top"><pre><code>GPtrArray* (* list_branches_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>list_tags_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* list_tags_async) (
+    IdeVcs* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>list_tags_finish</code></td>
+          <td style="vertical-align:top"><pre><code>GPtrArray* (* list_tags_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>switch_branch_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* switch_branch_async) (
+    IdeVcs* self,
+    IdeVcsBranch* branch,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>switch_branch_finish</code></td>
+          <td style="vertical-align:top"><pre><code>gboolean (* switch_branch_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>push_branch_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* push_branch_async) (
+    IdeVcs* self,
+    IdeVcsBranch* branch,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>push_branch_finish</code></td>
+          <td style="vertical-align:top"><pre><code>gboolean (* push_branch_finish) (
+    IdeVcs* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>query_ignored</code></td>
+          <td style="vertical-align:top"><pre><code>DexFuture* (* query_ignored) (
+    IdeVcs* self,
+    GFile* file
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        </table>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6 id="vfunc-changed"><a href="vfunc.Vcs.changed.html">Ide.Vcs.changed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_branch_name"><a href="vfunc.Vcs.get_branch_name.html">Ide.Vcs.get_branch_name</a></h6>
+          <div class="docblock">
+            <p>Retrieves the name of the branch in the current working&nbsp;directory.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_config"><a href="vfunc.Vcs.get_config.html">Ide.Vcs.get_config</a></h6>
+          <div class="docblock">
+            <p>Retrieves an <code>IdeVcsConfig</code> for the <code>IdeVcs</code> provided. If the <code>IdeVcs</code> implementation does not
+support access to configuration, then <code>NULL</code> is&nbsp;returned.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_display_name"><a href="vfunc.Vcs.get_display_name.html">Ide.Vcs.get_display_name</a></h6>
+          <div class="docblock">
+            <p>Gets the display name for the <span class="caps">VCS</span>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_priority"><a href="vfunc.Vcs.get_priority.html">Ide.Vcs.get_priority</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_workdir"><a href="vfunc.Vcs.get_workdir.html">Ide.Vcs.get_workdir</a></h6>
+          <div class="docblock">
+            <p>Retrieves the working directory for the context. This is the root of where
+the project files&nbsp;exist.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-is_ignored"><a href="vfunc.Vcs.is_ignored.html">Ide.Vcs.is_ignored</a></h6>
+          <div class="docblock">
+            <p>This function will check if <code>file</code> is considered an &#8220;ignored file&#8221; by
+the underlying Version Control&nbsp;System.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-list_branches_async"><a href="vfunc.Vcs.list_branches_async.html">Ide.Vcs.list_branches_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-list_branches_finish"><a href="vfunc.Vcs.list_branches_finish.html">Ide.Vcs.list_branches_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-list_status_async"><a href="vfunc.Vcs.list_status_async.html">Ide.Vcs.list_status_async</a></h6>
+          <div class="docblock">
+            <p>Retrieves the status of the files matching the request. If
+<code>directory_or_file</code> is a directory, then all files within that directory
+will be scanned for changes. If <code>include_descendants</code> is <code>TRUE</code>, the
+<code>IdeVcs</code> will scan sub-directories for changes as&nbsp;well.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-list_status_finish"><a href="vfunc.Vcs.list_status_finish.html">Ide.Vcs.list_status_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_vcs_list_status_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-list_tags_async"><a href="vfunc.Vcs.list_tags_async.html">Ide.Vcs.list_tags_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-list_tags_finish"><a href="vfunc.Vcs.list_tags_finish.html">Ide.Vcs.list_tags_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-push_branch_async"><a href="vfunc.Vcs.push_branch_async.html">Ide.Vcs.push_branch_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-push_branch_finish"><a href="vfunc.Vcs.push_branch_finish.html">Ide.Vcs.push_branch_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-query_ignored"><a href="vfunc.Vcs.query_ignored.html">Ide.Vcs.query_ignored</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 47</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-switch_branch_async"><a href="vfunc.Vcs.switch_branch_async.html">Ide.Vcs.switch_branch_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-switch_branch_finish"><a href="vfunc.Vcs.switch_branch_finish.html">Ide.Vcs.switch_branch_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

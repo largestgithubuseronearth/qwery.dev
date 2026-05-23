@@ -1,0 +1,905 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.BuildSystem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.BuildSystem"/>
+  <meta property="og:description" content="Reference for Ide.BuildSystem"/>
+  <meta name="twitter:title" content="Ide.BuildSystem"/>
+  <meta name="twitter:description" content="Reference for Ide.BuildSystem"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="iface.BuildSystem.html#description">BuildSystem</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.BuildSystem.from_context.html">from_context</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.BuildSystem.get_build_flags_async.html">get_build_flags_async</a>
+  
+    <a class="method" href="method.BuildSystem.get_build_flags_finish.html">get_build_flags_finish</a>
+  
+    <a class="method" href="method.BuildSystem.get_build_flags_for_dir_async.html">get_build_flags_for_dir_async</a>
+  
+    <a class="method" href="method.BuildSystem.get_build_flags_for_dir_finish.html">get_build_flags_for_dir_finish</a>
+  
+    <a class="method" href="method.BuildSystem.get_build_flags_for_files_async.html">get_build_flags_for_files_async</a>
+  
+    <a class="method" href="method.BuildSystem.get_build_flags_for_files_finish.html">get_build_flags_for_files_finish</a>
+  
+    <a class="method" href="method.BuildSystem.get_builddir.html">get_builddir</a>
+  
+    <a class="method" href="method.BuildSystem.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="method.BuildSystem.get_id.html">get_id</a>
+  
+    <a class="method" href="method.BuildSystem.get_priority.html">get_priority</a>
+  
+    <a class="method" href="method.BuildSystem.get_project_version.html">get_project_version</a>
+  
+    <a class="method" href="method.BuildSystem.get_srcdir.html">get_srcdir</a>
+  
+    <a class="method" href="method.BuildSystem.prepare_tooling.html">prepare_tooling</a>
+  
+    <a class="method" href="method.BuildSystem.supports_language.html">supports_language</a>
+  
+    <a class="method" href="method.BuildSystem.supports_toolchain.html">supports_toolchain</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.BuildSystem.project-file.html">project-file</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.BuildSystem.get_build_flags_async.html">get_build_flags_async</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_build_flags_finish.html">get_build_flags_finish</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_build_flags_for_files_async.html">get_build_flags_for_files_async</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_build_flags_for_files_finish.html">get_build_flags_for_files_finish</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_builddir.html">get_builddir</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_id.html">get_id</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_priority.html">get_priority</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_project_version.html">get_project_version</a>
+  
+    <a class="method" href="vfunc.BuildSystem.get_srcdir.html">get_srcdir</a>
+  
+    <a class="method" href="vfunc.BuildSystem.prepare_tooling.html">prepare_tooling</a>
+  
+    <a class="method" href="vfunc.BuildSystem.supports_language.html">supports_language</a>
+  
+    <a class="method" href="vfunc.BuildSystem.supports_toolchain.html">supports_toolchain</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Interface</h3>
+    <h1><a href="index.html">Ide</a><span class="sep"></span>BuildSystem</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>interface Ide.BuildSystem : Ide.Object</code></pre>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    <div class="toggle-wrapper prerequisite">
+      <h4 id="prerequisite">
+        Prerequisite
+        <a href="#prerequisite" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <p>In order to implement BuildSystem, your type must inherit from<a href="class.Object.html"><code>IdeObject</code></a>.</p>
+      </div>
+    </div>
+
+    
+    <div class="implementations toggle-wrapper default-hide">
+      <h4 id="implementations">Implementations<a href="#implementations" class="anchor"></a></h4>
+      <div class="docblock">
+        <ul>
+          <li><a href="class.FallbackBuildSystem.html">IdeFallbackBuildSystem</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+    <div class="methods toggle-wrapper">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.BuildSystem.from_context.html">ide_build_system_from_context</a></h6>
+        <div class="docblock">
+          <p>Gets the build system for the context. If no build system has been
+registered, then this returns <code>NULL</code>.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="methods toggle-wrapper">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_build_flags_async.html">ide_build_system_get_build_flags_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_build_flags_finish.html">ide_build_system_get_build_flags_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_build_flags_for_dir_async.html">ide_build_system_get_build_flags_for_dir_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_build_flags_for_dir_finish.html">ide_build_system_get_build_flags_for_dir_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_build_flags_for_files_async.html">ide_build_system_get_build_flags_for_files_async</a></h6>
+          <div class="docblock">
+            <p>This function will get build flags for all files and returns
+map of file and its build flags as <code>GHashTable</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_build_flags_for_files_finish.html">ide_build_system_get_build_flags_for_files_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_builddir.html">ide_build_system_get_builddir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_display_name.html">ide_build_system_get_display_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_id.html">ide_build_system_get_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_priority.html">ide_build_system_get_priority</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_project_version.html">ide_build_system_get_project_version</a></h6>
+          <div class="docblock">
+            <p>If the build system supports it, gets the project version as configured
+in the build system&#8217;s configuration&nbsp;files.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.get_srcdir.html">ide_build_system_get_srcdir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.prepare_tooling.html">ide_build_system_prepare_tooling</a></h6>
+          <div class="docblock">
+            <p>This should prepare an environment for developer tooling such as a language&nbsp;server.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 44</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.supports_language.html">ide_build_system_supports_language</a></h6>
+          <div class="docblock">
+            <p>Returns <code>TRUE</code> if <code>self</code> in it&#8217;s current configuration is known to support <code>language</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildSystem.supports_toolchain.html">ide_build_system_supports_toolchain</a></h6>
+          <div class="docblock">
+            <p>Checks whether the build system supports the given&nbsp;toolchain.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+    
+    <div class="properties toggle-wrapper">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.BuildSystem.project-file.html">Ide.BuildSystem:project-file</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+    
+
+    
+    <div class="interface toggle-wrapper default-hide">
+      <h4 style="display:flex;" id="interface-struct">
+        Interface structure
+        <a href="#interface-struct" class="anchor"></a>
+        
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeBuildSystemInterface {
+  GTypeInterface parent_iface;
+  gint (* get_priority) (
+    IdeBuildSystem* self
+  );
+  void (* get_build_flags_async) (
+    IdeBuildSystem* self,
+    GFile* file,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gchar** (* get_build_flags_finish) (
+    IdeBuildSystem* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* get_build_flags_for_files_async) (
+    IdeBuildSystem* self,
+    GPtrArray* files,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GHashTable* (* get_build_flags_for_files_finish) (
+    IdeBuildSystem* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  gchar* (* get_builddir) (
+    IdeBuildSystem* self,
+    IdePipeline* pipeline
+  );
+  gchar* (* get_id) (
+    IdeBuildSystem* self
+  );
+  gchar* (* get_display_name) (
+    IdeBuildSystem* self
+  );
+  gboolean (* supports_toolchain) (
+    IdeBuildSystem* self,
+    IdeToolchain* toolchain
+  );
+  gchar* (* get_project_version) (
+    IdeBuildSystem* self
+  );
+  gboolean (* supports_language) (
+    IdeBuildSystem* self,
+    const char* language
+  );
+  char* (* get_srcdir) (
+    IdeBuildSystem* self
+  );
+  void (* prepare_tooling) (
+    IdeBuildSystem* self,
+    IdeRunContext* run_context
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Interface members</h6>
+
+        <table>
+        
+        <tr>
+          <td style="vertical-align:top"><code>parent_iface</code></td>
+          <td style="vertical-align:top"><pre><code>GTypeInterface</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_priority</code></td>
+          <td style="vertical-align:top"><pre><code>gint (* get_priority) (
+    IdeBuildSystem* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_build_flags_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* get_build_flags_async) (
+    IdeBuildSystem* self,
+    GFile* file,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_build_flags_finish</code></td>
+          <td style="vertical-align:top"><pre><code>gchar** (* get_build_flags_finish) (
+    IdeBuildSystem* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_build_flags_for_files_async</code></td>
+          <td style="vertical-align:top"><pre><code>void (* get_build_flags_for_files_async) (
+    IdeBuildSystem* self,
+    GPtrArray* files,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_build_flags_for_files_finish</code></td>
+          <td style="vertical-align:top"><pre><code>GHashTable* (* get_build_flags_for_files_finish) (
+    IdeBuildSystem* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_builddir</code></td>
+          <td style="vertical-align:top"><pre><code>gchar* (* get_builddir) (
+    IdeBuildSystem* self,
+    IdePipeline* pipeline
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_id</code></td>
+          <td style="vertical-align:top"><pre><code>gchar* (* get_id) (
+    IdeBuildSystem* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_display_name</code></td>
+          <td style="vertical-align:top"><pre><code>gchar* (* get_display_name) (
+    IdeBuildSystem* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>supports_toolchain</code></td>
+          <td style="vertical-align:top"><pre><code>gboolean (* supports_toolchain) (
+    IdeBuildSystem* self,
+    IdeToolchain* toolchain
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_project_version</code></td>
+          <td style="vertical-align:top"><pre><code>gchar* (* get_project_version) (
+    IdeBuildSystem* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>supports_language</code></td>
+          <td style="vertical-align:top"><pre><code>gboolean (* supports_language) (
+    IdeBuildSystem* self,
+    const char* language
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>get_srcdir</code></td>
+          <td style="vertical-align:top"><pre><code>char* (* get_srcdir) (
+    IdeBuildSystem* self
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        <tr>
+          <td style="vertical-align:top"><code>prepare_tooling</code></td>
+          <td style="vertical-align:top"><pre><code>void (* prepare_tooling) (
+    IdeBuildSystem* self,
+    IdeRunContext* run_context
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td style="vertical-align:top"><p>No description available.</p></td>
+        </tr>
+        
+        </table>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6 id="vfunc-get_build_flags_async"><a href="vfunc.BuildSystem.get_build_flags_async.html">Ide.BuildSystem.get_build_flags_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_build_flags_finish"><a href="vfunc.BuildSystem.get_build_flags_finish.html">Ide.BuildSystem.get_build_flags_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_build_flags_for_files_async"><a href="vfunc.BuildSystem.get_build_flags_for_files_async.html">Ide.BuildSystem.get_build_flags_for_files_async</a></h6>
+          <div class="docblock">
+            <p>This function will get build flags for all files and returns
+map of file and its build flags as <code>GHashTable</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_build_flags_for_files_finish"><a href="vfunc.BuildSystem.get_build_flags_for_files_finish.html">Ide.BuildSystem.get_build_flags_for_files_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_builddir"><a href="vfunc.BuildSystem.get_builddir.html">Ide.BuildSystem.get_builddir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_display_name"><a href="vfunc.BuildSystem.get_display_name.html">Ide.BuildSystem.get_display_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_id"><a href="vfunc.BuildSystem.get_id.html">Ide.BuildSystem.get_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_priority"><a href="vfunc.BuildSystem.get_priority.html">Ide.BuildSystem.get_priority</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_project_version"><a href="vfunc.BuildSystem.get_project_version.html">Ide.BuildSystem.get_project_version</a></h6>
+          <div class="docblock">
+            <p>If the build system supports it, gets the project version as configured
+in the build system&#8217;s configuration&nbsp;files.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-get_srcdir"><a href="vfunc.BuildSystem.get_srcdir.html">Ide.BuildSystem.get_srcdir</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-prepare_tooling"><a href="vfunc.BuildSystem.prepare_tooling.html">Ide.BuildSystem.prepare_tooling</a></h6>
+          <div class="docblock">
+            <p>This should prepare an environment for developer tooling such as a language&nbsp;server.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 44</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-supports_language"><a href="vfunc.BuildSystem.supports_language.html">Ide.BuildSystem.supports_language</a></h6>
+          <div class="docblock">
+            <p>Returns <code>TRUE</code> if <code>self</code> in it&#8217;s current configuration is known to support <code>language</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6 id="vfunc-supports_toolchain"><a href="vfunc.BuildSystem.supports_toolchain.html">Ide.BuildSystem.supports_toolchain</a></h6>
+          <div class="docblock">
+            <p>Checks whether the build system supports the given&nbsp;toolchain.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

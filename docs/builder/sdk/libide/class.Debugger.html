@@ -1,0 +1,2512 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Debugger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.Debugger"/>
+  <meta property="og:description" content="Reference for Ide.Debugger"/>
+  <meta name="twitter:title" content="Ide.Debugger"/>
+  <meta name="twitter:description" content="Reference for Ide.Debugger"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Debugger.html#description">Debugger</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.Debugger.address_parse.html">address_parse</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Debugger.disassemble_async.html">disassemble_async</a>
+  
+    <a class="method" href="method.Debugger.disassemble_finish.html">disassemble_finish</a>
+  
+    <a class="method" href="method.Debugger.emit_breakpoint_added.html">emit_breakpoint_added</a>
+  
+    <a class="method" href="method.Debugger.emit_breakpoint_modified.html">emit_breakpoint_modified</a>
+  
+    <a class="method" href="method.Debugger.emit_breakpoint_removed.html">emit_breakpoint_removed</a>
+  
+    <a class="method" href="method.Debugger.emit_library_loaded.html">emit_library_loaded</a>
+  
+    <a class="method" href="method.Debugger.emit_library_unloaded.html">emit_library_unloaded</a>
+  
+    <a class="method" href="method.Debugger.emit_log.html">emit_log</a>
+  
+    <a class="method" href="method.Debugger.emit_running.html">emit_running</a>
+  
+    <a class="method" href="method.Debugger.emit_stopped.html">emit_stopped</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_added.html">emit_thread_added</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_group_added.html">emit_thread_group_added</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_group_exited.html">emit_thread_group_exited</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_group_removed.html">emit_thread_group_removed</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_group_started.html">emit_thread_group_started</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_removed.html">emit_thread_removed</a>
+  
+    <a class="method" href="method.Debugger.emit_thread_selected.html">emit_thread_selected</a>
+  
+    <a class="method" href="method.Debugger.get_breakpoints.html">get_breakpoints</a>
+  
+    <a class="method" href="method.Debugger.get_can_move.html">get_can_move</a>
+  
+    <a class="method" href="method.Debugger.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="method.Debugger.get_is_running.html">get_is_running</a>
+  
+    <a class="method" href="method.Debugger.get_selected_thread.html">get_selected_thread</a>
+  
+    <a class="method" href="method.Debugger.get_thread_groups.html">get_thread_groups</a>
+  
+    <a class="method" href="method.Debugger.get_threads.html">get_threads</a>
+  
+    <a class="method" href="method.Debugger.insert_breakpoint_async.html">insert_breakpoint_async</a>
+  
+    <a class="method" href="method.Debugger.insert_breakpoint_finish.html">insert_breakpoint_finish</a>
+  
+    <a class="method" href="method.Debugger.interpret_async.html">interpret_async</a>
+  
+    <a class="method" href="method.Debugger.interpret_finish.html">interpret_finish</a>
+  
+    <a class="method" href="method.Debugger.interrupt_async.html">interrupt_async</a>
+  
+    <a class="method" href="method.Debugger.interrupt_finish.html">interrupt_finish</a>
+  
+    <a class="method" href="method.Debugger.list_breakpoints_async.html">list_breakpoints_async</a>
+  
+    <a class="method" href="method.Debugger.list_breakpoints_finish.html">list_breakpoints_finish</a>
+  
+    <a class="method" href="method.Debugger.list_frames_async.html">list_frames_async</a>
+  
+    <a class="method" href="method.Debugger.list_frames_finish.html">list_frames_finish</a>
+  
+    <a class="method" href="method.Debugger.list_locals_async.html">list_locals_async</a>
+  
+    <a class="method" href="method.Debugger.list_locals_finish.html">list_locals_finish</a>
+  
+    <a class="method" href="method.Debugger.list_params_async.html">list_params_async</a>
+  
+    <a class="method" href="method.Debugger.list_params_finish.html">list_params_finish</a>
+  
+    <a class="method" href="method.Debugger.list_registers_async.html">list_registers_async</a>
+  
+    <a class="method" href="method.Debugger.list_registers_finish.html">list_registers_finish</a>
+  
+    <a class="method" href="method.Debugger.locate_binary_at_address.html">locate_binary_at_address</a>
+  
+    <a class="method" href="method.Debugger.modify_breakpoint_async.html">modify_breakpoint_async</a>
+  
+    <a class="method" href="method.Debugger.modify_breakpoint_finish.html">modify_breakpoint_finish</a>
+  
+    <a class="method" href="method.Debugger.move_async.html">move_async</a>
+  
+    <a class="method" href="method.Debugger.move_finish.html">move_finish</a>
+  
+    <a class="method" href="method.Debugger.prepare_for_run.html">prepare_for_run</a>
+  
+    <a class="method" href="method.Debugger.remove_breakpoint_async.html">remove_breakpoint_async</a>
+  
+    <a class="method" href="method.Debugger.remove_breakpoint_finish.html">remove_breakpoint_finish</a>
+  
+    <a class="method" href="method.Debugger.send_signal_async.html">send_signal_async</a>
+  
+    <a class="method" href="method.Debugger.send_signal_finish.html">send_signal_finish</a>
+  
+    <a class="method" href="method.Debugger.set_display_name.html">set_display_name</a>
+  
+    <a class="method" href="method.Debugger.supports_run_command.html">supports_run_command</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Debugger.display-name.html">display-name</a>
+  
+    <a class="property" href="property.Debugger.selected-thread.html">selected-thread</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.Debugger.breakpoint-added.html">breakpoint-added</a>
+  
+    <a class="signal" href="signal.Debugger.breakpoint-modified.html">breakpoint-modified</a>
+  
+    <a class="signal" href="signal.Debugger.breakpoint-removed.html">breakpoint-removed</a>
+  
+    <a class="signal" href="signal.Debugger.library-loaded.html">library-loaded</a>
+  
+    <a class="signal" href="signal.Debugger.library-unloaded.html">library-unloaded</a>
+  
+    <a class="signal" href="signal.Debugger.log.html">log</a>
+  
+    <a class="signal" href="signal.Debugger.running.html">running</a>
+  
+    <a class="signal" href="signal.Debugger.stopped.html">stopped</a>
+  
+    <a class="signal" href="signal.Debugger.thread-added.html">thread-added</a>
+  
+    <a class="signal" href="signal.Debugger.thread-group-added.html">thread-group-added</a>
+  
+    <a class="signal" href="signal.Debugger.thread-group-exited.html">thread-group-exited</a>
+  
+    <a class="signal" href="signal.Debugger.thread-group-removed.html">thread-group-removed</a>
+  
+    <a class="signal" href="signal.Debugger.thread-group-started.html">thread-group-started</a>
+  
+    <a class="signal" href="signal.Debugger.thread-removed.html">thread-removed</a>
+  
+    <a class="signal" href="signal.Debugger.thread-selected.html">thread-selected</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.Debugger.breakpoint_added.html">breakpoint_added</a>
+  
+    <a class="method" href="vfunc.Debugger.breakpoint_modified.html">breakpoint_modified</a>
+  
+    <a class="method" href="vfunc.Debugger.breakpoint_removed.html">breakpoint_removed</a>
+  
+    <a class="method" href="vfunc.Debugger.disassemble_async.html">disassemble_async</a>
+  
+    <a class="method" href="vfunc.Debugger.disassemble_finish.html">disassemble_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.get_can_move.html">get_can_move</a>
+  
+    <a class="method" href="vfunc.Debugger.insert_breakpoint_async.html">insert_breakpoint_async</a>
+  
+    <a class="method" href="vfunc.Debugger.insert_breakpoint_finish.html">insert_breakpoint_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.interpret_async.html">interpret_async</a>
+  
+    <a class="method" href="vfunc.Debugger.interpret_finish.html">interpret_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.interrupt_async.html">interrupt_async</a>
+  
+    <a class="method" href="vfunc.Debugger.interrupt_finish.html">interrupt_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.library_loaded.html">library_loaded</a>
+  
+    <a class="method" href="vfunc.Debugger.library_unloaded.html">library_unloaded</a>
+  
+    <a class="method" href="vfunc.Debugger.list_breakpoints_async.html">list_breakpoints_async</a>
+  
+    <a class="method" href="vfunc.Debugger.list_breakpoints_finish.html">list_breakpoints_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.list_frames_async.html">list_frames_async</a>
+  
+    <a class="method" href="vfunc.Debugger.list_frames_finish.html">list_frames_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.list_locals_async.html">list_locals_async</a>
+  
+    <a class="method" href="vfunc.Debugger.list_locals_finish.html">list_locals_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.list_params_async.html">list_params_async</a>
+  
+    <a class="method" href="vfunc.Debugger.list_params_finish.html">list_params_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.list_registers_async.html">list_registers_async</a>
+  
+    <a class="method" href="vfunc.Debugger.list_registers_finish.html">list_registers_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.log.html">log</a>
+  
+    <a class="method" href="vfunc.Debugger.modify_breakpoint_async.html">modify_breakpoint_async</a>
+  
+    <a class="method" href="vfunc.Debugger.modify_breakpoint_finish.html">modify_breakpoint_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.move_async.html">move_async</a>
+  
+    <a class="method" href="vfunc.Debugger.move_finish.html">move_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.prepare_for_run.html">prepare_for_run</a>
+  
+    <a class="method" href="vfunc.Debugger.remove_breakpoint_async.html">remove_breakpoint_async</a>
+  
+    <a class="method" href="vfunc.Debugger.remove_breakpoint_finish.html">remove_breakpoint_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.running.html">running</a>
+  
+    <a class="method" href="vfunc.Debugger.send_signal_async.html">send_signal_async</a>
+  
+    <a class="method" href="vfunc.Debugger.send_signal_finish.html">send_signal_finish</a>
+  
+    <a class="method" href="vfunc.Debugger.stopped.html">stopped</a>
+  
+    <a class="method" href="vfunc.Debugger.supports_run_command.html">supports_run_command</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_added.html">thread_added</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_group_added.html">thread_group_added</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_group_exited.html">thread_group_exited</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_group_removed.html">thread_group_removed</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_group_started.html">thread_group_started</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_removed.html">thread_removed</a>
+  
+    <a class="method" href="vfunc.Debugger.thread_selected.html">thread_selected</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>Debugger</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>abstract class Ide.Debugger : Ide.Object
+  implements Gio.ActionGroup {
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper implements">
+      <h4 id="implements">
+        Implements
+        <a href="#implements" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="interface"><a class="external" href="javascript:void(0)" data-link="iface.ActionGroup.html" data-namespace="Gio">GActionGroup</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.Debugger.address_parse.html">ide_debugger_address_parse</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Debugger.disassemble_async.html">ide_debugger_disassemble_async</a></h6>
+          <div class="docblock">
+            <p>Disassembles the address range&nbsp;requested.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.disassemble_finish.html">ide_debugger_disassemble_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_debugger_disassemble_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_breakpoint_added.html">ide_debugger_emit_breakpoint_added</a></h6>
+          <div class="docblock">
+            <p>Emits the <code>IdeDebugger::breakpoint-added</code> signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_breakpoint_modified.html">ide_debugger_emit_breakpoint_modified</a></h6>
+          <div class="docblock">
+            <p>Emits the <code>IdeDebugger::breakpoint-modified</code> signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_breakpoint_removed.html">ide_debugger_emit_breakpoint_removed</a></h6>
+          <div class="docblock">
+            <p>Emits the <code>IdeDebugger::breakpoint-removed</code> signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_library_loaded.html">ide_debugger_emit_library_loaded</a></h6>
+          <div class="docblock">
+            <p>Emits the &#8220;library-loaded&#8221;&nbsp;signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_library_unloaded.html">ide_debugger_emit_library_unloaded</a></h6>
+          <div class="docblock">
+            <p>Emits the &#8220;library-unloaded&#8221;&nbsp;signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_log.html">ide_debugger_emit_log</a></h6>
+          <div class="docblock">
+            <p>Emits the &#8220;log&#8221;&nbsp;signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_running.html">ide_debugger_emit_running</a></h6>
+          <div class="docblock">
+            <p>Emits the &#8220;running&#8221;&nbsp;signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_stopped.html">ide_debugger_emit_stopped</a></h6>
+          <div class="docblock">
+            <p>Emits the &#8220;stopped&#8221;&nbsp;signal.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_added.html">ide_debugger_emit_thread_added</a></h6>
+          <div class="docblock">
+            <p>Emits the <code>IdeDebugger::thread-added</code> signal notifying that a new thread
+has been added to the&nbsp;inferior.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_group_added.html">ide_debugger_emit_thread_group_added</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_group_exited.html">ide_debugger_emit_thread_group_exited</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_group_removed.html">ide_debugger_emit_thread_group_removed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_group_started.html">ide_debugger_emit_thread_group_started</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_removed.html">ide_debugger_emit_thread_removed</a></h6>
+          <div class="docblock">
+            <p>Emits the <code>IdeDebugger::thread-removed</code> signal notifying that a thread has
+been removed to the&nbsp;inferior.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.emit_thread_selected.html">ide_debugger_emit_thread_selected</a></h6>
+          <div class="docblock">
+            <p>Emits the <code>IdeDebugger::thread-selected</code> signal notifying that a thread
+has been set as the current debugging&nbsp;thread.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_breakpoints.html">ide_debugger_get_breakpoints</a></h6>
+          <div class="docblock">
+            <p>Gets the breakpoints for the <code>IdeDebugger</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_can_move.html">ide_debugger_get_can_move</a></h6>
+          <div class="docblock">
+            <p>Checks to see if the debugger can make the movement matching <code>movement</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_display_name.html">ide_debugger_get_display_name</a></h6>
+          <div class="docblock">
+            <p>Gets the display name for the debugger as the user should see it in various
+<span class="caps">UI</span>&nbsp;components.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_is_running.html">ide_debugger_get_is_running</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_selected_thread.html">ide_debugger_get_selected_thread</a></h6>
+          <div class="docblock">
+            <p>Gets the current selected thread by the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_thread_groups.html">ide_debugger_get_thread_groups</a></h6>
+          <div class="docblock">
+            <p>Gets the thread groups that have been registered by the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.get_threads.html">ide_debugger_get_threads</a></h6>
+          <div class="docblock">
+            <p>Gets the threads that have been registered by the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.insert_breakpoint_async.html">ide_debugger_insert_breakpoint_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that a breakpoint is added to the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.insert_breakpoint_finish.html">ide_debugger_insert_breakpoint_finish</a></h6>
+          <div class="docblock">
+            <p>Completes a request to asynchronously insert a&nbsp;breakpoint.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.interpret_async.html">ide_debugger_interpret_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that the debugger interpret the&nbsp;command.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.interpret_finish.html">ide_debugger_interpret_finish</a></h6>
+          <div class="docblock">
+            <p>Retrieves the result of the asynchronous operation to interpret a debugger&nbsp;command.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.interrupt_async.html">ide_debugger_interrupt_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that the debugger interrupts execution of a thread
+group. Thread groups are a collection of threads that are executed or
+stopped together and on gdb on Linux, this is the default for all threads in
+the&nbsp;process.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.interrupt_finish.html">ide_debugger_interrupt_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_breakpoints_async.html">ide_debugger_list_breakpoints_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests the list of current breakpoints from the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_breakpoints_finish.html">ide_debugger_list_breakpoints_finish</a></h6>
+          <div class="docblock">
+            <p>Gets the list of breakpoints from the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_frames_async.html">ide_debugger_list_frames_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_frames_finish.html">ide_debugger_list_frames_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_locals_async.html">ide_debugger_list_locals_async</a></h6>
+          <div class="docblock">
+            <p>Requests the debugger backend to list the locals that are available to the
+given <code>frame</code> of <code>thread</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_locals_finish.html">ide_debugger_list_locals_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_debugger_list_locals_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_params_async.html">ide_debugger_list_params_async</a></h6>
+          <div class="docblock">
+            <p>Requests the debugger backend to list the parameters to the given stack&nbsp;frame.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_params_finish.html">ide_debugger_list_params_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_debugger_list_params_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_registers_async.html">ide_debugger_list_registers_async</a></h6>
+          <div class="docblock">
+            <p>Requests the list of registers and their&nbsp;values.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.list_registers_finish.html">ide_debugger_list_registers_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_debugger_list_registers_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.locate_binary_at_address.html">ide_debugger_locate_binary_at_address</a></h6>
+          <div class="docblock">
+            <p>Attempts to locate the binary that contains a given&nbsp;address.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.modify_breakpoint_async.html">ide_debugger_modify_breakpoint_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that a breakpoint is modified by the debugger&nbsp;backend.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.modify_breakpoint_finish.html">ide_debugger_modify_breakpoint_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to modify a&nbsp;breakpoint.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.move_async.html">ide_debugger_move_async</a></h6>
+          <div class="docblock">
+            <p>Advances the debugger to the next breakpoint or until the debugger stops.
+<code>movement</code> should describe the type of movement to&nbsp;perform.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.move_finish.html">ide_debugger_move_finish</a></h6>
+          <div class="docblock">
+            <p>Notifies that the movement request has been submitted to the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.prepare_for_run.html">ide_debugger_prepare_for_run</a></h6>
+          <div class="docblock">
+            <p>Prepares the runner to launch a debugger and target&nbsp;process.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.remove_breakpoint_async.html">ide_debugger_remove_breakpoint_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that a breakpoint is removed from the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.remove_breakpoint_finish.html">ide_debugger_remove_breakpoint_finish</a></h6>
+          <div class="docblock">
+            <p>Completes a request to asynchronously remove a&nbsp;breakpoint.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.send_signal_async.html">ide_debugger_send_signal_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.send_signal_finish.html">ide_debugger_send_signal_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.set_display_name.html">ide_debugger_set_display_name</a></h6>
+          <div class="docblock">
+            <p>Sets the <code>IdeDebugger:display-name</code> property.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Debugger.supports_run_command.html">ide_debugger_supports_run_command</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="iface.ActionGroup.html" data-namespace="Gio">GActionGroup</a> (14)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_added.html">g_action_group_action_added</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-added</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_enabled_changed.html">g_action_group_action_enabled_changed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-enabled-changed</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_removed.html">g_action_group_action_removed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-removed</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_state_changed.html">g_action_group_action_state_changed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-state-changed</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.activate_action.html">g_action_group_activate_action</a></h6>
+            <div class="docblock">
+              <p>Activate the named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.change_action_state.html">g_action_group_change_action_state</a></h6>
+            <div class="docblock">
+              <p>Request for the state of the named action within <code>action_group</code> to be
+changed to <code>value</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_enabled.html">g_action_group_get_action_enabled</a></h6>
+            <div class="docblock">
+              <p>Checks if the named action within <code>action_group</code> is currently&nbsp;enabled.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_parameter_type.html">g_action_group_get_action_parameter_type</a></h6>
+            <div class="docblock">
+              <p>Queries the type of the parameter that must be given when activating
+the named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_state.html">g_action_group_get_action_state</a></h6>
+            <div class="docblock">
+              <p>Queries the current state of the named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_state_hint.html">g_action_group_get_action_state_hint</a></h6>
+            <div class="docblock">
+              <p>Requests a hint about the valid range of values for the state of the
+named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_state_type.html">g_action_group_get_action_state_type</a></h6>
+            <div class="docblock">
+              <p>Queries the type of the state of the named action within
+<code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.has_action.html">g_action_group_has_action</a></h6>
+            <div class="docblock">
+              <p>Checks if the named action exists within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.list_actions.html">g_action_group_list_actions</a></h6>
+            <div class="docblock">
+              <p>Lists the actions contained within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.query_action.html">g_action_group_query_action</a></h6>
+            <div class="docblock">
+              <p>Queries all aspects of the named action within an <code>action_group</code>.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Debugger.display-name.html">Ide.Debugger:display-name</a></h6>
+          <div class="docblock">
+            <p>The &#8220;display-name&#8221; property is used by <span class="caps">UI</span> to when it is necessary
+to display the name of the debugger. You might set this to &#8220;<span class="caps">GNU</span> Debugger&#8221;
+or &#8220;Python Debugger&#8221;,&nbsp;etc.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Debugger.selected-thread.html">Ide.Debugger:selected-thread</a></h6>
+          <div class="docblock">
+            <p>The currently selected&nbsp;thread.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+        
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.Debugger.breakpoint-added.html">Ide.Debugger::breakpoint-added</a></h6>
+          <div class="docblock">
+            <p>The &#8220;breakpoint-added&#8221; signal is emitted when a breakpoint has been
+added to the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.breakpoint-modified.html">Ide.Debugger::breakpoint-modified</a></h6>
+          <div class="docblock">
+            <p>The &#8220;breakpoint-modified&#8221; signal is emitted when a breakpoint has been
+modified by the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.breakpoint-removed.html">Ide.Debugger::breakpoint-removed</a></h6>
+          <div class="docblock">
+            <p>The &#8220;breakpoint-removed&#8221; signal is emitted when a breakpoint has been
+removed from the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.library-loaded.html">Ide.Debugger::library-loaded</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a library has been loaded by the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.library-unloaded.html">Ide.Debugger::library-unloaded</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a library has been unloaded by the debugger.
+Generally, this means that the library was a module and loaded in such a
+way that allowed&nbsp;unloading.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.log.html">Ide.Debugger::log</a></h6>
+          <div class="docblock">
+            <p>The &#8220;log&#8221; signal is emitted when there is new content to be
+appended to one of the&nbsp;streams.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.running.html">Ide.Debugger::running</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the debugger starts or resumes executing
+the&nbsp;inferior.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.stopped.html">Ide.Debugger::stopped</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the debugger has stopped executing the
+inferior for a variety of&nbsp;reasons.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-added.html">Ide.Debugger::thread-added</a></h6>
+          <div class="docblock">
+            <p>The signal is emitted when a thread is added to the&nbsp;inferior.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-group-added.html">Ide.Debugger::thread-group-added</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a thread-group has been&nbsp;added.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-group-exited.html">Ide.Debugger::thread-group-exited</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a thread-group has&nbsp;exited.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-group-removed.html">Ide.Debugger::thread-group-removed</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a thread-group has been&nbsp;removed.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-group-started.html">Ide.Debugger::thread-group-started</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a thread-group has been&nbsp;started.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-removed.html">Ide.Debugger::thread-removed</a></h6>
+          <div class="docblock">
+            <p>The signal is emitted when a thread is removed from the&nbsp;inferior.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.Debugger.thread-selected.html">Ide.Debugger::thread-selected</a></h6>
+          <div class="docblock">
+            <p>The signal is emitted when a thread is selected in the&nbsp;debugger.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="iface.ActionGroup.html" data-namespace="Gio">GActionGroup</a> (4)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-added.html">GActionGroup::action-added</a></h6>
+            <div class="docblock">
+              <p>Signals that a new action was just added to the&nbsp;group.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-enabled-changed.html">GActionGroup::action-enabled-changed</a></h6>
+            <div class="docblock">
+              <p>Signals that the enabled status of the named action has&nbsp;changed.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-removed.html">GActionGroup::action-removed</a></h6>
+            <div class="docblock">
+              <p>Signals that an action is just about to be removed from the&nbsp;group.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-state-changed.html">GActionGroup::action-state-changed</a></h6>
+            <div class="docblock">
+              <p>Signals that the state of the named action has&nbsp;changed.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeDebuggerClass {
+  IdeObjectClass parent_class;
+  void (* log) (
+    IdeDebugger* self,
+    IdeDebuggerStream stream,
+    GBytes* content
+  );
+  void (* thread_group_added) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  );
+  void (* thread_group_removed) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  );
+  void (* thread_group_started) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  );
+  void (* thread_group_exited) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  );
+  void (* thread_added) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread
+  );
+  void (* thread_removed) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread
+  );
+  void (* thread_selected) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread
+  );
+  void (* breakpoint_added) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint
+  );
+  void (* breakpoint_removed) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint
+  );
+  void (* breakpoint_modified) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint
+  );
+  void (* running) (
+    IdeDebugger* self
+  );
+  void (* stopped) (
+    IdeDebugger* self,
+    IdeDebuggerStopReason stop_reason,
+    IdeDebuggerBreakpoint* breakpoint
+  );
+  void (* library_loaded) (
+    IdeDebugger* self,
+    IdeDebuggerLibrary* library
+  );
+  void (* library_unloaded) (
+    IdeDebugger* self,
+    IdeDebuggerLibrary* library
+  );
+  gboolean (* supports_run_command) (
+    IdeDebugger* self,
+    IdePipeline* pipeline,
+    IdeRunCommand* run_command,
+    int* priority
+  );
+  void (* prepare_for_run) (
+    IdeDebugger* self,
+    IdePipeline* pipeline,
+    IdeRunContext* run_context
+  );
+  gboolean (* get_can_move) (
+    IdeDebugger* self,
+    IdeDebuggerMovement movement
+  );
+  void (* move_async) (
+    IdeDebugger* self,
+    IdeDebuggerMovement movement,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* move_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_breakpoints_async) (
+    IdeDebugger* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_breakpoints_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* insert_breakpoint_async) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* insert_breakpoint_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* remove_breakpoint_async) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* remove_breakpoint_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* modify_breakpoint_async) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpointChange change,
+    IdeDebuggerBreakpoint* breakpoint,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* modify_breakpoint_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_frames_async) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_frames_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* interrupt_async) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* interrupt_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* send_signal_async) (
+    IdeDebugger* self,
+    int signum,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* send_signal_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_locals_async) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread,
+    IdeDebuggerFrame* frame,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_locals_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_params_async) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread,
+    IdeDebuggerFrame* frame,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_params_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* list_registers_async) (
+    IdeDebugger* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* list_registers_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* disassemble_async) (
+    IdeDebugger* self,
+    const IdeDebuggerAddressRange* range,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  GPtrArray* (* disassemble_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* interpret_async) (
+    IdeDebugger* self,
+    const gchar* command,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* interpret_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>log: void (* log) (
+    IdeDebugger* self,
+    IdeDebuggerStream stream,
+    GBytes* content
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_group_added: void (* thread_group_added) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_group_removed: void (* thread_group_removed) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_group_started: void (* thread_group_started) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_group_exited: void (* thread_group_exited) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_added: void (* thread_added) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_removed: void (* thread_removed) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>thread_selected: void (* thread_selected) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>breakpoint_added: void (* breakpoint_added) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>breakpoint_removed: void (* breakpoint_removed) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>breakpoint_modified: void (* breakpoint_modified) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>running: void (* running) (
+    IdeDebugger* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>stopped: void (* stopped) (
+    IdeDebugger* self,
+    IdeDebuggerStopReason stop_reason,
+    IdeDebuggerBreakpoint* breakpoint
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>library_loaded: void (* library_loaded) (
+    IdeDebugger* self,
+    IdeDebuggerLibrary* library
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>library_unloaded: void (* library_unloaded) (
+    IdeDebugger* self,
+    IdeDebuggerLibrary* library
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>supports_run_command: gboolean (* supports_run_command) (
+    IdeDebugger* self,
+    IdePipeline* pipeline,
+    IdeRunCommand* run_command,
+    int* priority
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>prepare_for_run: void (* prepare_for_run) (
+    IdeDebugger* self,
+    IdePipeline* pipeline,
+    IdeRunContext* run_context
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_can_move: gboolean (* get_can_move) (
+    IdeDebugger* self,
+    IdeDebuggerMovement movement
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>move_async: void (* move_async) (
+    IdeDebugger* self,
+    IdeDebuggerMovement movement,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>move_finish: gboolean (* move_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_breakpoints_async: void (* list_breakpoints_async) (
+    IdeDebugger* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_breakpoints_finish: GPtrArray* (* list_breakpoints_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>insert_breakpoint_async: void (* insert_breakpoint_async) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>insert_breakpoint_finish: gboolean (* insert_breakpoint_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>remove_breakpoint_async: void (* remove_breakpoint_async) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpoint* breakpoint,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>remove_breakpoint_finish: gboolean (* remove_breakpoint_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>modify_breakpoint_async: void (* modify_breakpoint_async) (
+    IdeDebugger* self,
+    IdeDebuggerBreakpointChange change,
+    IdeDebuggerBreakpoint* breakpoint,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>modify_breakpoint_finish: gboolean (* modify_breakpoint_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_frames_async: void (* list_frames_async) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_frames_finish: GPtrArray* (* list_frames_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>interrupt_async: void (* interrupt_async) (
+    IdeDebugger* self,
+    IdeDebuggerThreadGroup* thread_group,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>interrupt_finish: gboolean (* interrupt_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>send_signal_async: void (* send_signal_async) (
+    IdeDebugger* self,
+    int signum,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>send_signal_finish: gboolean (* send_signal_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_locals_async: void (* list_locals_async) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread,
+    IdeDebuggerFrame* frame,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_locals_finish: GPtrArray* (* list_locals_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_params_async: void (* list_params_async) (
+    IdeDebugger* self,
+    IdeDebuggerThread* thread,
+    IdeDebuggerFrame* frame,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_params_finish: GPtrArray* (* list_params_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_registers_async: void (* list_registers_async) (
+    IdeDebugger* self,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>list_registers_finish: GPtrArray* (* list_registers_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>disassemble_async: void (* disassemble_async) (
+    IdeDebugger* self,
+    const IdeDebuggerAddressRange* range,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>disassemble_finish: GPtrArray* (* disassemble_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>interpret_async: void (* interpret_async) (
+    IdeDebugger* self,
+    const gchar* command,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>interpret_finish: gboolean (* interpret_finish) (
+    IdeDebugger* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-breakpoint_added"><a href="vfunc.Debugger.breakpoint_added.html">Ide.DebuggerClass.breakpoint_added</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-breakpoint_modified"><a href="vfunc.Debugger.breakpoint_modified.html">Ide.DebuggerClass.breakpoint_modified</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-breakpoint_removed"><a href="vfunc.Debugger.breakpoint_removed.html">Ide.DebuggerClass.breakpoint_removed</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-disassemble_async"><a href="vfunc.Debugger.disassemble_async.html">Ide.DebuggerClass.disassemble_async</a></h6>
+        <div class="docblock">
+          <p>Disassembles the address range&nbsp;requested.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-disassemble_finish"><a href="vfunc.Debugger.disassemble_finish.html">Ide.DebuggerClass.disassemble_finish</a></h6>
+        <div class="docblock">
+          <p>Completes an asynchronous request to&nbsp;ide_debugger_disassemble_async().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-get_can_move"><a href="vfunc.Debugger.get_can_move.html">Ide.DebuggerClass.get_can_move</a></h6>
+        <div class="docblock">
+          <p>Checks to see if the debugger can make the movement matching <code>movement</code>.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-insert_breakpoint_async"><a href="vfunc.Debugger.insert_breakpoint_async.html">Ide.DebuggerClass.insert_breakpoint_async</a></h6>
+        <div class="docblock">
+          <p>Asynchronously requests that a breakpoint is added to the&nbsp;debugger.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-insert_breakpoint_finish"><a href="vfunc.Debugger.insert_breakpoint_finish.html">Ide.DebuggerClass.insert_breakpoint_finish</a></h6>
+        <div class="docblock">
+          <p>Completes a request to asynchronously insert a&nbsp;breakpoint.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-interpret_async"><a href="vfunc.Debugger.interpret_async.html">Ide.DebuggerClass.interpret_async</a></h6>
+        <div class="docblock">
+          <p>Asynchronously requests that the debugger interpret the&nbsp;command.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-interpret_finish"><a href="vfunc.Debugger.interpret_finish.html">Ide.DebuggerClass.interpret_finish</a></h6>
+        <div class="docblock">
+          <p>Retrieves the result of the asynchronous operation to interpret a debugger&nbsp;command.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-interrupt_async"><a href="vfunc.Debugger.interrupt_async.html">Ide.DebuggerClass.interrupt_async</a></h6>
+        <div class="docblock">
+          <p>Asynchronously requests that the debugger interrupts execution of a thread
+group. Thread groups are a collection of threads that are executed or
+stopped together and on gdb on Linux, this is the default for all threads in
+the&nbsp;process.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-interrupt_finish"><a href="vfunc.Debugger.interrupt_finish.html">Ide.DebuggerClass.interrupt_finish</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-library_loaded"><a href="vfunc.Debugger.library_loaded.html">Ide.DebuggerClass.library_loaded</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-library_unloaded"><a href="vfunc.Debugger.library_unloaded.html">Ide.DebuggerClass.library_unloaded</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_breakpoints_async"><a href="vfunc.Debugger.list_breakpoints_async.html">Ide.DebuggerClass.list_breakpoints_async</a></h6>
+        <div class="docblock">
+          <p>Asynchronously requests the list of current breakpoints from the&nbsp;debugger.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_breakpoints_finish"><a href="vfunc.Debugger.list_breakpoints_finish.html">Ide.DebuggerClass.list_breakpoints_finish</a></h6>
+        <div class="docblock">
+          <p>Gets the list of breakpoints from the&nbsp;debugger.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_frames_async"><a href="vfunc.Debugger.list_frames_async.html">Ide.DebuggerClass.list_frames_async</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_frames_finish"><a href="vfunc.Debugger.list_frames_finish.html">Ide.DebuggerClass.list_frames_finish</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_locals_async"><a href="vfunc.Debugger.list_locals_async.html">Ide.DebuggerClass.list_locals_async</a></h6>
+        <div class="docblock">
+          <p>Requests the debugger backend to list the locals that are available to the
+given <code>frame</code> of <code>thread</code>.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_locals_finish"><a href="vfunc.Debugger.list_locals_finish.html">Ide.DebuggerClass.list_locals_finish</a></h6>
+        <div class="docblock">
+          <p>Completes an asynchronous request to&nbsp;ide_debugger_list_locals_async().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_params_async"><a href="vfunc.Debugger.list_params_async.html">Ide.DebuggerClass.list_params_async</a></h6>
+        <div class="docblock">
+          <p>Requests the debugger backend to list the parameters to the given stack&nbsp;frame.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_params_finish"><a href="vfunc.Debugger.list_params_finish.html">Ide.DebuggerClass.list_params_finish</a></h6>
+        <div class="docblock">
+          <p>Completes an asynchronous request to&nbsp;ide_debugger_list_params_async().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_registers_async"><a href="vfunc.Debugger.list_registers_async.html">Ide.DebuggerClass.list_registers_async</a></h6>
+        <div class="docblock">
+          <p>Requests the list of registers and their&nbsp;values.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-list_registers_finish"><a href="vfunc.Debugger.list_registers_finish.html">Ide.DebuggerClass.list_registers_finish</a></h6>
+        <div class="docblock">
+          <p>Completes an asynchronous request to&nbsp;ide_debugger_list_registers_async().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-log"><a href="vfunc.Debugger.log.html">Ide.DebuggerClass.log</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-modify_breakpoint_async"><a href="vfunc.Debugger.modify_breakpoint_async.html">Ide.DebuggerClass.modify_breakpoint_async</a></h6>
+        <div class="docblock">
+          <p>Asynchronously requests that a breakpoint is modified by the debugger&nbsp;backend.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-modify_breakpoint_finish"><a href="vfunc.Debugger.modify_breakpoint_finish.html">Ide.DebuggerClass.modify_breakpoint_finish</a></h6>
+        <div class="docblock">
+          <p>Completes an asynchronous request to modify a&nbsp;breakpoint.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-move_async"><a href="vfunc.Debugger.move_async.html">Ide.DebuggerClass.move_async</a></h6>
+        <div class="docblock">
+          <p>Advances the debugger to the next breakpoint or until the debugger stops.
+<code>movement</code> should describe the type of movement to&nbsp;perform.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-move_finish"><a href="vfunc.Debugger.move_finish.html">Ide.DebuggerClass.move_finish</a></h6>
+        <div class="docblock">
+          <p>Notifies that the movement request has been submitted to the&nbsp;debugger.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-prepare_for_run"><a href="vfunc.Debugger.prepare_for_run.html">Ide.DebuggerClass.prepare_for_run</a></h6>
+        <div class="docblock">
+          <p>Prepares the runner to launch a debugger and target&nbsp;process.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-remove_breakpoint_async"><a href="vfunc.Debugger.remove_breakpoint_async.html">Ide.DebuggerClass.remove_breakpoint_async</a></h6>
+        <div class="docblock">
+          <p>Asynchronously requests that a breakpoint is removed from the&nbsp;debugger.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-remove_breakpoint_finish"><a href="vfunc.Debugger.remove_breakpoint_finish.html">Ide.DebuggerClass.remove_breakpoint_finish</a></h6>
+        <div class="docblock">
+          <p>Completes a request to asynchronously remove a&nbsp;breakpoint.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-running"><a href="vfunc.Debugger.running.html">Ide.DebuggerClass.running</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-send_signal_async"><a href="vfunc.Debugger.send_signal_async.html">Ide.DebuggerClass.send_signal_async</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-send_signal_finish"><a href="vfunc.Debugger.send_signal_finish.html">Ide.DebuggerClass.send_signal_finish</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-stopped"><a href="vfunc.Debugger.stopped.html">Ide.DebuggerClass.stopped</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-supports_run_command"><a href="vfunc.Debugger.supports_run_command.html">Ide.DebuggerClass.supports_run_command</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_added"><a href="vfunc.Debugger.thread_added.html">Ide.DebuggerClass.thread_added</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_group_added"><a href="vfunc.Debugger.thread_group_added.html">Ide.DebuggerClass.thread_group_added</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_group_exited"><a href="vfunc.Debugger.thread_group_exited.html">Ide.DebuggerClass.thread_group_exited</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_group_removed"><a href="vfunc.Debugger.thread_group_removed.html">Ide.DebuggerClass.thread_group_removed</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_group_started"><a href="vfunc.Debugger.thread_group_started.html">Ide.DebuggerClass.thread_group_started</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_removed"><a href="vfunc.Debugger.thread_removed.html">Ide.DebuggerClass.thread_removed</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-thread_selected"><a href="vfunc.Debugger.thread_selected.html">Ide.DebuggerClass.thread_selected</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="#implements"><span class="link-text">Implements</span></a></li>
+      
+      
+
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

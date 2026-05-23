@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extending the Build Pipeline &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Processes and Containers" href="../processes/index.html" />
+    <link rel="prev" title="Implementing a Build System" href="buildsystem.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/index.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../enabling.html">Enabling and Disabling Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating.html">Creating Your First Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workbench/index.html">Extending the Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../greeter.html">Extending the Greeter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editor/index.html">Extending the Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../symbols/index.html">Symbols and Semantic Analysis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Extending the Build Pipeline</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="buildsystem.html">Implementing a Build System</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Extending the Build Pipeline</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../processes/index.html">Processes and Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../devices.html">Extending the Device Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running.html">Extending the Run Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../keybindings.html">Registering Keybindings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../langserv.html">Integrating Language Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search.html">Extending Project Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session.html">Session Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../menus.html">Extending Application Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preferences.html">Registering Application Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workers.html">Managing Worker Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vcs.html">Integrating Version Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Extensions</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Extending the Build Pipeline</a></li>
+      <li class="breadcrumb-item active">Extending the Build Pipeline</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/plugins/building/pipeline.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="extending-the-build-pipeline">
+<h1>Extending the Build Pipeline<a class="headerlink" href="#extending-the-build-pipeline" title="Link to this heading"></a></h1>
+<p>Builder uses the concept of a “Build Pipeline” to build a project. The build
+pipeline consistes of multiple “phases” and build “stages” run in a given phase.</p>
+<p>For example, in the <code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.DOWNLOADS</span></code> phase, you might have a stage
+that downloads and installs the dependencies for your project. The Flatpak
+extension does this when building Flatpak-based project configurations.</p>
+<p>The various phases of the build pipeline are the following and are always
+executed in exactly this sequence up to the requested phase.</p>
+<section id="build-phases">
+<h2>Build Phases<a class="headerlink" href="#build-phases" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.PREPARE</span></code> is the first phase of the build pipeline. Use this to create necessary directories and other preparation steps.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.DOWNLOADS</span></code> should be used to download and cache any build artifacts that are needed during the build.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.DEPENDENCIES</span></code> should build any dependencies that are needed to successfully build the project.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.AUTOGEN</span></code> should generate any necessary project files. Contrast this with the <code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.CONFIGURE</span></code> phase which runs the configuration scripts.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.CONFIGURE</span></code> should run configuration scripts such as <code class="docutils literal notranslate"><span class="pre">./configure</span></code>, <code class="docutils literal notranslate"><span class="pre">meson</span></code>, or <code class="docutils literal notranslate"><span class="pre">cmake</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.BUILD</span></code> should perform the incremental build process such as <code class="docutils literal notranslate"><span class="pre">make</span></code> or <code class="docutils literal notranslate"><span class="pre">ninja</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.INSTALL</span></code> should install the project to the configured prefix.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.EXPORT</span></code> should be used to attach export hooks such as building a Flatpak bundle, Debian, or RPM package.</p></li>
+</ul>
+</div></blockquote>
+<p>Additionally, there are phases which have special meaning.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.BEFORE</span></code> can be XOR’d with any previous phase to indicate it should run as part of the phase, but before the phase has started.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.AFTER</span></code> can be XOR’d with any previous phase to indicate it should run as part of the phase, but after the phase has completed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.FINISHED</span></code> indicates that a previous build request has finished.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ide.PipelinePhase.FAILED</span></code> indicates that a previous build request has failed.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="creating-a-build-stage">
+<h2>Creating a Build Stage<a class="headerlink" href="#creating-a-build-stage" title="Link to this heading"></a></h2>
+<p>To add a build stage, we start by creating a build pipeline addin. When it
+loads we will register our stage in the appropriate phase.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># my_plugin.py</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">gi</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">GObject</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ide</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyPipelineStage</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">Object</span><span class="p">,</span> <span class="n">Ide</span><span class="o">.</span><span class="n">PipelineStage</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipeline</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This is a synchronous build stage, which will block the</span>
+<span class="sd">        main loop. If what you need to do is long running, you</span>
+<span class="sd">        might consider using do_execute_async() and</span>
+<span class="sd">        do_execute_finish().</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running my build stage!&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_clean_async</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipeline</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">,</span> <span class="n">callback</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        When the user requests that the build pipeline run the</span>
+<span class="sd">        clean operation (often before a &quot;rebuild&quot;), this function</span>
+<span class="sd">        will be executed. Use it to delete stale directories, etc.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="n">Gio</span><span class="o">.</span><span class="n">Task</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">return_boolean</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_clean_finish</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">task</span><span class="o">.</span><span class="n">propagate_boolean</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipeline</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        If you need to check if this stage still needs to</span>
+<span class="sd">        be run, use the query signal to check an external</span>
+<span class="sd">        resource.</span>
+
+<span class="sd">        By default, stages are marked completed after they</span>
+<span class="sd">        run. That means a second attempt to run the stage</span>
+<span class="sd">        will be skipped unless set_completed() is set to False.</span>
+
+<span class="sd">        If you need to do something asynchronous, call</span>
+<span class="sd">        self.pause() to pause the stage until the async</span>
+<span class="sd">        operation has completed, and then call unpause()</span>
+<span class="sd">        to resume execution of the stage.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># This will run on every request to run the phase</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_completed</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_chain</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">next</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sometimes, you have build stages that are next to</span>
+<span class="sd">        each other in the pipeline and they can be coalesced</span>
+<span class="sd">        into a single operation.</span>
+
+<span class="sd">        One such example is &quot;make&quot; followed by &quot;make install&quot;.</span>
+
+<span class="sd">        You can detect that here and reduce how much work is</span>
+<span class="sd">        done by the build pipeline.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyPipelineAddin</span><span class="p">(</span><span class="n">GObject</span><span class="o">.</span><span class="n">Object</span><span class="p">,</span> <span class="n">Ide</span><span class="o">.</span><span class="n">PipelineAddin</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipeline</span><span class="p">):</span>
+        <span class="n">stage</span> <span class="o">=</span> <span class="n">MyPipelineStage</span><span class="p">()</span>
+        <span class="n">phase</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">PipelinePhase</span><span class="o">.</span><span class="n">BUILD</span> <span class="o">|</span> <span class="n">Ide</span><span class="o">.</span><span class="n">PipelinePhase</span><span class="o">.</span><span class="n">AFTER</span>
+        <span class="n">stage_id</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">phase</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">stage</span><span class="p">)</span>
+
+        <span class="c1"># track() can be used to auto-unregister the phase when</span>
+        <span class="c1"># the pipeline is removed.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">track</span><span class="p">(</span><span class="n">stage_id</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="buildsystem.html" class="btn btn-neutral float-left" title="Implementing a Build System" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../processes/index.html" class="btn btn-neutral float-right" title="Processes and Containers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

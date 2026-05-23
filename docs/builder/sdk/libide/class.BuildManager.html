@@ -1,0 +1,985 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.BuildManager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.BuildManager"/>
+  <meta property="og:description" content="Reference for Ide.BuildManager"/>
+  <meta name="twitter:title" content="Ide.BuildManager"/>
+  <meta name="twitter:description" content="Reference for Ide.BuildManager"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.BuildManager.html#description">BuildManager</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.BuildManager.from_context.html">from_context</a>
+  
+    <a class="func" href="type_func.BuildManager.ref_from_context.html">ref_from_context</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.BuildManager.build_async.html">build_async</a>
+  
+    <a class="method" href="method.BuildManager.build_finish.html">build_finish</a>
+  
+    <a class="method" href="method.BuildManager.cancel.html">cancel</a>
+  
+    <a class="method" href="method.BuildManager.clean_async.html">clean_async</a>
+  
+    <a class="method" href="method.BuildManager.clean_finish.html">clean_finish</a>
+  
+    <a class="method" href="method.BuildManager.get_busy.html">get_busy</a>
+  
+    <a class="method" href="method.BuildManager.get_can_build.html">get_can_build</a>
+  
+    <a class="method" href="method.BuildManager.get_error_count.html">get_error_count</a>
+  
+    <a class="method" href="method.BuildManager.get_last_build_time.html">get_last_build_time</a>
+  
+    <a class="method" href="method.BuildManager.get_message.html">get_message</a>
+  
+    <a class="method" href="method.BuildManager.get_pipeline.html">get_pipeline</a>
+  
+    <a class="method" href="method.BuildManager.get_running_time.html">get_running_time</a>
+  
+    <a class="method" href="method.BuildManager.get_warning_count.html">get_warning_count</a>
+  
+    <a class="method" href="method.BuildManager.invalidate.html">invalidate</a>
+  
+    <a class="method" href="method.BuildManager.list_targets_async.html">list_targets_async</a>
+  
+    <a class="method" href="method.BuildManager.list_targets_finish.html">list_targets_finish</a>
+  
+    <a class="method" href="method.BuildManager.rebuild_async.html">rebuild_async</a>
+  
+    <a class="method" href="method.BuildManager.rebuild_finish.html">rebuild_finish</a>
+  
+    <a class="method" href="method.BuildManager.ref_pipeline.html">ref_pipeline</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.BuildManager.busy.html">busy</a>
+  
+    <a class="property" href="property.BuildManager.can-build.html">can-build</a>
+  
+    <a class="property" href="property.BuildManager.error-count.html">error-count</a>
+  
+    <a class="property" href="property.BuildManager.has-diagnostics.html">has-diagnostics</a>
+  
+    <a class="property" href="property.BuildManager.last-build-time.html">last-build-time</a>
+  
+    <a class="property" href="property.BuildManager.message.html">message</a>
+  
+    <a class="property" href="property.BuildManager.pipeline.html">pipeline</a>
+  
+    <a class="property" href="property.BuildManager.running-time.html">running-time</a>
+  
+    <a class="property" href="property.BuildManager.warning-count.html">warning-count</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.BuildManager.build-failed.html">build-failed</a>
+  
+    <a class="signal" href="signal.BuildManager.build-finished.html">build-finished</a>
+  
+    <a class="signal" href="signal.BuildManager.build-started.html">build-started</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>BuildManager</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>final class Ide.BuildManager : Ide.Object
+  implements Gio.ActionGroup, Gio.Initable {
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper implements">
+      <h4 id="implements">
+        Implements
+        <a href="#implements" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="interface"><a class="external" href="javascript:void(0)" data-link="iface.ActionGroup.html" data-namespace="Gio">GActionGroup</a></li>
+          
+        
+          
+          <li class="interface"><a class="external" href="javascript:void(0)" data-link="iface.Initable.html" data-namespace="Gio">GInitable</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.BuildManager.from_context.html">ide_build_manager_from_context</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.BuildManager.ref_from_context.html">ide_build_manager_ref_from_context</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.BuildManager.build_async.html">ide_build_manager_build_async</a></h6>
+          <div class="docblock">
+            <p>This function will request that <code>phase</code> is completed in the underlying
+build pipeline and execute a build. Upon completion, <code>callback</code> will be
+executed and it can determine the success or failure of the operation
+using&nbsp;ide_build_manager_build_finish().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.build_finish.html">ide_build_manager_build_finish</a></h6>
+          <div class="docblock">
+            <p>Completes a request to&nbsp;ide_build_manager_build_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.cancel.html">ide_build_manager_cancel</a></h6>
+          <div class="docblock">
+            <p>This function will cancel any in-flight&nbsp;builds.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.clean_async.html">ide_build_manager_clean_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that the build pipeline clean up to <code>phase</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.clean_finish.html">ide_build_manager_clean_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_build_manager_clean_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_busy.html">ide_build_manager_get_busy</a></h6>
+          <div class="docblock">
+            <p>Gets if the <code>IdeBuildManager</code> is currently busy building the&nbsp;project.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_can_build.html">ide_build_manager_get_can_build</a></h6>
+          <div class="docblock">
+            <p>Checks if the current pipeline is ready to&nbsp;build.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_error_count.html">ide_build_manager_get_error_count</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_last_build_time.html">ide_build_manager_get_last_build_time</a></h6>
+          <div class="docblock">
+            <p>This function returns a <code>GDateTime</code> of the last build request. If
+there has not yet been a build request, this will return <code>NULL</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_message.html">ide_build_manager_get_message</a></h6>
+          <div class="docblock">
+            <p>This function returns the current build message as a&nbsp;string.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_pipeline.html">ide_build_manager_get_pipeline</a></h6>
+          <div class="docblock">
+            <p>This function gets the current build pipeline. The pipeline will be
+reloaded as build configurations&nbsp;change.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_running_time.html">ide_build_manager_get_running_time</a></h6>
+          <div class="docblock">
+            <p>Gets the amount of elapsed time of the current build as a
+<code>GTimeSpan</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.get_warning_count.html">ide_build_manager_get_warning_count</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.invalidate.html">ide_build_manager_invalidate</a></h6>
+          <div class="docblock">
+            <p>Requests that the <code>IdeBuildManager</code> invalidate the current pipeline and
+setup a new&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.list_targets_async.html">ide_build_manager_list_targets_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.list_targets_finish.html">ide_build_manager_list_targets_finish</a></h6>
+          <div class="docblock">
+            <p>Lists available build&nbsp;targets.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.rebuild_async.html">ide_build_manager_rebuild_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously requests that the build pipeline clean and rebuild up
+to the given phase. This may involve discarding previous build artifacts
+to allow for the rebuild&nbsp;process.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.rebuild_finish.html">ide_build_manager_rebuild_finish</a></h6>
+          <div class="docblock">
+            <p>Completes an asynchronous request to&nbsp;ide_build_manager_rebuild_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.BuildManager.ref_pipeline.html">ide_build_manager_ref_pipeline</a></h6>
+          <div class="docblock">
+            <p>A thread-safe variant of&nbsp;ide_build_manager_get_pipeline().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="iface.ActionGroup.html" data-namespace="Gio">GActionGroup</a> (14)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_added.html">g_action_group_action_added</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-added</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_enabled_changed.html">g_action_group_action_enabled_changed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-enabled-changed</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_removed.html">g_action_group_action_removed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-removed</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.action_state_changed.html">g_action_group_action_state_changed</a></h6>
+            <div class="docblock">
+              <p>Emits the <code>GActionGroup::action-state-changed</code> signal on <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.activate_action.html">g_action_group_activate_action</a></h6>
+            <div class="docblock">
+              <p>Activate the named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.change_action_state.html">g_action_group_change_action_state</a></h6>
+            <div class="docblock">
+              <p>Request for the state of the named action within <code>action_group</code> to be
+changed to <code>value</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_enabled.html">g_action_group_get_action_enabled</a></h6>
+            <div class="docblock">
+              <p>Checks if the named action within <code>action_group</code> is currently&nbsp;enabled.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_parameter_type.html">g_action_group_get_action_parameter_type</a></h6>
+            <div class="docblock">
+              <p>Queries the type of the parameter that must be given when activating
+the named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_state.html">g_action_group_get_action_state</a></h6>
+            <div class="docblock">
+              <p>Queries the current state of the named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_state_hint.html">g_action_group_get_action_state_hint</a></h6>
+            <div class="docblock">
+              <p>Requests a hint about the valid range of values for the state of the
+named action within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.get_action_state_type.html">g_action_group_get_action_state_type</a></h6>
+            <div class="docblock">
+              <p>Queries the type of the state of the named action within
+<code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.has_action.html">g_action_group_has_action</a></h6>
+            <div class="docblock">
+              <p>Checks if the named action exists within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.list_actions.html">g_action_group_list_actions</a></h6>
+            <div class="docblock">
+              <p>Lists the actions contained within <code>action_group</code>.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.ActionGroup.query_action.html">g_action_group_query_action</a></h6>
+            <div class="docblock">
+              <p>Queries all aspects of the named action within an <code>action_group</code>.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="iface.Initable.html" data-namespace="Gio">GInitable</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="method.Initable.init.html">g_initable_init</a></h6>
+            <div class="docblock">
+              <p>Initializes the object implementing the&nbsp;interface.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.BuildManager.busy.html">Ide.BuildManager:busy</a></h6>
+          <div class="docblock">
+            <p>The &#8220;busy&#8221; property indicates if there is currently a build
+executing. This can be bound to <span class="caps">UI</span> elements to display to the
+user that a build is active (and therefore other builds cannot
+be activated at the&nbsp;moment).</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.can-build.html">Ide.BuildManager:can-build</a></h6>
+          <div class="docblock">
+            <p>Gets if the build manager can queue a build&nbsp;request.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.error-count.html">Ide.BuildManager:error-count</a></h6>
+          <div class="docblock">
+            <p>The number of errors discovered during the build&nbsp;process.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.has-diagnostics.html">Ide.BuildManager:has-diagnostics</a></h6>
+          <div class="docblock">
+            <p>The &#8220;has-diagnostics&#8221; property indicates that there have been
+diagnostics found during the last execution of the build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.last-build-time.html">Ide.BuildManager:last-build-time</a></h6>
+          <div class="docblock">
+            <p>The &#8220;last-build-time&#8221; property contains a <code>GDateTime</code> of the time
+the last build request was&nbsp;submitted.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.message.html">Ide.BuildManager:message</a></h6>
+          <div class="docblock">
+            <p>The &#8220;message&#8221; property contains a string message describing
+the current state of the build process. This may be bound to
+<span class="caps">UI</span> elements to notify the user of the buid&nbsp;progress.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.pipeline.html">Ide.BuildManager:pipeline</a></h6>
+          <div class="docblock">
+            <p>The &#8220;pipeline&#8221; property is the build pipeline that the build manager
+is currently&nbsp;managing.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.running-time.html">Ide.BuildManager:running-time</a></h6>
+          <div class="docblock">
+            <p>The &#8220;running-time&#8221; property can be bound by <span class="caps">UI</span> elements that
+want to track how long the current build has taken. <code>g_object_notify()</code>
+is called on a regular interval during the build so that the <span class="caps">UI</span>
+elements may automatically&nbsp;update.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.BuildManager.warning-count.html">Ide.BuildManager:warning-count</a></h6>
+          <div class="docblock">
+            <p>The &#8220;warning-count&#8221; property contains the number of warnings that have
+been discovered in the current build&nbsp;request.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+        
+      
+        
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.BuildManager.build-failed.html">Ide.BuildManager::build-failed</a></h6>
+          <div class="docblock">
+            <p>The &#8220;build-failed&#8221; signal is emitted when a build that was previously
+notified via <code>IdeBuildManager::build-started</code> has failed to complete&nbsp;successfully.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.BuildManager.build-finished.html">Ide.BuildManager::build-finished</a></h6>
+          <div class="docblock">
+            <p>The &#8220;build-finished&#8221; signal is emitted when a build completed&nbsp;successfully.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.BuildManager.build-started.html">Ide.BuildManager::build-started</a></h6>
+          <div class="docblock">
+            <p>The &#8220;build-started&#8221; signal is emitted when a new build has started.
+The build may be an incremental build. The <code>pipeline</code> instance is
+the build pipeline which is being&nbsp;executed.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="iface.ActionGroup.html" data-namespace="Gio">GActionGroup</a> (4)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-added.html">GActionGroup::action-added</a></h6>
+            <div class="docblock">
+              <p>Signals that a new action was just added to the&nbsp;group.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-enabled-changed.html">GActionGroup::action-enabled-changed</a></h6>
+            <div class="docblock">
+              <p>Signals that the enabled status of the named action has&nbsp;changed.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-removed.html">GActionGroup::action-removed</a></h6>
+            <div class="docblock">
+              <p>Signals that an action is just about to be removed from the&nbsp;group.</p>
+            </div><h6><a class="external" href="javascript:void(0)" data-namespace="Gio" data-link="signal.ActionGroup.action-state-changed.html">GActionGroup::action-state-changed</a></h6>
+            <div class="docblock">
+              <p>Signals that the state of the named action has&nbsp;changed.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeBuildManagerClass {
+  IdeObjectClass parent_class;
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="#implements"><span class="link-text">Implements</span></a></li>
+      
+      
+
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

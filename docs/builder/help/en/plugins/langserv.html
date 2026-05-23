@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrating Language Servers &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extending Project Search" href="search.html" />
+    <link rel="prev" title="Registering Keybindings" href="keybindings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="enabling.html">Enabling and Disabling Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating.html">Creating Your First Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workbench/index.html">Extending the Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="greeter.html">Extending the Greeter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editor/index.html">Extending the Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="symbols/index.html">Symbols and Semantic Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/index.html">Extending the Build Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="processes/index.html">Processes and Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="devices.html">Extending the Device Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running.html">Extending the Run Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keybindings.html">Registering Keybindings</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Integrating Language Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Extending Project Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session.html">Session Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menus.html">Extending Application Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html">Registering Application Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workers.html">Managing Worker Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs.html">Integrating Version Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Extensions</a></li>
+      <li class="breadcrumb-item active">Integrating Language Servers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/plugins/langserv.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="integrating-language-servers">
+<h1>Integrating Language Servers<a class="headerlink" href="#integrating-language-servers" title="Link to this heading"></a></h1>
+<p>In order to integrate a language server with <strong>GNOME Builder</strong> you have to create an <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessLauncher</span></code>
+to startup the language server.</p>
+<p>This subprocess should be restarted if it breaks therefore we have to wrap this
+<code class="docutils literal notranslate"><span class="pre">Ide.SubprocessLauncher</span></code> in a <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor</span></code> to monitor the
+external process. After the subprocess is started we connect <code class="docutils literal notranslate"><span class="pre">stdin</span></code> and <code class="docutils literal notranslate"><span class="pre">stdout</span></code>
+to our <code class="docutils literal notranslate"><span class="pre">Ide.LspClient</span></code> for dispatching of messages between client and server.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LSPService</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">Object</span><span class="p">):</span>
+   <span class="n">_has_started</span> <span class="o">=</span> <span class="kc">False</span>
+   <span class="n">_client</span> <span class="o">=</span> <span class="kc">None</span>
+
+   <span class="nd">@GObject</span><span class="o">.</span><span class="n">Property</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">Ide</span><span class="o">.</span><span class="n">LspClient</span><span class="p">)</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">client</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span>
+
+   <span class="nd">@client</span><span class="o">.</span><span class="n">setter</span>
+   <span class="k">def</span><span class="w"> </span><span class="nf">client</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">_client</span> <span class="o">=</span> <span class="n">value</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">notify</span><span class="p">(</span><span class="s1">&#39;client&#39;</span><span class="p">)</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_has_started</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">_has_started</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">launcher</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">SubprocessLauncher</span><span class="p">()</span>
+         <span class="n">launcher</span><span class="o">.</span><span class="n">set_flags</span><span class="p">(</span><span class="n">Gio</span><span class="o">.</span><span class="n">SubprocessFlags</span><span class="o">.</span><span class="n">STDIN_PIPE</span> <span class="o">|</span> <span class="n">Gio</span><span class="o">.</span><span class="n">SubprocessFlags</span><span class="o">.</span><span class="n">STDOUT_PIPE</span><span class="p">)</span>
+         <span class="n">launcher</span><span class="o">.</span><span class="n">push_argv</span><span class="p">(</span><span class="s1">&#39;my_language_server_executable&#39;</span><span class="p">)</span>
+
+         <span class="n">supervisor</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">SubprocessSupervisor</span><span class="p">()</span>
+         <span class="n">supervisor</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;spawned&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lsp_spawned</span><span class="p">)</span>
+         <span class="n">supervisor</span><span class="o">.</span><span class="n">set_launcher</span><span class="p">(</span><span class="n">launcher</span><span class="p">)</span>
+         <span class="n">supervisor</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">lsp_spawned</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">supervisor</span><span class="p">,</span> <span class="n">subprocess</span><span class="p">):</span>
+      <span class="n">stdin</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">get_stdin_pipe</span><span class="p">()</span>
+      <span class="n">stdout</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">get_stdout_pipe</span><span class="p">()</span>
+      <span class="n">io_stream</span> <span class="o">=</span> <span class="n">Gio</span><span class="o">.</span><span class="n">SimpleIOStream</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">stdout</span><span class="p">,</span> <span class="n">stdin</span><span class="p">)</span>
+
+      <span class="n">client</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">LspClient</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">io_stream</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+      <span class="n">client</span><span class="o">.</span><span class="n">add_language</span><span class="p">(</span><span class="s1">&#39;my_language&#39;</span><span class="p">)</span>
+      <span class="n">client</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As a language server handles several parts of an IDE we have to create according
+extensions for code completion, diagnostics or hover content. As we want to make
+sure that the corresponding service is only started once we use the builtin object
+system (<code class="docutils literal notranslate"><span class="pre">Ide.Context.ensure_child_type(type)</span></code>.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyLspCompletionProvider</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">LspCompletionProvider</span><span class="p">,</span> <span class="n">Ide</span><span class="o">.</span><span class="n">CompletionProvider</span><span class="p">):</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">do_load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+      <span class="n">service</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">ensure_child_typed</span><span class="p">(</span><span class="n">LSPService</span><span class="p">)</span>
+      <span class="n">service</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      <span class="n">service</span><span class="o">.</span><span class="n">bind_property</span><span class="p">(</span><span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="n">GObject</span><span class="o">.</span><span class="n">BindingFlags</span><span class="o">.</span><span class="n">SYNC_CREATE</span><span class="p">)</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">do_get_priority</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+      <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyLspDiagnosticProvider</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">LspDiagnosticProvider</span><span class="p">,</span> <span class="n">Ide</span><span class="o">.</span><span class="n">DiagnosticProvider</span><span class="p">):</span>
+
+   <span class="k">def</span><span class="w"> </span><span class="nf">do_load</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="n">context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_context</span><span class="p">()</span>
+      <span class="n">service</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">ensure_child_typed</span><span class="p">(</span><span class="n">LSPService</span><span class="p">)</span>
+      <span class="n">service</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      <span class="n">service</span><span class="o">.</span><span class="n">bind_property</span><span class="p">(</span><span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="n">GObject</span><span class="o">.</span><span class="n">BindingFlags</span><span class="o">.</span><span class="n">SYNC_CREATE</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="keybindings.html" class="btn btn-neutral float-left" title="Registering Keybindings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="search.html" class="btn btn-neutral float-right" title="Extending Project Search" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

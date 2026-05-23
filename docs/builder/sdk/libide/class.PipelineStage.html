@@ -1,0 +1,1107 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.PipelineStage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.PipelineStage"/>
+  <meta property="og:description" content="Reference for Ide.PipelineStage"/>
+  <meta name="twitter:title" content="Ide.PipelineStage"/>
+  <meta name="twitter:description" content="Reference for Ide.PipelineStage"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.PipelineStage.html#description">PipelineStage</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.PipelineStage.build_async.html">build_async</a>
+  
+    <a class="method" href="method.PipelineStage.build_finish.html">build_finish</a>
+  
+    <a class="method" href="method.PipelineStage.chain.html">chain</a>
+  
+    <a class="method" href="method.PipelineStage.clean_async.html">clean_async</a>
+  
+    <a class="method" href="method.PipelineStage.clean_finish.html">clean_finish</a>
+  
+    <a class="method" href="method.PipelineStage.emit_reap.html">emit_reap</a>
+  
+    <a class="method" href="method.PipelineStage.get_active.html">get_active</a>
+  
+    <a class="method" href="method.PipelineStage.get_check_stdout.html">get_check_stdout</a>
+  
+    <a class="method" href="method.PipelineStage.get_completed.html">get_completed</a>
+  
+    <a class="method" href="method.PipelineStage.get_disabled.html">get_disabled</a>
+  
+    <a class="method" href="method.PipelineStage.get_name.html">get_name</a>
+  
+    <a class="method" href="method.PipelineStage.get_stdout_path.html">get_stdout_path</a>
+  
+    <a class="method" href="method.PipelineStage.get_transient.html">get_transient</a>
+  
+    <a class="method" href="method.PipelineStage.log.html">log</a>
+  
+    <a class="method" href="method.PipelineStage.log_subprocess.html">log_subprocess</a>
+  
+    <a class="method" href="method.PipelineStage.pause.html">pause</a>
+  
+    <a class="method" href="method.PipelineStage.set_active.html">set_active</a>
+  
+    <a class="method" href="method.PipelineStage.set_check_stdout.html">set_check_stdout</a>
+  
+    <a class="method" href="method.PipelineStage.set_completed.html">set_completed</a>
+  
+    <a class="method" href="method.PipelineStage.set_disabled.html">set_disabled</a>
+  
+    <a class="method" href="method.PipelineStage.set_log_observer.html">set_log_observer</a>
+  
+    <a class="method" href="method.PipelineStage.set_name.html">set_name</a>
+  
+    <a class="method" href="method.PipelineStage.set_stdout_path.html">set_stdout_path</a>
+  
+    <a class="method" href="method.PipelineStage.set_transient.html">set_transient</a>
+  
+    <a class="method" href="method.PipelineStage.unpause.html">unpause</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.PipelineStage.active.html">active</a>
+  
+    <a class="property" href="property.PipelineStage.check-stdout.html">check-stdout</a>
+  
+    <a class="property" href="property.PipelineStage.completed.html">completed</a>
+  
+    <a class="property" href="property.PipelineStage.disabled.html">disabled</a>
+  
+    <a class="property" href="property.PipelineStage.name.html">name</a>
+  
+    <a class="property" href="property.PipelineStage.stdout-path.html">stdout-path</a>
+  
+    <a class="property" href="property.PipelineStage.transient.html">transient</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.PipelineStage.chain.html">chain</a>
+  
+    <a class="signal" href="signal.PipelineStage.query.html">query</a>
+  
+    <a class="signal" href="signal.PipelineStage.reap.html">reap</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.PipelineStage.build.html">build</a>
+  
+    <a class="method" href="vfunc.PipelineStage.build_async.html">build_async</a>
+  
+    <a class="method" href="vfunc.PipelineStage.build_finish.html">build_finish</a>
+  
+    <a class="method" href="vfunc.PipelineStage.chain.html">chain</a>
+  
+    <a class="method" href="vfunc.PipelineStage.clean_async.html">clean_async</a>
+  
+    <a class="method" href="vfunc.PipelineStage.clean_finish.html">clean_finish</a>
+  
+    <a class="method" href="vfunc.PipelineStage.query.html">query</a>
+  
+    <a class="method" href="vfunc.PipelineStage.reap.html">reap</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>PipelineStage</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>class Ide.PipelineStage : Ide.Object
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+    <div class="descendants toggle-wrapper default-hide">
+      <h4 id="descendants">Descendants <a href="#descendants" class="anchor"></a></h4>
+      <div class="docblock">
+        <ul>
+          <li class="class"><a href="class.PipelineStageCommand.html" title="PipelineStageCommand">IdePipelineStageCommand</a></li>
+        
+          <li class="class"><a href="class.PipelineStageLauncher.html" title="PipelineStageLauncher">IdePipelineStageLauncher</a></li>
+        
+          <li class="class"><a href="class.PipelineStageMkdirs.html" title="PipelineStageMkdirs">IdePipelineStageMkdirs</a></li>
+        
+          <li class="class"><a href="class.PipelineStageTransfer.html" title="PipelineStageTransfer">IdePipelineStageTransfer</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.build_async.html">ide_pipeline_stage_build_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.build_finish.html">ide_pipeline_stage_build_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.chain.html">ide_pipeline_stage_chain</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.clean_async.html">ide_pipeline_stage_clean_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.clean_finish.html">ide_pipeline_stage_clean_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.emit_reap.html">ide_pipeline_stage_emit_reap</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_active.html">ide_pipeline_stage_get_active</a></h6>
+          <div class="docblock">
+            <p>Gets the &#8220;active&#8221; property, which is set to <code>TRUE</code> when the
+build stage is actively executing or&nbsp;cleaning.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_check_stdout.html">ide_pipeline_stage_get_check_stdout</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_completed.html">ide_pipeline_stage_get_completed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_disabled.html">ide_pipeline_stage_get_disabled</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_name.html">ide_pipeline_stage_get_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_stdout_path.html">ide_pipeline_stage_get_stdout_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.get_transient.html">ide_pipeline_stage_get_transient</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.log.html">ide_pipeline_stage_log</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.log_subprocess.html">ide_pipeline_stage_log_subprocess</a></h6>
+          <div class="docblock">
+            <p>This function will begin logging <code>subprocess</code> by reading from the
+stdout and stderr streams of the subprocess. You must have created
+the subprocess with <code>G_SUBPROCESS_FLAGS_STDERR_PIPE</code> and
+<code>G_SUBPROCESS_FLAGS_STDOUT_PIPE</code> so that the streams may be&nbsp;read.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.pause.html">ide_pipeline_stage_pause</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_active.html">ide_pipeline_stage_set_active</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_check_stdout.html">ide_pipeline_stage_set_check_stdout</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_completed.html">ide_pipeline_stage_set_completed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_disabled.html">ide_pipeline_stage_set_disabled</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_log_observer.html">ide_pipeline_stage_set_log_observer</a></h6>
+          <div class="docblock">
+            <p>Sets the log observer to handle calls to the various stage logging
+functions. This will be set by the pipeline to mux logs from all
+stages into a unified build&nbsp;log.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_name.html">ide_pipeline_stage_set_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_stdout_path.html">ide_pipeline_stage_set_stdout_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.set_transient.html">ide_pipeline_stage_set_transient</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.PipelineStage.unpause.html">ide_pipeline_stage_unpause</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.active.html">Ide.PipelineStage:active</a></h6>
+          <div class="docblock">
+            <p>This property is set to <code>TRUE</code> when the build stage is actively
+running or&nbsp;cleaning.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.check-stdout.html">Ide.PipelineStage:check-stdout</a></h6>
+          <div class="docblock">
+            <p>Most build systems will preserve stderr for the processes they call, such
+as gcc, clang, and others. However, if your build system redirects all
+output to stdout, you may need to set this property to <code>TRUE</code> to ensure
+that Builder will extract errors from&nbsp;stdout.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.completed.html">Ide.PipelineStage:completed</a></h6>
+          <div class="docblock">
+            <p>The &#8220;completed&#8221; property is set to <code>TRUE</code> after the pipeline has
+completed processing the stage. When the pipeline invalidates
+phases, completed may be reset to <code>FALSE</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.disabled.html">Ide.PipelineStage:disabled</a></h6>
+          <div class="docblock">
+            <p>If the build stage is disabled. This allows you to have a stage that is
+attached but will not be activated during&nbsp;execution.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.name.html">Ide.PipelineStage:name</a></h6>
+          <div class="docblock">
+            <p>The name of the build stage. This is only used by <span class="caps">UI</span> to view
+the build&nbsp;pipeline.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.stdout-path.html">Ide.PipelineStage:stdout-path</a></h6>
+          <div class="docblock">
+            <p>The &#8220;stdout-path&#8221; property allows a build stage to redirect its log
+messages to a stdout file. Instead of passing stdout along to the
+build pipeline, they will be redirected to this&nbsp;file.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.PipelineStage.transient.html">Ide.PipelineStage:transient</a></h6>
+          <div class="docblock">
+            <p>If the build stage is&nbsp;transient.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.PipelineStage.chain.html">Ide.PipelineStage::chain</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.PipelineStage.query.html">Ide.PipelineStage::query</a></h6>
+          <div class="docblock">
+            <p>The <code>IdePipelineStage::query</code> signal is emitted to request that the
+build stage update its completed stage from any external&nbsp;resources.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.PipelineStage.reap.html">Ide.PipelineStage::reap</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when a request to rebuild the project has
+occurred. This allows build stages to ensure that certain files are
+removed from the system. For example, an autotools build stage might
+request that &#8220;configure&#8221; is removed so that autogen.sh will be Executed
+as part of the next&nbsp;build.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdePipelineStageClass {
+  IdeObjectClass parent_class;
+  gboolean (* build) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GCancellable* cancellable,
+    GError** error
+  );
+  void (* build_async) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* build_finish) (
+    IdePipelineStage* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* clean_async) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  );
+  gboolean (* clean_finish) (
+    IdePipelineStage* self,
+    GAsyncResult* result,
+    GError** error
+  );
+  void (* query) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GPtrArray* targets,
+    GCancellable* cancellable
+  );
+  void (* reap) (
+    IdePipelineStage* self,
+    IdeDirectoryReaper* reaper
+  );
+  gboolean (* chain) (
+    IdePipelineStage* self,
+    IdePipelineStage* next
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>build: gboolean (* build) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GCancellable* cancellable,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>build_async: void (* build_async) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>build_finish: gboolean (* build_finish) (
+    IdePipelineStage* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>clean_async: void (* clean_async) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GCancellable* cancellable,
+    GAsyncReadyCallback callback,
+    gpointer user_data
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>clean_finish: gboolean (* clean_finish) (
+    IdePipelineStage* self,
+    GAsyncResult* result,
+    GError** error
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>query: void (* query) (
+    IdePipelineStage* self,
+    IdePipeline* pipeline,
+    GPtrArray* targets,
+    GCancellable* cancellable
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>reap: void (* reap) (
+    IdePipelineStage* self,
+    IdeDirectoryReaper* reaper
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>chain: gboolean (* chain) (
+    IdePipelineStage* self,
+    IdePipelineStage* next
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-build"><a href="vfunc.PipelineStage.build.html">Ide.PipelineStageClass.build</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-build_async"><a href="vfunc.PipelineStage.build_async.html">Ide.PipelineStageClass.build_async</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-build_finish"><a href="vfunc.PipelineStage.build_finish.html">Ide.PipelineStageClass.build_finish</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-chain"><a href="vfunc.PipelineStage.chain.html">Ide.PipelineStageClass.chain</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-clean_async"><a href="vfunc.PipelineStage.clean_async.html">Ide.PipelineStageClass.clean_async</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-clean_finish"><a href="vfunc.PipelineStage.clean_finish.html">Ide.PipelineStageClass.clean_finish</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-query"><a href="vfunc.PipelineStage.query.html">Ide.PipelineStageClass.query</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-reap"><a href="vfunc.PipelineStage.reap.html">Ide.PipelineStageClass.reap</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

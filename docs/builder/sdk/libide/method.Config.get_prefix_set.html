@@ -1,0 +1,340 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Config.get_prefix_set</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta priority="og:title" content="Ide.Config.get_prefix_set"/>
+  <meta priority="og:description" content="Reference for Ide.Config.get_prefix_set"/>
+  <meta name="twitter:title" content="Ide.Config.get_prefix_set"/>
+  <meta name="twitter:description" content="Reference for Ide.Config.get_prefix_set"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.Config.html">Config</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Config.apply_path.html">apply_path</a>
+  
+    <a class="method" href="method.Config.get_app_id.html">get_app_id</a>
+  
+    <a class="method" href="method.Config.get_append_path.html">get_append_path</a>
+  
+    <a class="method" href="method.Config.get_args_for_phase.html">get_args_for_phase</a>
+  
+    <a class="method" href="method.Config.get_build_commands.html">get_build_commands</a>
+  
+    <a class="method" href="method.Config.get_build_commands_dir.html">get_build_commands_dir</a>
+  
+    <a class="method" href="method.Config.get_config_opts.html">get_config_opts</a>
+  
+    <a class="method" href="method.Config.get_debug.html">get_debug</a>
+  
+    <a class="method" href="method.Config.get_description.html">get_description</a>
+  
+    <a class="method" href="method.Config.get_dirty.html">get_dirty</a>
+  
+    <a class="method" href="method.Config.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="method.Config.get_environ.html">get_environ</a>
+  
+    <a class="method" href="method.Config.get_environment.html">get_environment</a>
+  
+    <a class="method" href="method.Config.get_extensions.html">get_extensions</a>
+  
+    <a class="method" href="method.Config.get_id.html">get_id</a>
+  
+    <a class="method" href="method.Config.get_internal_boolean.html">get_internal_boolean</a>
+  
+    <a class="method" href="method.Config.get_internal_int.html">get_internal_int</a>
+  
+    <a class="method" href="method.Config.get_internal_int64.html">get_internal_int64</a>
+  
+    <a class="method" href="method.Config.get_internal_object.html">get_internal_object</a>
+  
+    <a class="method" href="method.Config.get_internal_string.html">get_internal_string</a>
+  
+    <a class="method" href="method.Config.get_internal_strv.html">get_internal_strv</a>
+  
+    <a class="method" href="method.Config.get_locality.html">get_locality</a>
+  
+    <a class="method" href="method.Config.get_parallelism.html">get_parallelism</a>
+  
+    <a class="method" href="method.Config.get_post_install_commands.html">get_post_install_commands</a>
+  
+    <a class="method" href="method.Config.get_prefix.html">get_prefix</a>
+  
+    <a class="method current" href="method.Config.get_prefix_set.html">get_prefix_set</a>
+  
+    <a class="method" href="method.Config.get_prepend_path.html">get_prepend_path</a>
+  
+    <a class="method" href="method.Config.get_ready.html">get_ready</a>
+  
+    <a class="method" href="method.Config.get_run_opts.html">get_run_opts</a>
+  
+    <a class="method" href="method.Config.get_runtime.html">get_runtime</a>
+  
+    <a class="method" href="method.Config.get_runtime_environment.html">get_runtime_environment</a>
+  
+    <a class="method" href="method.Config.get_runtime_id.html">get_runtime_id</a>
+  
+    <a class="method" href="method.Config.get_sequence.html">get_sequence</a>
+  
+    <a class="method" href="method.Config.get_toolchain.html">get_toolchain</a>
+  
+    <a class="method" href="method.Config.get_toolchain_id.html">get_toolchain_id</a>
+  
+    <a class="method" href="method.Config.getenv.html">getenv</a>
+  
+    <a class="method" href="method.Config.replace_config_opt.html">replace_config_opt</a>
+  
+    <a class="method" href="method.Config.set_app_id.html">set_app_id</a>
+  
+    <a class="method" href="method.Config.set_append_path.html">set_append_path</a>
+  
+    <a class="method" href="method.Config.set_args_for_phase.html">set_args_for_phase</a>
+  
+    <a class="method" href="method.Config.set_build_commands.html">set_build_commands</a>
+  
+    <a class="method" href="method.Config.set_build_commands_dir.html">set_build_commands_dir</a>
+  
+    <a class="method" href="method.Config.set_config_opts.html">set_config_opts</a>
+  
+    <a class="method" href="method.Config.set_debug.html">set_debug</a>
+  
+    <a class="method" href="method.Config.set_dirty.html">set_dirty</a>
+  
+    <a class="method" href="method.Config.set_display_name.html">set_display_name</a>
+  
+    <a class="method" href="method.Config.set_environment.html">set_environment</a>
+  
+    <a class="method" href="method.Config.set_internal_boolean.html">set_internal_boolean</a>
+  
+    <a class="method" href="method.Config.set_internal_int.html">set_internal_int</a>
+  
+    <a class="method" href="method.Config.set_internal_int64.html">set_internal_int64</a>
+  
+    <a class="method" href="method.Config.set_internal_object.html">set_internal_object</a>
+  
+    <a class="method" href="method.Config.set_internal_string.html">set_internal_string</a>
+  
+    <a class="method" href="method.Config.set_internal_strv.html">set_internal_strv</a>
+  
+    <a class="method" href="method.Config.set_locality.html">set_locality</a>
+  
+    <a class="method" href="method.Config.set_parallelism.html">set_parallelism</a>
+  
+    <a class="method" href="method.Config.set_post_install_commands.html">set_post_install_commands</a>
+  
+    <a class="method" href="method.Config.set_prefix.html">set_prefix</a>
+  
+    <a class="method" href="method.Config.set_prefix_set.html">set_prefix_set</a>
+  
+    <a class="method" href="method.Config.set_prepend_path.html">set_prepend_path</a>
+  
+    <a class="method" href="method.Config.set_run_opts.html">set_run_opts</a>
+  
+    <a class="method" href="method.Config.set_runtime.html">set_runtime</a>
+  
+    <a class="method" href="method.Config.set_runtime_environment.html">set_runtime_environment</a>
+  
+    <a class="method" href="method.Config.set_runtime_id.html">set_runtime_id</a>
+  
+    <a class="method" href="method.Config.set_toolchain.html">set_toolchain</a>
+  
+    <a class="method" href="method.Config.set_toolchain_id.html">set_toolchain_id</a>
+  
+    <a class="method" href="method.Config.setenv.html">setenv</a>
+  
+    <a class="method" href="method.Config.supports_runtime.html">supports_runtime</a>
+  
+    <a class="method" href="method.Config.translate_file.html">translate_file</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index.html">Ide</a><span class="sep"></span><a href="class.Config.html">Config</a><span class="sep"></span>get_prefix_set</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="n">gboolean</span>
+<span class="n">ide_config_get_prefix_set</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">IdeConfig</span><span class="o">*</span><span class="w"> </span><span class="n">self</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+      <div class="docblock">
+        <table>
+        
+          <tr><td>Gets property</td><td><a href="property.Config.prefix-set.html"><code>Ide.Config:prefix-set</code></a></td></tr>
+        
+        </table>
+      </div>
+      
+    </div>
+
+    
+
+    
+    <div class="return-value toggle-wrapper">
+      <h4 id="return-value">
+        Return value
+        <a href="#return-value" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <div class="returns">
+          <div class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gboolean</code></p>
+            <p>No description available.</p>
+          </div>
+          <div>
+            <table>
+            
+            
+            
+            
+            
+            
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

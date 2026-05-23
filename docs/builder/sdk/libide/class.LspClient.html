@@ -1,0 +1,931 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.LspClient</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.LspClient"/>
+  <meta property="og:description" content="Reference for Ide.LspClient"/>
+  <meta name="twitter:title" content="Ide.LspClient"/>
+  <meta name="twitter:description" content="Reference for Ide.LspClient"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.LspClient.html#description">LspClient</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.LspClient.new.html">new</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.LspClient.add_language.html">add_language</a>
+  
+    <a class="method" href="method.LspClient.call_async.html">call_async</a>
+  
+    <a class="method" href="method.LspClient.call_finish.html">call_finish</a>
+  
+    <a class="method" href="method.LspClient.get_diagnostics_async.html">get_diagnostics_async</a>
+  
+    <a class="method" href="method.LspClient.get_diagnostics_finish.html">get_diagnostics_finish</a>
+  
+    <a class="method" href="method.LspClient.get_initialization_options.html">get_initialization_options</a>
+  
+    <a class="method" href="method.LspClient.get_server_capabilities.html">get_server_capabilities</a>
+  
+    <a class="method" href="method.LspClient.get_trace.html">get_trace</a>
+  
+    <a class="method" href="method.LspClient.send_notification_async.html">send_notification_async</a>
+  
+    <a class="method" href="method.LspClient.send_notification_finish.html">send_notification_finish</a>
+  
+    <a class="method" href="method.LspClient.set_initialization_options.html">set_initialization_options</a>
+  
+    <a class="method" href="method.LspClient.set_name.html">set_name</a>
+  
+    <a class="method" href="method.LspClient.set_root_uri.html">set_root_uri</a>
+  
+    <a class="method" href="method.LspClient.set_trace.html">set_trace</a>
+  
+    <a class="method" href="method.LspClient.start.html">start</a>
+  
+    <a class="method" href="method.LspClient.stop.html">stop</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.LspClient.initialization-options.html">initialization-options</a>
+  
+    <a class="property" href="property.LspClient.io-stream.html">io-stream</a>
+  
+    <a class="property" href="property.LspClient.name.html">name</a>
+  
+    <a class="property" href="property.LspClient.root-uri.html">root-uri</a>
+  
+    <a class="property" href="property.LspClient.server-capabilities.html">server-capabilities</a>
+  
+    <a class="property" href="property.LspClient.trace.html">trace</a>
+  
+    <a class="property" href="property.LspClient.use-markdown-in-diagnostics.html">use-markdown-in-diagnostics</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.LspClient.initialized.html">initialized</a>
+  
+    <a class="signal" href="signal.LspClient.load-configuration.html">load-configuration</a>
+  
+    <a class="signal" href="signal.LspClient.notification.html">notification</a>
+  
+    <a class="signal" href="signal.LspClient.published-diagnostics.html">published-diagnostics</a>
+  
+    <a class="signal" href="signal.LspClient.supports-language.html">supports-language</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.LspClient.initialized.html">initialized</a>
+  
+    <a class="method" href="vfunc.LspClient.load_configuration.html">load_configuration</a>
+  
+    <a class="method" href="vfunc.LspClient.notification.html">notification</a>
+  
+    <a class="method" href="vfunc.LspClient.published_diagnostics.html">published_diagnostics</a>
+  
+    <a class="method" href="vfunc.LspClient.supports_language.html">supports_language</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>LspClient</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>class Ide.LspClient : Ide.Object
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.LspClient.new.html">ide_lsp_client_new</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.LspClient.add_language.html">ide_lsp_client_add_language</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.call_async.html">ide_lsp_client_call_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously queries the Language Server using the <span class="caps">JSON</span>-<span class="caps">RPC</span>&nbsp;protocol.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.call_finish.html">ide_lsp_client_call_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.get_diagnostics_async.html">ide_lsp_client_get_diagnostics_async</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.get_diagnostics_finish.html">ide_lsp_client_get_diagnostics_finish</a></h6>
+          <div class="docblock">
+            <p>Completes a request to&nbsp;ide_lsp_client_get_diagnostics_async().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.get_initialization_options.html">ide_lsp_client_get_initialization_options</a></h6>
+          <div class="docblock">
+            <p>Gets the initialization options for the&nbsp;client.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.get_server_capabilities.html">ide_lsp_client_get_server_capabilities</a></h6>
+          <div class="docblock">
+            <p>Gets the capabilities provided to us by the server after&nbsp;initializing.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.get_trace.html">ide_lsp_client_get_trace</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.send_notification_async.html">ide_lsp_client_send_notification_async</a></h6>
+          <div class="docblock">
+            <p>Asynchronously sends a notification to the Language&nbsp;Server.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.send_notification_finish.html">ide_lsp_client_send_notification_finish</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.set_initialization_options.html">ide_lsp_client_set_initialization_options</a></h6>
+          <div class="docblock">
+            <p>Sets the <code>initilizationOptions</code> to send to the language server
+when the server is&nbsp;initialized.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.set_name.html">ide_lsp_client_set_name</a></h6>
+          <div class="docblock">
+            <p>Sets the name for the&nbsp;client.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 44</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.set_root_uri.html">ide_lsp_client_set_root_uri</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.set_trace.html">ide_lsp_client_set_trace</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.start.html">ide_lsp_client_start</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.LspClient.stop.html">ide_lsp_client_stop</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.LspClient.initialization-options.html">Ide.LspClient:initialization-options</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.LspClient.io-stream.html">Ide.LspClient:io-stream</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.LspClient.name.html">Ide.LspClient:name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.LspClient.root-uri.html">Ide.LspClient:root-uri</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.LspClient.server-capabilities.html">Ide.LspClient:server-capabilities</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.LspClient.trace.html">Ide.LspClient:trace</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.LspClient.use-markdown-in-diagnostics.html">Ide.LspClient:use-markdown-in-diagnostics</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.LspClient.initialized.html">Ide.LspClient::initialized</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.LspClient.load-configuration.html">Ide.LspClient::load-configuration</a></h6>
+          <div class="docblock">
+            <p>Loads the configuration object to reply to a workspace/configuration
+request from the&nbsp;peer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.LspClient.notification.html">Ide.LspClient::notification</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.LspClient.published-diagnostics.html">Ide.LspClient::published-diagnostics</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.LspClient.supports-language.html">Ide.LspClient::supports-language</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeLspClientClass {
+  IdeObjectClass parent_class;
+  void (* notification) (
+    IdeLspClient* self,
+    const gchar* method,
+    GVariant* params
+  );
+  gboolean (* supports_language) (
+    IdeLspClient* self,
+    const gchar* language_id
+  );
+  void (* published_diagnostics) (
+    IdeLspClient* self,
+    GFile* file,
+    IdeDiagnostics* diagnostics
+  );
+  GVariant* (* load_configuration) (
+    IdeLspClient* self
+  );
+  void (* initialized) (
+    IdeLspClient* self
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>notification: void (* notification) (
+    IdeLspClient* self,
+    const gchar* method,
+    GVariant* params
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>supports_language: gboolean (* supports_language) (
+    IdeLspClient* self,
+    const gchar* language_id
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>published_diagnostics: void (* published_diagnostics) (
+    IdeLspClient* self,
+    GFile* file,
+    IdeDiagnostics* diagnostics
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>load_configuration: GVariant* (* load_configuration) (
+    IdeLspClient* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>initialized: void (* initialized) (
+    IdeLspClient* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-initialized"><a href="vfunc.LspClient.initialized.html">Ide.LspClientClass.initialized</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-load_configuration"><a href="vfunc.LspClient.load_configuration.html">Ide.LspClientClass.load_configuration</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-notification"><a href="vfunc.LspClient.notification.html">Ide.LspClientClass.notification</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-published_diagnostics"><a href="vfunc.LspClient.published_diagnostics.html">Ide.LspClientClass.published_diagnostics</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-supports_language"><a href="vfunc.LspClient.supports_language.html">Ide.LspClientClass.supports_language</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+<li class="toc-list-item"><a href="#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

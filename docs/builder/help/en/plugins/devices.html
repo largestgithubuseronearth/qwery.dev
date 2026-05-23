@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extending the Device Manager &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extending the Run Manager" href="running.html" />
+    <link rel="prev" title="Subprocesses and Pseudo Terminals" href="processes/subprocesses.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="enabling.html">Enabling and Disabling Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating.html">Creating Your First Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workbench/index.html">Extending the Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="greeter.html">Extending the Greeter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editor/index.html">Extending the Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="symbols/index.html">Symbols and Semantic Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/index.html">Extending the Build Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="processes/index.html">Processes and Containers</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Extending the Device Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running.html">Extending the Run Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keybindings.html">Registering Keybindings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langserv.html">Integrating Language Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Extending Project Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session.html">Session Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="menus.html">Extending Application Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html">Registering Application Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workers.html">Managing Worker Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs.html">Integrating Version Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Extensions</a></li>
+      <li class="breadcrumb-item active">Extending the Device Manager</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/plugins/devices.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="extending-the-device-manager">
+<h1>Extending the Device Manager<a class="headerlink" href="#extending-the-device-manager" title="Link to this heading"></a></h1>
+<p>Builder provides an abstraction for external hardware devices. In fact, the
+local development machine is a special device called the “local” device.</p>
+<p>Devices are used in determining how to compile for the target architecture. In
+the future, we expect to gain additional features such as deploying
+applications to the device and debugging. However it is too soon to speculate
+on that API.</p>
+<p>You might want to provide support for an external device such as a embedded
+board, tablet, or phone. To do this, use an <code class="docutils literal notranslate"><span class="pre">Ide.DeviceProvider</span></code>.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ide</span><span class="p">,</span> <span class="n">Gio</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">FooDeviceProvider</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">DeviceProvider</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_load_async</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">,</span> <span class="n">callback</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="n">Gio</span><span class="o">.</span><span class="n">Task</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">devices</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="c1"># Do some device discovery, preferrably asynchronously if you have blocking I/O</span>
+        <span class="n">device</span> <span class="o">=</span> <span class="n">FooDevice</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="n">display_name</span><span class="o">=</span><span class="s1">&#39;My Headphones&#39;</span><span class="p">,</span> <span class="n">icon_name</span><span class="o">=</span><span class="s1">&#39;audio-headphones-symbolic&#39;</span><span class="p">)</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">devices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+
+        <span class="n">task</span><span class="o">.</span><span class="n">return_boolean</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_load_finish</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">task</span><span class="o">.</span><span class="n">propagate_boolean</span><span class="p">():</span>
+            <span class="k">for</span> <span class="n">device</span> <span class="ow">in</span> <span class="n">task</span><span class="o">.</span><span class="n">devices</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">emit_device_added</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">FooDevice</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">Device</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_prepare_configuration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="c1"># If you need to alter the Ide.Config in some way, this is where</span>
+        <span class="c1"># you would do that.</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_get_info_async</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">,</span> <span class="n">callback</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="c1"># If you need to probe the device to get information about it</span>
+        <span class="c1"># such as the host triplet, etc, this is where you would do</span>
+        <span class="c1"># that. And again, preferrably asynchronously if blocking I/O</span>
+        <span class="c1"># is required.</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="n">Gio</span><span class="o">.</span><span class="n">Task</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cancellable</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">info</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">DeviceInfo</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">set_kind</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">DeviceKind</span><span class="o">.</span><span class="n">PHONE</span><span class="p">)</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">set_host_triplet</span><span class="p">(</span><span class="n">Ide</span><span class="o">.</span><span class="n">Triplet</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;x86_64-linux-gnu&#39;</span><span class="p">))</span>
+        <span class="n">task</span><span class="o">.</span><span class="n">return_boolean</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_get_info_finish</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">task</span><span class="o">.</span><span class="n">propagate_boolean</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">task</span><span class="o">.</span><span class="n">info</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="processes/subprocesses.html" class="btn btn-neutral float-left" title="Subprocesses and Pseudo Terminals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="running.html" class="btn btn-neutral float-right" title="Extending the Run Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

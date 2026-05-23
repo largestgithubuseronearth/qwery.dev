@@ -1,0 +1,328 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Pipeline.request_phase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta priority="og:title" content="Ide.Pipeline.request_phase"/>
+  <meta priority="og:description" content="Reference for Ide.Pipeline.request_phase"/>
+  <meta name="twitter:title" content="Ide.Pipeline.request_phase"/>
+  <meta name="twitter:description" content="Reference for Ide.Pipeline.request_phase"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.Pipeline.html">Pipeline</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Pipeline.add_error_format.html">add_error_format</a>
+  
+    <a class="method" href="method.Pipeline.add_log_observer.html">add_log_observer</a>
+  
+    <a class="method" href="method.Pipeline.addin_find_by_module_name.html">addin_find_by_module_name</a>
+  
+    <a class="method" href="method.Pipeline.attach.html">attach</a>
+  
+    <a class="method" href="method.Pipeline.attach_command.html">attach_command</a>
+  
+    <a class="method" href="method.Pipeline.attach_launcher.html">attach_launcher</a>
+  
+    <a class="method" href="method.Pipeline.attach_pty.html">attach_pty</a>
+  
+    <a class="method" href="method.Pipeline.build_async.html">build_async</a>
+  
+    <a class="method" href="method.Pipeline.build_builddir_path.html">build_builddir_path</a>
+  
+    <a class="method" href="method.Pipeline.build_finish.html">build_finish</a>
+  
+    <a class="method" href="method.Pipeline.build_srcdir_path.html">build_srcdir_path</a>
+  
+    <a class="method" href="method.Pipeline.build_targets_async.html">build_targets_async</a>
+  
+    <a class="method" href="method.Pipeline.build_targets_finish.html">build_targets_finish</a>
+  
+    <a class="method" href="method.Pipeline.clean_async.html">clean_async</a>
+  
+    <a class="method" href="method.Pipeline.clean_finish.html">clean_finish</a>
+  
+    <a class="method" href="method.Pipeline.contains_program_in_path.html">contains_program_in_path</a>
+  
+    <a class="method" href="method.Pipeline.create_launcher.html">create_launcher</a>
+  
+    <a class="method" href="method.Pipeline.create_run_context.html">create_run_context</a>
+  
+    <a class="method" href="method.Pipeline.detach.html">detach</a>
+  
+    <a class="method" href="method.Pipeline.dup_arch.html">dup_arch</a>
+  
+    <a class="method" href="method.Pipeline.emit_diagnostic.html">emit_diagnostic</a>
+  
+    <a class="method" href="method.Pipeline.foreach_stage.html">foreach_stage</a>
+  
+    <a class="method" href="method.Pipeline.get_builddir.html">get_builddir</a>
+  
+    <a class="method" href="method.Pipeline.get_busy.html">get_busy</a>
+  
+    <a class="method" href="method.Pipeline.get_can_export.html">get_can_export</a>
+  
+    <a class="method" href="method.Pipeline.get_config.html">get_config</a>
+  
+    <a class="method" href="method.Pipeline.get_deploy_strategy.html">get_deploy_strategy</a>
+  
+    <a class="method" href="method.Pipeline.get_device.html">get_device</a>
+  
+    <a class="method" href="method.Pipeline.get_device_info.html">get_device_info</a>
+  
+    <a class="method" href="method.Pipeline.get_host_triplet.html">get_host_triplet</a>
+  
+    <a class="method" href="method.Pipeline.get_message.html">get_message</a>
+  
+    <a class="method" href="method.Pipeline.get_phase.html">get_phase</a>
+  
+    <a class="method" href="method.Pipeline.get_pty.html">get_pty</a>
+  
+    <a class="method" href="method.Pipeline.get_requested_phase.html">get_requested_phase</a>
+  
+    <a class="method" href="method.Pipeline.get_runtime.html">get_runtime</a>
+  
+    <a class="method" href="method.Pipeline.get_srcdir.html">get_srcdir</a>
+  
+    <a class="method" href="method.Pipeline.get_stage_by_id.html">get_stage_by_id</a>
+  
+    <a class="method" href="method.Pipeline.get_toolchain.html">get_toolchain</a>
+  
+    <a class="method" href="method.Pipeline.has_configured.html">has_configured</a>
+  
+    <a class="method" href="method.Pipeline.invalidate_phase.html">invalidate_phase</a>
+  
+    <a class="method" href="method.Pipeline.is_native.html">is_native</a>
+  
+    <a class="method" href="method.Pipeline.is_ready.html">is_ready</a>
+  
+    <a class="method" href="method.Pipeline.prepare_run_context.html">prepare_run_context</a>
+  
+    <a class="method" href="method.Pipeline.rebuild_async.html">rebuild_async</a>
+  
+    <a class="method" href="method.Pipeline.rebuild_finish.html">rebuild_finish</a>
+  
+    <a class="method" href="method.Pipeline.ref_toolchain.html">ref_toolchain</a>
+  
+    <a class="method" href="method.Pipeline.remove_error_format.html">remove_error_format</a>
+  
+    <a class="method" href="method.Pipeline.remove_log_observer.html">remove_log_observer</a>
+  
+    <a class="method current" href="method.Pipeline.request_phase.html">request_phase</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index.html">Ide</a><span class="sep"></span><a href="class.Pipeline.html">Pipeline</a><span class="sep"></span>request_phase</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="n">gboolean</span>
+<span class="n">ide_pipeline_request_phase</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">IdePipeline</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IdePipelinePhase</span><span class="w"> </span><span class="n">phase</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>Requests that the next execution of the pipeline will build up to <code>phase</code>
+including all stages that were previously&nbsp;invalidated.</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <dl class="arguments">
+          
+          <dt class="arg-name"><code>phase</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="flags.PipelinePhase.html"><code>IdePipelinePhase</code></a></p>
+            <p>An <code>IdePipelinePhase</code>.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </table>
+          </dd>
+          
+
+          
+        </dl>
+      </div>
+    </div>
+    
+
+    
+    <div class="return-value toggle-wrapper">
+      <h4 id="return-value">
+        Return value
+        <a href="#return-value" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <div class="returns">
+          <div class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gboolean</code></p>
+            <p><code>TRUE</code> if a stage is known to require&nbsp;execution.</p>
+          </div>
+          <div>
+            <table>
+            
+            
+            
+            
+            
+            
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

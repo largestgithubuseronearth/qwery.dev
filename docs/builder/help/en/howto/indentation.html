@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changing Indentation &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Search and Replace" href="search_and_replace.html" />
+    <link rel="prev" title="How-To Guides" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins/index.html">Extensions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">How-To Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Changing Indentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_and_replace.html">Search and Replace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jump_to_definition.html">Jump to Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_for_symbol.html">Searching for Symbols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sysroot.html">Use a Custom Sysroot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">How-To Guides</a></li>
+      <li class="breadcrumb-item active">Changing Indentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/howto/indentation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changing-indentation">
+<h1>Changing Indentation<a class="headerlink" href="#changing-indentation" title="Link to this heading"></a></h1>
+<p>To change the indentation rules you have two options.
+Either globally for your system, or for just the current project.</p>
+<section id="project-wide">
+<h2>Project-Wide<a class="headerlink" href="#project-wide" title="Link to this heading"></a></h2>
+<p>If you would like to change settings for just your project, use a <code class="docutils literal notranslate"><span class="pre">.editorconfig</span></code> file.
+You can add a <code class="docutils literal notranslate"><span class="pre">.editorconfig</span></code> file to the root of your project in the <a class="reference external" href="http://editorconfig.org/">editorconfig</a> format.</p>
+<p>It looks something like:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+
+<span class="k">[*]</span>
+<span class="na">charset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">utf-8</span>
+<span class="na">end_of_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">lf</span>
+</pre></div>
+</div>
+</section>
+<section id="globally">
+<h2>Globally<a class="headerlink" href="#globally" title="Link to this heading"></a></h2>
+<p>If you would like to change the indentation rules for your user, and thereby all projects which do not contain an <code class="docutils literal notranslate"><span class="pre">.editorconfig</span></code> file, use the application preferences.
+You can access the preferences through the perspective selector or using the <code class="docutils literal notranslate"><span class="pre">Control+,</span></code> keyboard shortcut.</p>
+<p>First select “Programming Languages” from the sidebar on the left.
+Then select the programming language from the list of options.
+On the right you will now see a list of preferences that may be tweaked for that language.
+Change the indentation level to your desired preference.</p>
+</section>
+<section id="disabling-an-indenter">
+<h2>Disabling an Indenter<a class="headerlink" href="#disabling-an-indenter" title="Link to this heading"></a></h2>
+<p>If an indenter is being problematic, you can disable it using <code class="docutils literal notranslate"><span class="pre">gsettings</span></code>.
+The GNU-style C indenter is provided as part of the <code class="docutils literal notranslate"><span class="pre">c-pack</span></code> plugin and can be disabled as such:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>flatpak<span class="w"> </span>run<span class="w"> </span>--command<span class="o">=</span>bash<span class="w"> </span>org.gnome.Builder
+<span class="o">[</span>org.gnome.Builder<span class="o">]</span>$<span class="w"> </span>gsettings<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="s2">&quot;org.gnome.builder.extension-type:/org/gnome/builder/extension-types/c-pack/IdeIndenter/&quot;</span><span class="w"> </span>enabled<span class="w"> </span><span class="nb">false</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="How-To Guides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="search_and_replace.html" class="btn btn-neutral float-right" title="Search and Replace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

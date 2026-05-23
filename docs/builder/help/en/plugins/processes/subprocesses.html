@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subprocesses and Pseudo Terminals &mdash; Builder 50.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=692e2056"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Extending the Device Manager" href="../devices.html" />
+    <link rel="prev" title="Application Runtimes and Containers" href="runtimes.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Builder
+          </a>
+              <div class="version">
+                50
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exploring.html">Exploring the Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/index.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Extensions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../enabling.html">Enabling and Disabling Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating.html">Creating Your First Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workbench/index.html">Extending the Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../greeter.html">Extending the Greeter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editor/index.html">Extending the Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../symbols/index.html">Symbols and Semantic Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building/index.html">Extending the Build Pipeline</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Processes and Containers</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="runtimes.html">Application Runtimes and Containers</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Subprocesses and Pseudo Terminals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../devices.html">Extending the Device Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running.html">Extending the Run Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../keybindings.html">Registering Keybindings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../langserv.html">Integrating Language Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../search.html">Extending Project Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session.html">Session Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../menus.html">Extending Application Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preferences.html">Registering Application Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workers.html">Managing Worker Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vcs.html">Integrating Version Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Builder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Extensions</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Processes and Containers</a></li>
+      <li class="breadcrumb-item active">Subprocesses and Pseudo Terminals</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/plugins/processes/subprocesses.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="subprocesses-and-pseudo-terminals">
+<h1>Subprocesses and Pseudo Terminals<a class="headerlink" href="#subprocesses-and-pseudo-terminals" title="Link to this heading"></a></h1>
+<section id="creating-subprocesses">
+<h2>Creating Subprocesses<a class="headerlink" href="#creating-subprocesses" title="Link to this heading"></a></h2>
+<p>Builder provides a powerful abstraction for creating subprocesses.
+<code class="docutils literal notranslate"><span class="pre">Ide.Subprocess</span></code> allows you to setup and modify how a processes should be launched without the burden of how to launch the subprocess.
+This means that Builder can use different strategies based on the host system, subprocess requirements, and plugins that may need to modify the program arguments.</p>
+<p>When Builder is not running in a sandbox, it can generally execute subprocesses the normal way using fork and exec.
+However, if Builder is sandboxed, it may need to run the subprocess on the host rather than inside the sandbox.
+To ensure your subprocess is run on the host, use <code class="docutils literal notranslate"><span class="pre">Ide.Subprocess.set_run_on_host()</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can only run programs on the host that are already installed.
+Use <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">program-name</span></code> to determine if the process is available on the host.</p>
+</div>
+<p>If you are integrating an external tool, such as Valgrind, you might need to inject arguments into the argument array.
+For the Valgrind case, <code class="docutils literal notranslate"><span class="pre">Ide.Subprocess.prepend_argv()</span></code> of <code class="docutils literal notranslate"><span class="pre">&quot;valgrind&quot;</span></code> would be appropriate.</p>
+<p>Some runtime plugins may need to modify the argument array even further.
+For example, the Flatpak plugin will require that all commands start with <code class="docutils literal notranslate"><span class="pre">flatpak</span> <span class="pre">build</span> <span class="pre">...</span></code> so that the commands are never run on the host system, but instead inside the runtime.
+Plugins that require this should inject their additional arguments from the <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessLauncher.spawn()</span></code> virtual-method so that plugins do not get confused about the placement of arguments.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">GLib</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">gi.repository</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ide</span>
+
+<span class="c1"># You may want access to stdin/stdout/stderr. If so, ensure you specify</span>
+<span class="c1"># the appropriate Gio.SubprocessFlags for your subprocess.</span>
+<span class="n">launcher</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">SubprocessLauncher</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">Gio</span><span class="o">.</span><span class="n">SubprocessFlags</span><span class="o">.</span><span class="n">STDOUT_PIPE</span> <span class="o">|</span>
+                                      <span class="n">Gio</span><span class="o">.</span><span class="n">SubprocessFlags</span><span class="o">.</span><span class="n">STDERR_PIPE</span> <span class="o">|</span>
+                                      <span class="n">Gio</span><span class="o">.</span><span class="n">SubprocessFlags</span><span class="o">.</span><span class="n">STDIN_PIPE</span><span class="p">)</span>
+
+<span class="c1"># If you need to specify where to launch the process. The default</span>
+<span class="c1"># is the home directory.</span>
+<span class="n">launcher</span><span class="o">.</span><span class="n">set_cwd</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">GLib</span><span class="o">.</span><span class="n">get_home_dir</span><span class="p">(),</span> <span class="s1">&#39;Projects&#39;</span><span class="p">))</span>
+
+<span class="c1"># Push some arguments onto argv</span>
+<span class="n">launcher</span><span class="o">.</span><span class="n">push_argv</span><span class="p">(</span><span class="s1">&#39;which&#39;</span><span class="p">)</span>
+<span class="n">launcher</span><span class="o">.</span><span class="n">push_argv</span><span class="p">(</span><span class="s1">&#39;ls&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set some environment variables</span>
+<span class="n">launcher</span><span class="o">.</span><span class="n">setenv</span><span class="p">(</span><span class="s1">&#39;LANG&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Spawn the process. If you pass in a Gio.Cancellable, you can kill the</span>
+<span class="c1"># subprocess by calling Gio.Cancellable.cancel().</span>
+<span class="n">subprocess</span> <span class="o">=</span> <span class="n">launcher</span><span class="o">.</span><span class="n">spawn</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># We need to wait for the child to complete. If you want to read the</span>
+<span class="c1"># output of the subprocess, see Ide.Subprocess.communicate_utf8().</span>
+<span class="c1"># wait_check() will ensure the return value is zero. If you do not</span>
+<span class="c1"># care about the return value, just use wait().</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">wait_check</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">ex</span><span class="p">))</span>
+
+ <span class="c1"># May Ide.Subprocess API have async variants. Consider using them to</span>
+ <span class="c1"># avoid needlessly blocking threads.</span>
+</pre></div>
+</div>
+</section>
+<section id="supervising-subprocesses">
+<h2>Supervising Subprocesses<a class="headerlink" href="#supervising-subprocesses" title="Link to this heading"></a></h2>
+<p>There are times where you might want to respawn a process in case it exits prematurely.
+Builder provides the <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor</span></code> abstraction to simplify this for you.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor</span></code> has a simple API.
+Just attach your <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessLauncher</span></code> using <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor.set_launcher()</span></code> and call <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor.start()</span></code>.</p>
+<p>If the subprocess begins flapping (exiting immediately after spawning) some delay will be added to slow things down.</p>
+<p>To stop the subprocess, use <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor.stop()</span></code>.</p>
+<p>If you need access to the subprocess, you can access it either via the <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor.get_subprocess()</span></code> method or by connecting to the <code class="docutils literal notranslate"><span class="pre">Ide.SubprocessSupervisor::spawned()</span></code> signal.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">on_subprocess_spawned</span><span class="p">(</span><span class="n">supervisor</span><span class="p">,</span> <span class="n">subprocess</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Spawned process &quot;</span> <span class="o">+</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">get_identifier</span><span class="p">())</span>
+
+<span class="n">launcher</span> <span class="o">=</span> <span class="n">create_launcher</span><span class="p">()</span>
+
+<span class="n">supervisor</span> <span class="o">=</span> <span class="n">Ide</span><span class="o">.</span><span class="n">SubprocessSupervisor</span><span class="p">()</span>
+<span class="n">supervisor</span><span class="o">.</span><span class="n">set_launcher</span><span class="p">(</span><span class="n">launcher</span><span class="p">)</span>
+<span class="n">supervisor</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;spawned&#39;</span><span class="p">,</span> <span class="n">on_subprocess_spawned</span><span class="p">)</span>
+<span class="n">supervisor</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="pseudo-terminals">
+<h2>Pseudo Terminals<a class="headerlink" href="#pseudo-terminals" title="Link to this heading"></a></h2>
+<p>Pseudo terminals are tricky business.
+In general, if you need access to a PTY, use the VTE library like Builder’s terminal plugin.
+For an example of how to setup the PTY, we use a flow like this.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">// This code does little to no error checking.</span>
+<span class="c1">// Your code should be more careful.</span>
+
+<span class="c1">// First create our PTY master</span>
+<span class="n">VtePty</span><span class="w"> </span><span class="o">*</span><span class="n">pty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vte_terminal_pty_new_sync</span><span class="w"> </span><span class="p">(</span><span class="n">terminal</span><span class="p">,</span>
+<span class="w">                                         </span><span class="n">VTE_PTY_DEFAULT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">VTE_PTY_NO_LASTLOG</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">VTE_PTY_NO_UTMP</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">VTE_PTY_NO_WTMP</span><span class="p">,</span>
+<span class="w">                                         </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+
+<span class="c1">// Now go through the PTY slave setup</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">master_fd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vte_pty_get_fd</span><span class="w"> </span><span class="p">(</span><span class="n">pty</span><span class="p">);</span>
+
+<span class="n">assert</span><span class="w"> </span><span class="p">(</span><span class="n">grantpt</span><span class="w"> </span><span class="p">(</span><span class="n">master_fd</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="n">assert</span><span class="w"> </span><span class="p">(</span><span class="n">unlockpt</span><span class="w"> </span><span class="p">(</span><span class="n">master_fd</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">// Get the path to the PTY slave</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">name</span><span class="p">[</span><span class="n">PATH_MAX</span><span class="p">];</span>
+<span class="n">assert</span><span class="w"> </span><span class="p">(</span><span class="n">ptsname_r</span><span class="w"> </span><span class="p">(</span><span class="n">master_fd</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="n">name</span><span class="w"> </span><span class="p">[</span><span class="k">sizeof</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+
+<span class="c1">// Open the PTY slave</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">slave_fd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">O_RDWR</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">O_CLOEXEC</span><span class="p">);</span>
+
+<span class="c1">// Now, when spawning a process, you can set stdin/stdout/stderr to the FD</span>
+<span class="c1">// of the slave. We use dup() because the callee takes ownership.</span>
+<span class="n">ide_subprocess_launcher_take_stdin_fd</span><span class="w"> </span><span class="p">(</span><span class="n">launcher</span><span class="p">,</span><span class="w"> </span><span class="n">dup</span><span class="w"> </span><span class="p">(</span><span class="n">slave_fd</span><span class="p">));</span>
+<span class="n">ide_subprocess_launcher_take_stdout_fd</span><span class="w"> </span><span class="p">(</span><span class="n">launcher</span><span class="p">,</span><span class="w"> </span><span class="n">dup</span><span class="w"> </span><span class="p">(</span><span class="n">slave_fd</span><span class="p">));</span>
+<span class="n">ide_subprocess_launcher_take_stderr_fd</span><span class="w"> </span><span class="p">(</span><span class="n">launcher</span><span class="p">,</span><span class="w"> </span><span class="n">dup</span><span class="w"> </span><span class="p">(</span><span class="n">slave_fd</span><span class="p">));</span>
+<span class="n">close</span><span class="w"> </span><span class="p">(</span><span class="n">slave_fd</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>When launching the subprocess with Builder, it will detect that <code class="docutils literal notranslate"><span class="pre">stdin</span></code>, <code class="docutils literal notranslate"><span class="pre">stdout</span></code>, or <code class="docutils literal notranslate"><span class="pre">stderr</span></code> are pseudo terminals and perform the proper <code class="docutils literal notranslate"><span class="pre">ioctl()</span></code> setup for you.
+This allows for the PTY to cross the sandbox boundary to the host, ensuring that you may have a host-based shell with a PTY from within the sandbox.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="runtimes.html" class="btn btn-neutral float-left" title="Application Runtimes and Containers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../devices.html" class="btn btn-neutral float-right" title="Extending the Device Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2025, Christian Hergert, et al..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

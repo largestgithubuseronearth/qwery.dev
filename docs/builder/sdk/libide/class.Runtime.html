@@ -1,0 +1,976 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.Runtime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.Runtime"/>
+  <meta property="og:description" content="Reference for Ide.Runtime"/>
+  <meta name="twitter:title" content="Ide.Runtime"/>
+  <meta name="twitter:description" content="Reference for Ide.Runtime"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Runtime.html#description">Runtime</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.Runtime.new.html">new</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Runtime.contains_program_in_path.html">contains_program_in_path</a>
+  
+    <a class="method" href="method.Runtime.get_arch.html">get_arch</a>
+  
+    <a class="method" href="method.Runtime.get_category.html">get_category</a>
+  
+    <a class="method" href="method.Runtime.get_display_name.html">get_display_name</a>
+  
+    <a class="method" href="method.Runtime.get_icon_name.html">get_icon_name</a>
+  
+    <a class="method" href="method.Runtime.get_id.html">get_id</a>
+  
+    <a class="method" href="method.Runtime.get_name.html">get_name</a>
+  
+    <a class="method" href="method.Runtime.get_short_id.html">get_short_id</a>
+  
+    <a class="method" href="method.Runtime.get_system_include_dirs.html">get_system_include_dirs</a>
+  
+    <a class="method" href="method.Runtime.get_triplet.html">get_triplet</a>
+  
+    <a class="method" href="method.Runtime.prepare_configuration.html">prepare_configuration</a>
+  
+    <a class="method" href="method.Runtime.prepare_to_build.html">prepare_to_build</a>
+  
+    <a class="method" href="method.Runtime.prepare_to_run.html">prepare_to_run</a>
+  
+    <a class="method" href="method.Runtime.set_category.html">set_category</a>
+  
+    <a class="method" href="method.Runtime.set_display_name.html">set_display_name</a>
+  
+    <a class="method" href="method.Runtime.set_icon_name.html">set_icon_name</a>
+  
+    <a class="method" href="method.Runtime.set_id.html">set_id</a>
+  
+    <a class="method" href="method.Runtime.set_name.html">set_name</a>
+  
+    <a class="method" href="method.Runtime.set_short_id.html">set_short_id</a>
+  
+    <a class="method" href="method.Runtime.supports_toolchain.html">supports_toolchain</a>
+  
+    <a class="method" href="method.Runtime.translate_file.html">translate_file</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Runtime.category.html">category</a>
+  
+    <a class="property" href="property.Runtime.display-name.html">display-name</a>
+  
+    <a class="property" href="property.Runtime.icon-name.html">icon-name</a>
+  
+    <a class="property" href="property.Runtime.id.html">id</a>
+  
+    <a class="property" href="property.Runtime.name.html">name</a>
+  
+    <a class="property" href="property.Runtime.short-id.html">short-id</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.Runtime.contains_program_in_path.html">contains_program_in_path</a>
+  
+    <a class="method" href="vfunc.Runtime.get_system_include_dirs.html">get_system_include_dirs</a>
+  
+    <a class="method" href="vfunc.Runtime.get_triplet.html">get_triplet</a>
+  
+    <a class="method" href="vfunc.Runtime.prepare_configuration.html">prepare_configuration</a>
+  
+    <a class="method" href="vfunc.Runtime.prepare_to_build.html">prepare_to_build</a>
+  
+    <a class="method" href="vfunc.Runtime.prepare_to_run.html">prepare_to_run</a>
+  
+    <a class="method" href="vfunc.Runtime.supports_toolchain.html">supports_toolchain</a>
+  
+    <a class="method" href="vfunc.Runtime.translate_file.html">translate_file</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>Runtime</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>class Ide.Runtime : Ide.Object
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a href="class.Object.html" title="Object">IdeObject</a></li>
+          
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.Runtime.new.html">ide_runtime_new</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Runtime.contains_program_in_path.html">ide_runtime_contains_program_in_path</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_arch.html">ide_runtime_get_arch</a></h6>
+          <div class="docblock">
+            <p>Gets the architecture of the&nbsp;runtime.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_category.html">ide_runtime_get_category</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_display_name.html">ide_runtime_get_display_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_icon_name.html">ide_runtime_get_icon_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_id.html">ide_runtime_get_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_name.html">ide_runtime_get_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_short_id.html">ide_runtime_get_short_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_system_include_dirs.html">ide_runtime_get_system_include_dirs</a></h6>
+          <div class="docblock">
+            <p>Gets the system include dirs for the runtime. Usually, this is just
+&#8220;/usr/include&#8221;, but more complex runtimes may include&nbsp;additional.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.get_triplet.html">ide_runtime_get_triplet</a></h6>
+          <div class="docblock">
+            <p>Gets the architecture triplet of the&nbsp;runtime.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.prepare_configuration.html">ide_runtime_prepare_configuration</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.prepare_to_build.html">ide_runtime_prepare_to_build</a></h6>
+          <div class="docblock">
+            <p>Prepares a run context for running a build&nbsp;command.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.prepare_to_run.html">ide_runtime_prepare_to_run</a></h6>
+          <div class="docblock">
+            <p>Prepares a run context to run an&nbsp;application.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.set_category.html">ide_runtime_set_category</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.set_display_name.html">ide_runtime_set_display_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.set_icon_name.html">ide_runtime_set_icon_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.set_id.html">ide_runtime_set_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.set_name.html">ide_runtime_set_name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.set_short_id.html">ide_runtime_set_short_id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.supports_toolchain.html">ide_runtime_supports_toolchain</a></h6>
+          <div class="docblock">
+            <p>Informs wether a toolchain is supported by&nbsp;this.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Runtime.translate_file.html">ide_runtime_translate_file</a></h6>
+          <div class="docblock">
+            <p>Translates the file from a path within the runtime to a path that can
+be accessed from the host&nbsp;system.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="class.Object.html">IdeObject</a> (29)</h5><div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a href="class.Object.html#methods">IdeObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Runtime.category.html">Ide.Runtime:category</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Runtime.display-name.html">Ide.Runtime:display-name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Runtime.icon-name.html">Ide.Runtime:icon-name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Runtime.id.html">Ide.Runtime:id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Runtime.name.html">Ide.Runtime:name</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.Runtime.short-id.html">Ide.Runtime:short-id</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-properties">
+          <h5 style="display:block;">Properties inherited from <a href="class.Object.html">IdeObject</a> (2)</h5><div class="docblock">
+          
+            <h6><a href="property.Object.cancellable.html">Ide.Object:cancellable</a></h6><div class="docblock">
+              <p>The &#8220;cancellable&#8221; property is a <code>GCancellable</code> that can be used by operations
+that will be cancelled when the <code>IdeObject::destroy</code> signal is emitted on <code>self</code>.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+            <h6><a href="property.Object.parent.html">Ide.Object:parent</a></h6><div class="docblock">
+              <p>The parent <code>IdeObject</code>, if&nbsp;any.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals">
+          <h5 style="display:block;">Signals inherited from <a href="class.Object.html">IdeObject</a> (1)</h5><div class="docblock">
+          
+            <h6><a href="signal.Object.destroy.html">IdeObject::destroy</a></h6><div class="docblock">
+              <p>The &#8220;destroy&#8221; signal is emitted when the object should destroy itself
+and cleanup any state that is no longer necessary. This happens when
+the object has been removed from the because it was requested to be
+destroyed, or because a parent object is being&nbsp;destroyed.</p>
+            </div>
+            <div class="docblock">
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeRuntimeClass {
+  IdeObjectClass parent;
+  gboolean (* contains_program_in_path) (
+    IdeRuntime* self,
+    const gchar* program,
+    GCancellable* cancellable
+  );
+  void (* prepare_configuration) (
+    IdeRuntime* self,
+    IdeConfig* config
+  );
+  void (* prepare_to_run) (
+    IdeRuntime* self,
+    IdePipeline* pipeline,
+    IdeRunContext* run_context
+  );
+  void (* prepare_to_build) (
+    IdeRuntime* self,
+    IdePipeline* pipeline,
+    IdeRunContext* run_context
+  );
+  GFile* (* translate_file) (
+    IdeRuntime* self,
+    GFile* file
+  );
+  gchar** (* get_system_include_dirs) (
+    IdeRuntime* self
+  );
+  IdeTriplet* (* get_triplet) (
+    IdeRuntime* self
+  );
+  gboolean (* supports_toolchain) (
+    IdeRuntime* self,
+    IdeToolchain* toolchain
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent: IdeObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>contains_program_in_path: gboolean (* contains_program_in_path) (
+    IdeRuntime* self,
+    const gchar* program,
+    GCancellable* cancellable
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>prepare_configuration: void (* prepare_configuration) (
+    IdeRuntime* self,
+    IdeConfig* config
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>prepare_to_run: void (* prepare_to_run) (
+    IdeRuntime* self,
+    IdePipeline* pipeline,
+    IdeRunContext* run_context
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>prepare_to_build: void (* prepare_to_build) (
+    IdeRuntime* self,
+    IdePipeline* pipeline,
+    IdeRunContext* run_context
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>translate_file: GFile* (* translate_file) (
+    IdeRuntime* self,
+    GFile* file
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_system_include_dirs: gchar** (* get_system_include_dirs) (
+    IdeRuntime* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_triplet: IdeTriplet* (* get_triplet) (
+    IdeRuntime* self
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>supports_toolchain: gboolean (* supports_toolchain) (
+    IdeRuntime* self,
+    IdeToolchain* toolchain
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-contains_program_in_path"><a href="vfunc.Runtime.contains_program_in_path.html">Ide.RuntimeClass.contains_program_in_path</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-get_system_include_dirs"><a href="vfunc.Runtime.get_system_include_dirs.html">Ide.RuntimeClass.get_system_include_dirs</a></h6>
+        <div class="docblock">
+          <p>Gets the system include dirs for the runtime. Usually, this is just
+&#8220;/usr/include&#8221;, but more complex runtimes may include&nbsp;additional.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-get_triplet"><a href="vfunc.Runtime.get_triplet.html">Ide.RuntimeClass.get_triplet</a></h6>
+        <div class="docblock">
+          <p>Gets the architecture triplet of the&nbsp;runtime.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-prepare_configuration"><a href="vfunc.Runtime.prepare_configuration.html">Ide.RuntimeClass.prepare_configuration</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-prepare_to_build"><a href="vfunc.Runtime.prepare_to_build.html">Ide.RuntimeClass.prepare_to_build</a></h6>
+        <div class="docblock">
+          <p>Prepares a run context for running a build&nbsp;command.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-prepare_to_run"><a href="vfunc.Runtime.prepare_to_run.html">Ide.RuntimeClass.prepare_to_run</a></h6>
+        <div class="docblock">
+          <p>Prepares a run context to run an&nbsp;application.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-supports_toolchain"><a href="vfunc.Runtime.supports_toolchain.html">Ide.RuntimeClass.supports_toolchain</a></h6>
+        <div class="docblock">
+          <p>Informs wether a toolchain is supported by&nbsp;this.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-translate_file"><a href="vfunc.Runtime.translate_file.html">Ide.RuntimeClass.translate_file</a></h6>
+        <div class="docblock">
+          <p>Translates the file from a path within the runtime to a path that can
+be accessed from the host&nbsp;system.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+<li class="toc-list-item"><a href="#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

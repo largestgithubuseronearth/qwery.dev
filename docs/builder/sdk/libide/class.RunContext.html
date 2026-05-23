@@ -1,0 +1,750 @@
+<!--
+SPDX-FileCopyrightText: Christian Hergert
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ide.RunContext</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="org.gnome.Builder.svg"/>
+  <meta property="og:image:alt" content="Ide-50"/>
+  
+
+  
+  <meta property="og:title" content="Ide.RunContext"/>
+  <meta property="og:description" content="Reference for Ide.RunContext"/>
+  <meta name="twitter:title" content="Ide.RunContext"/>
+  <meta name="twitter:description" content="Reference for Ide.RunContext"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="org.gnome.Builder.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Ide</a></h3>
+        <p>API Version: 50</p>
+        
+        <p>Library Version: 50</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.RunContext.html#description">RunContext</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.RunContext.new.html">new</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.RunContext.add_environ.html">add_environ</a>
+  
+    <a class="method" href="method.RunContext.add_minimal_environment.html">add_minimal_environment</a>
+  
+    <a class="method" href="method.RunContext.append_args.html">append_args</a>
+  
+    <a class="method" href="method.RunContext.append_args_parsed.html">append_args_parsed</a>
+  
+    <a class="method" href="method.RunContext.append_argv.html">append_argv</a>
+  
+    <a class="method" href="method.RunContext.append_formatted.html">append_formatted</a>
+  
+    <a class="method" href="method.RunContext.create_stdio_stream.html">create_stdio_stream</a>
+  
+    <a class="method" href="method.RunContext.end.html">end</a>
+  
+    <a class="method" href="method.RunContext.environ_to_argv.html">environ_to_argv</a>
+  
+    <a class="method" href="method.RunContext.get_argv.html">get_argv</a>
+  
+    <a class="method" href="method.RunContext.get_cwd.html">get_cwd</a>
+  
+    <a class="method" href="method.RunContext.get_environ.html">get_environ</a>
+  
+    <a class="method" href="method.RunContext.getenv.html">getenv</a>
+  
+    <a class="method" href="method.RunContext.merge_unix_fd_map.html">merge_unix_fd_map</a>
+  
+    <a class="method" href="method.RunContext.prepend_args.html">prepend_args</a>
+  
+    <a class="method" href="method.RunContext.prepend_argv.html">prepend_argv</a>
+  
+    <a class="method" href="method.RunContext.push.html">push</a>
+  
+    <a class="method" href="method.RunContext.push_at_base.html">push_at_base</a>
+  
+    <a class="method" href="method.RunContext.push_error.html">push_error</a>
+  
+    <a class="method" href="method.RunContext.push_expansion.html">push_expansion</a>
+  
+    <a class="method" href="method.RunContext.push_host.html">push_host</a>
+  
+    <a class="method" href="method.RunContext.push_shell.html">push_shell</a>
+  
+    <a class="method" href="method.RunContext.push_user_shell.html">push_user_shell</a>
+  
+    <a class="method" href="method.RunContext.set_argv.html">set_argv</a>
+  
+    <a class="method" href="method.RunContext.set_cwd.html">set_cwd</a>
+  
+    <a class="method" href="method.RunContext.set_environ.html">set_environ</a>
+  
+    <a class="method" href="method.RunContext.set_pty.html">set_pty</a>
+  
+    <a class="method" href="method.RunContext.set_pty_fd.html">set_pty_fd</a>
+  
+    <a class="method" href="method.RunContext.setenv.html">setenv</a>
+  
+    <a class="method" href="method.RunContext.spawn.html">spawn</a>
+  
+    <a class="method" href="method.RunContext.take_fd.html">take_fd</a>
+  
+    <a class="method" href="method.RunContext.unsetenv.html">unsetenv</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Ide</a><span class="sep" role="presentation"></span>RunContext</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+        </h4>
+
+        <pre><code>final class Ide.RunContext : GObject.Object
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>No description available.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.RunContext.new.html">ide_run_context_new</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.RunContext.add_environ.html">ide_run_context_add_environ</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.add_minimal_environment.html">ide_run_context_add_minimal_environment</a></h6>
+          <div class="docblock">
+            <p>Adds a minimal set of environment&nbsp;variables.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.append_args.html">ide_run_context_append_args</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.append_args_parsed.html">ide_run_context_append_args_parsed</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.append_argv.html">ide_run_context_append_argv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.append_formatted.html">ide_run_context_append_formatted</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.create_stdio_stream.html">ide_run_context_create_stdio_stream</a></h6>
+          <div class="docblock">
+            <p>Creates a stream to communicate with the subprocess using&nbsp;stdin/stdout.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.end.html">ide_run_context_end</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.environ_to_argv.html">ide_run_context_environ_to_argv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.get_argv.html">ide_run_context_get_argv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.get_cwd.html">ide_run_context_get_cwd</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.get_environ.html">ide_run_context_get_environ</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.getenv.html">ide_run_context_getenv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.merge_unix_fd_map.html">ide_run_context_merge_unix_fd_map</a></h6>
+          <div class="docblock">
+            <p>Merges the <code>IdeUnixFDMap</code> into the current&nbsp;layer.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.prepend_args.html">ide_run_context_prepend_args</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.prepend_argv.html">ide_run_context_prepend_argv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push.html">ide_run_context_push</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push_at_base.html">ide_run_context_push_at_base</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push_error.html">ide_run_context_push_error</a></h6>
+          <div class="docblock">
+            <p>Pushes a new layer that will always fail with <code>error</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push_expansion.html">ide_run_context_push_expansion</a></h6>
+          <div class="docblock">
+            <p>Pushes a layer to expand known environment&nbsp;variables.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push_host.html">ide_run_context_push_host</a></h6>
+          <div class="docblock">
+            <p>Pushes handler to transform command to run on&nbsp;host.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push_shell.html">ide_run_context_push_shell</a></h6>
+          <div class="docblock">
+            <p>Pushes a shell which can run the upper layer command with&nbsp;-c.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.push_user_shell.html">ide_run_context_push_user_shell</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.set_argv.html">ide_run_context_set_argv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.set_cwd.html">ide_run_context_set_cwd</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.set_environ.html">ide_run_context_set_environ</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.set_pty.html">ide_run_context_set_pty</a></h6>
+          <div class="docblock">
+            <p>Sets the <span class="caps">PTY</span> for a run&nbsp;context.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.set_pty_fd.html">ide_run_context_set_pty_fd</a></h6>
+          <div class="docblock">
+            <p>Sets up a <span class="caps">PTY</span> for the run context that will communicate with the
+consumer. The consumer is the generally the widget that is rendering
+the <span class="caps">PTY</span> contents and the producer is the <span class="caps">FD</span> that is connected to the&nbsp;subprocess.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.setenv.html">ide_run_context_setenv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.spawn.html">ide_run_context_spawn</a></h6>
+          <div class="docblock">
+            <p>Spwans the run&nbsp;command.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.take_fd.html">ide_run_context_take_fd</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.RunContext.unsetenv.html">ide_run_context_unsetenv</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct IdeRunContextClass {
+  GObjectClass parent_class;
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: GObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+<li class="toc-list-item"><a href="#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>
