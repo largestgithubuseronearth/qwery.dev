@@ -1,6 +1,6 @@
 +++
 title="Contact"
 +++
-- [Github](https://github.com/largestgithubuseronearth)
-- [GNOME Gitlab](https://gitlab.gnome.org/qwery)
-- [Mastodon](https://mastodon.social/@clairie)
+- [Github: largestgithubuseronearth](https://github.com/largestgithubuseronearth)
+- [GNOME Gitlab: qwery](https://gitlab.gnome.org/qwery)
+- [Mastodon: clairie@mastodon.social](https://mastodon.social/@clairie)
