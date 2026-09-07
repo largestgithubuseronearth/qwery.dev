@@ -1,5 +1,5 @@
 +++
-title = "Docs"
+title = "Mirror"
 +++
 A mirror for some documentation I couldn't find up-to-date anywhere else.
 
