@@ -1,6 +1,6 @@
 baseurl = "/"
 locale = 'en-us'
-title = 'Claire'
+title = 'Claire homepage'
 theme = 'terminal'
 
 pagination.pagerSize = 5
@@ -71,7 +71,7 @@ pagination.pagerSize = 5
 
     [languages.en.params]
       subtitle = "Welcome to my website!"
-      owner = "Claire (qwery)"
+      owner = "Claire Lewis (qwery)"
       keywords = "qwery"
       copyright = "Claire <qwerymailbox@gmail.com>"
       menuMore = "Show more"
@@ -85,7 +85,7 @@ pagination.pagerSize = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Qwery Software Corporation"
+        logoText = "Claire Lewis"
         logoHomeLink = "/"
 
       [languages.en.menu]
