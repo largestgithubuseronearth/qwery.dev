@@ -1,5 +1,4 @@
 +++
-date = '2026-08-31T17:34:45-07:00'
 title = 'hi my name is claire ☺ ♥ '
 +++
 
